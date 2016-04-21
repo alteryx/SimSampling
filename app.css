@@ -1,0 +1,18 @@
+/* Be consistent with TextBox */
+.Select-control{
+  border-radius: 0px !important;
+}
+.Select{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.radioGroup input[type="radio"]{
+  display: none;
+}
+.radioGroup li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ul.radioGroup {
+  margin-top: -5px;
+}
