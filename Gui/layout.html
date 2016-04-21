@@ -1,0 +1,32 @@
+<fieldset>
+  <legend>Simulation Configuration</legend>
+  {{ samplingMechanism }}
+  {{ chunkSize }}
+  <div id='isIntermediate'>
+    {{ seed }}
+    {{ numIterations }}
+  </div>
+  {{ samplingMode }}
+  <!-- <alteryx-pluginwidget type="Button" id="next" buttontext="Next" 
+    onclick="buttonClicked(event)" isprimary="true">
+  </alteryx-pluginwidget> -->
+</fieldset>
+<fieldset id='parametricSampling'>
+  <legend>Parametric Sampling</legend>
+  {{ stageName }}
+  {{ distribution }}
+  <div>
+  <b>Placeholder for Distribution Plot and Sliders</b>
+  <p>For now use JSON strings to define parameters and bounds</p>
+  {{ jsonParameters }}
+  {{ jsonBounds }}
+  </div>
+</fieldset>
+<fieldset id='dataSampling'>
+  <legend>Data Sampling</legend>
+  {{ fields }}
+  {{ samplingStrategy }}
+  <div id='div-distToFit'>
+    {{ distToFit }}
+  </div>
+</fieldset>
