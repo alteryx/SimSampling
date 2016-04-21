@@ -1,5 +1,6 @@
 ## DO NOT MODIFY: Auto Inserted by AlteryxRhelper ----
 library(AlteryxRhelper)
+## Configuration ----
 config <- list(
   chunkSize = numericInput('%Question.chunkSize%' , 256000),
   distribution = dropdownInput('%Question.distribution%' , 'norm'),
@@ -29,9 +30,25 @@ config$parameters = jsonlite::fromJSON(config$jsonParameters)
 
 print(config)
 
+## Inputs ----
+readInputs <- function(...){
+  inputNames = c(...)
+  streams = paste0('#', seq_along(inputNames))
+  inputs <- setNames(lapply(streams, read.Alteryx), inputNames)
+  Filter(function(d){NROW(d) > 0}, inputs)
+}
+# TOFIX: think through the condition to read inputs
+inputs <- if (inAlteryx() && '%Question.activePage%' != "") {
+  readInputs("S", "D") 
+} else {
+  # replace NULL with default
+  NULL
+}
 
-# Read Data
-d <- read.Alteryx2("#1", default = data.frame(x = 1:10))
+payload <- list(config = config, inputs = inputs)
+
+## Insert Processing Code ----
+
 
 # Write Data to Output 1
-write.Alteryx2(d, 1)
+write.Alteryx2(inputs, 1)
