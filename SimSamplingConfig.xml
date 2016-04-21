@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<AlteryxJavaScriptPlugin>
+  <EngineSettings EngineDLL="Macro" EngineDLLEntryPoint="Supporting_Macros/SimSampling.yxmc" SDKVersion="10.1"/>
+  <GuiSettings Html="SimSamplingGui.html" Icon="SimSamplingIcon.png" SDKVersion="10.1">
+    <InputConnections>
+      <Connection Name="SampleData" AllowMultiple="False" Optional="True" Type="Connection" Label="D"/>
+      <Connection Name="SimulationData" AllowMultiple="False" Optional="True" Type="Connection" Label="S"/>
+    </InputConnections>
+    <OutputConnections>
+      <Connection Name="Data" AllowMultiple="False" Optional="True" Type="Connection" Label="D"/>
+    </OutputConnections>
+  </GuiSettings>
+  <Properties>
+    <MetaInfo>
+      <NameIsFileName>False</NameIsFileName>
+      <Name>Simulation Sampling</Name>
+      <Description>Simulation Sampling</Description>
+      <ToolInDb>False</ToolInDb>
+      <CategoryName>Prescriptive</CategoryName>
+      <Author>Dylan Blanchard</Author>
+      <Company>Alteryx, Inc</Company>
+      <Copyright>Alteryx, Inc</Copyright>
+      <DescriptionLink></DescriptionLink>
+    </MetaInfo>
+  </Properties>
+</AlteryxJavaScriptPlugin>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+SimSampling
+</title>
+    <link rel="stylesheet" href="app.css" media="screen" charset="utf-8">
+    <script type="text/javascript">
+      // Include version 1 of the base GUI library.
+      document.write(
+        '<link rel="import" href="' + window.Alteryx.LibDir + '1/lib/alteryx/gui/includes.html">'
+      );
+    </script>
+</head>
+<body>
+    
+<fieldset>
+  <legend>Simulation Configuration</legend>
+  
+<!--  samplingMechanism  -->
+<label htmlFor="samplingMechanism">Select sampling mechanism</label>
+<alteryx-pluginwidget type="DropDown" id="samplingMechanism" dataName="samplingMechanism">
+  <alteryx-option uiobject="Monte Carlo" default="true">mc</alteryx-option>
+  <alteryx-option uiobject="Latin HyperCube">lh</alteryx-option>
+</alteryx-pluginwidget>
+  
+
+  
+<!--  chunkSize  -->
+<label htmlFor="chunkSize">Chunk size</label>
+<alteryx-pluginwidget type="NumericSpinner" default="256000" minimum="1" maximum="100000000" step="1" id="chunkSize" dataName="chunkSize"></alteryx-pluginwidget>
+  
+
+  <div id='isIntermediate'>
+    
+<!--  seed  -->
+<label htmlFor="seed">Seed</label>
+<alteryx-pluginwidget type="NumericSpinner" default="1" minimum="1" maximum="100000000" step="1" id="seed" dataName="seed"></alteryx-pluginwidget>
+  
+
+    
+<!--  numIterations  -->
+<label htmlFor="numIterations">Number of iterations</label>
+<alteryx-pluginwidget type="NumericSpinner" default="10" minimum="1" maximum="100000000" step="1" id="numIterations" dataName="numIterations"></alteryx-pluginwidget>
+  
+
+  </div>
+  
+<!--  samplingMode  -->
+<label htmlFor="samplingMode">Select sampling mode</label>
+<alteryx-pluginwidget type="RadioGroup" id="samplingMode" dataName="samplingMode">
+  <alteryx-option uiobject="Sample parametrically" default="true">parametric</alteryx-option>
+  <alteryx-option uiobject="Sample from data">data</alteryx-option>
+</alteryx-pluginwidget>
+  
+
+  <!-- <alteryx-pluginwidget type="Button" id="next" buttontext="Next" 
+    onclick="buttonClicked(event)" isprimary="true">
+  </alteryx-pluginwidget> -->
+</fieldset>
+<fieldset id='parametricSampling'>
+  <legend>Parametric Sampling</legend>
+  
+<!--  stageName  -->
+<label htmlFor="stageName">Enter stage name</label>
+<alteryx-pluginwidget type="TextBox" password="false" id="stageName" dataName="stageName"></alteryx-pluginwidget>
+  
+
+  
+<!--  distribution  -->
+<label htmlFor="distribution">Select distribution</label>
+<alteryx-pluginwidget type="ComboBox" id="distribution" dataName="distribution">
+  <alteryx-option uiobject="Normal" default="true">norm</alteryx-option>
+  <alteryx-option uiobject="LogNormal">lnorm</alteryx-option>
+  <alteryx-option uiobject="Pareto">pareto</alteryx-option>
+  <alteryx-option uiobject="Uniform">unif</alteryx-option>
+  <alteryx-option uiobject="Triangular">triangle</alteryx-option>
+  <alteryx-option uiobject="Gamma">gamma</alteryx-option>
+  <alteryx-option uiobject="Binomial">binom</alteryx-option>
+  <alteryx-option uiobject="Geometric">geom</alteryx-option>
+  <alteryx-option uiobject="Poisson">pois</alteryx-option>
+</alteryx-pluginwidget>
+  
+
+  <div>
+  <b>Placeholder for Distribution Plot and Sliders</b>
+  <p>For now use JSON strings to define parameters and bounds</p>
+  
+<!--  jsonParameters  -->
+<label htmlFor="jsonParameters">Parameters*</label>
+<alteryx-pluginwidget type="TextBox" password="false" placeholder="{&quot;mean&quot;: 0, &quot;sd&quot;: 1}" id="jsonParameters" dataName="jsonParameters"></alteryx-pluginwidget>
+  
+
+  
+<!--  jsonBounds  -->
+<label htmlFor="jsonBounds">Bounds*</label>
+<alteryx-pluginwidget type="TextBox" password="false" placeholder="[-5, 5]" id="jsonBounds" dataName="jsonBounds"></alteryx-pluginwidget>
+  
+
+  </div>
+</fieldset>
+<fieldset id='dataSampling'>
+  <legend>Data Sampling</legend>
+  
+<!--  fields  -->
+<label htmlFor="fields">Select fields to sample</label>
+<alteryx-pluginwidget type="DropDown" dataType="FieldSelectorMulti" inputNumber="0" connectionNumber="0" fieldType="All" id="fields" dataName="fields"></alteryx-pluginwidget>
+  
+
+  
+<!--  samplingStrategy  -->
+<label htmlFor="samplingStrategy">Select sampling strategy</label>
+<alteryx-pluginwidget type="DropDown" id="samplingStrategy" dataName="samplingStrategy">
+  <alteryx-option uiobject="Sample entire rows" default="true">rows</alteryx-option>
+  <alteryx-option uiobject="Sample each column independently">columns</alteryx-option>
+  <alteryx-option uiobject="Sample from best fitting distribution">dist</alteryx-option>
+</alteryx-pluginwidget>
+  
+
+  <div id='div-distToFit'>
+    
+<!--  distToFit  -->
+<label htmlFor="distToFit">Select distributions to fit</label>
+<alteryx-pluginwidget type="MultiSelectListBox" dataType="MultiStringSelector" id="distToFit" dataName="distToFit">
+  <alteryx-option uiobject="Normal">norm</alteryx-option>
+  <alteryx-option uiobject="LogNormal">lnorm</alteryx-option>
+  <alteryx-option uiobject="Pareto">pareto</alteryx-option>
+  <alteryx-option uiobject="Uniform">unif</alteryx-option>
+  <alteryx-option uiobject="Triangular">triangle</alteryx-option>
+  <alteryx-option uiobject="Gamma">gamma</alteryx-option>
+  <alteryx-option uiobject="Binomial">binom</alteryx-option>
+  <alteryx-option uiobject="Geometric">geom</alteryx-option>
+  <alteryx-option uiobject="Poisson">pois</alteryx-option>
+</alteryx-pluginwidget>
+  
+
+  </div>
+</fieldset>
+
+  <script src="app.min.js" type="text/javascript"></script>
+</body>
+</html>
