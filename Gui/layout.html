@@ -1,7 +1,9 @@
 <fieldset>
   <legend>Simulation Configuration</legend>
-  {{ samplingMechanism }}
-  {{ chunkSize }}
+  <div>
+    {{ samplingMechanism }}
+    {{ chunkSize }}
+  </div>
   <div id='isIntermediate'>
     {{ seed }}
     {{ numIterations }}
@@ -24,8 +26,19 @@
 </fieldset>
 <fieldset id='dataSampling'>
   <legend>Data Sampling</legend>
-  {{ fields }}
-  {{ samplingStrategy }}
+  {{ dataKind }}
+  <div id='div-dataKind-raw'>
+    {{ fields }}
+    {{ samplingStrategy }}
+  </div>
+  <div id='div-dataKind-binned'>
+    {{ binnedDataName }}
+    {{ binnedIdField }}
+    {{ binnedValueField }}
+  </div>
+  <div id='div-dataKind-manual'>
+    <b>Placeholder for Roulette</b>
+  </div>
   <div id='div-distToFit'>
     {{ distToFit }}
   </div>
