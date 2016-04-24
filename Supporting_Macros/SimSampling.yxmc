@@ -16,7 +16,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="78" y="438"/>
+        <Position x="114" y="486"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -106,7 +106,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxRPluginGui.R">
-        <Position x="222" y="503"/>
+        <Position x="258" y="551"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -123,6 +123,7 @@ config &lt;- list(
   fields = listInput('%Question.fields%'),
   jsonBounds = textInput('%Question.jsonBounds%' , '[-4, 4]'),
   jsonParameters = textInput('%Question.jsonParameters%' , '{"mean": 0, "sd": 1}'),
+  jsonRouletteData = textInput('%Question.jsonRouletteData%' , '{"100": 1, "110": 2, "120": 4}'),
   numIterations = numericInput('%Question.numIterations%' , 10),
   samplingMechanism = dropdownInput('%Question.samplingMechanism%' , 'mc'),
   samplingMode = dropdownInput('%Question.samplingMode%' , 'parametric'),
@@ -136,6 +137,7 @@ options(alteryx.debug = config$debug)
 
 config$bounds = jsonlite::fromJSON(config$jsonBounds)
 config$parameters = jsonlite::fromJSON(config$jsonParameters)
+config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
 
 print(config)
 
@@ -144,7 +146,7 @@ print(config)
 d &lt;- read.Alteryx2("#1", default = data.frame(x = 1:10))
 
 # Write Data to Output 1
-write.Alteryx2(d, 1)  
+write.Alteryx2(d, 1)   
 </RScript>
           <UseFullUpdate value="False"/>
         </Configuration>
@@ -165,7 +167,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="318" y="455"/>
+        <Position x="354" y="503"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -195,7 +197,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="78" y="546"/>
+        <Position x="114" y="594"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -236,7 +238,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="414" width="100" height="24"/>
+        <Position x="90" y="462" width="100" height="24"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -256,7 +258,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="522" width="100" height="24"/>
+        <Position x="90" y="570" width="100" height="24"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -274,9 +276,42 @@ write.Alteryx2(d, 1)
         </Annotation>
       </Properties>
     </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="392" y="349" width="145" height="98"/>
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Roulette</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10"/>
+          <Disabled value="False"/>
+          <Folded value="False"/>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name/>
+          <DefaultAnnotationText/>
+          <Left value="False"/>
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+            <Position x="402" y="378" width="59" height="59"/>
+          </GuiSettings>
+          <Properties>
+            <Configuration/>
+            <Annotation DisplayMode="0">
+              <Name>jsonRouletteData</Name>
+              <DefaultAnnotationText/>
+              <Left value="False"/>
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="356" y="193" width="426" height="98"/>
+        <Position x="392" y="241" width="426" height="98"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -294,7 +329,7 @@ write.Alteryx2(d, 1)
       <ChildNodes>
         <Node ToolID="33">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="366" y="222" width="59" height="59"/>
+            <Position x="402" y="270" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -307,7 +342,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="36">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="498" y="222" width="59" height="59"/>
+            <Position x="534" y="270" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -320,7 +355,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="37">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="630" y="222" width="59" height="59"/>
+            <Position x="666" y="270" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -335,7 +370,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="426" y="6" width="471" height="170"/>
+        <Position x="462" y="54" width="471" height="170"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -353,7 +388,7 @@ write.Alteryx2(d, 1)
       <ChildNodes>
         <Node ToolID="24">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
-            <Position x="436" y="40.00002" width="59" height="59"/>
+            <Position x="472" y="88.00002" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -366,7 +401,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="25">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="580" y="40" width="59" height="59"/>
+            <Position x="616" y="88" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -379,7 +414,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="26">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
-            <Position x="726" y="35" width="59" height="59"/>
+            <Position x="762" y="83" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -392,7 +427,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="31">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="438" y="107" width="59" height="59"/>
+            <Position x="474" y="155" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -407,7 +442,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="18" y="198" width="322" height="165"/>
+        <Position x="54" y="246" width="322" height="165"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -425,7 +460,7 @@ write.Alteryx2(d, 1)
       <ChildNodes>
         <Node ToolID="19">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="28" y="232" width="59" height="59"/>
+            <Position x="64" y="280" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -438,7 +473,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="20">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="186" y="227" width="59" height="59"/>
+            <Position x="222" y="275" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -451,7 +486,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="21">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="186" y="294" width="59" height="59"/>
+            <Position x="222" y="342" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -464,7 +499,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="22">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="30.00001" y="294" width="59" height="59"/>
+            <Position x="66.00001" y="342" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -479,7 +514,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="18.00002" y="13" width="395" height="170"/>
+        <Position x="54.00002" y="61" width="395" height="170"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -497,7 +532,7 @@ write.Alteryx2(d, 1)
       <ChildNodes>
         <Node ToolID="13">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="28.00002" y="47.00005" width="59" height="59"/>
+            <Position x="64.00002" y="95.00005" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -510,7 +545,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="14">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
-            <Position x="186" y="42" width="59" height="59"/>
+            <Position x="222" y="90" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -523,7 +558,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="15">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
-            <Position x="318" y="54" width="59" height="59"/>
+            <Position x="354" y="102" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -536,7 +571,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="16">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
-            <Position x="30" y="114" width="59" height="59"/>
+            <Position x="66" y="162" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -549,7 +584,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="27">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="186" y="114" width="59" height="59"/>
+            <Position x="222" y="162" width="59" height="59"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -695,6 +730,12 @@ write.Alteryx2(d, 1)
       <Constant>
         <Namespace>Question</Namespace>
         <Name>binnedValueField</Name>
+        <Value/>
+        <IsNumeric value="False"/>
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>jsonRouletteData</Name>
         <Value/>
         <IsNumeric value="False"/>
       </Constant>
@@ -947,6 +988,16 @@ Manual Entry:manual
               <Field_IsOutput value="True"/>
               <Field_IncludeNone value="False"/>
               <Field_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</Field_FilterTypes>
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Roulette Data</Description>
+              <Name>jsonRouletteData</Name>
+              <ToolId value="39"/>
+              <Default>{"100": 1, "110": 2, "120": 4}</Default>
+              <Password value="False"/>
+              <Multiline value="False"/>
+              <Hidden value="False"/>
             </Question>
           </Questions>
         </Question>
