@@ -17,7 +17,8 @@ SimSampling
     
 <fieldset>
   <legend>Simulation Configuration</legend>
-  
+  <div>
+    
 <!--  samplingMechanism  -->
 <label htmlFor="samplingMechanism">Select sampling mechanism</label>
 <alteryx-pluginwidget type="DropDown" id="samplingMechanism" dataName="samplingMechanism">
@@ -26,12 +27,13 @@ SimSampling
 </alteryx-pluginwidget>
   
 
-  
+    
 <!--  chunkSize  -->
 <label htmlFor="chunkSize">Chunk size</label>
 <alteryx-pluginwidget type="NumericSpinner" default="256000" minimum="1" maximum="100000000" step="1" id="chunkSize" dataName="chunkSize"></alteryx-pluginwidget>
   
 
+  </div>
   <div id='isIntermediate'>
     
 <!--  seed  -->
@@ -95,7 +97,7 @@ SimSampling
   
 <!--  jsonBounds  -->
 <label htmlFor="jsonBounds">Bounds*</label>
-<alteryx-pluginwidget type="TextBox" password="false" placeholder="[-5, 5]" id="jsonBounds" dataName="jsonBounds"></alteryx-pluginwidget>
+<alteryx-pluginwidget type="TextBox" password="false" placeholder="[-4, 4]" id="jsonBounds" dataName="jsonBounds"></alteryx-pluginwidget>
   
 
   </div>
@@ -103,12 +105,23 @@ SimSampling
 <fieldset id='dataSampling'>
   <legend>Data Sampling</legend>
   
+<!--  dataKind  -->
+<label htmlFor="dataKind">Specify kind of data</label>
+<alteryx-pluginwidget type="DropDown" id="dataKind" dataName="dataKind">
+  <alteryx-option uiobject="Raw Data (not binned)" default="true">raw</alteryx-option>
+  <alteryx-option uiobject="Binned Data">binned</alteryx-option>
+  <alteryx-option uiobject="Manual Entry">manual</alteryx-option>
+</alteryx-pluginwidget>
+  
+
+  <div id='div-dataKind-raw'>
+    
 <!--  fields  -->
 <label htmlFor="fields">Select fields to sample</label>
 <alteryx-pluginwidget type="DropDown" dataType="FieldSelectorMulti" inputNumber="0" connectionNumber="0" fieldType="All" id="fields" dataName="fields"></alteryx-pluginwidget>
   
 
-  
+    
 <!--  samplingStrategy  -->
 <label htmlFor="samplingStrategy">Select sampling strategy</label>
 <alteryx-pluginwidget type="DropDown" id="samplingStrategy" dataName="samplingStrategy">
@@ -118,6 +131,36 @@ SimSampling
 </alteryx-pluginwidget>
   
 
+  </div>
+  <div id='div-dataKind-binned'>
+    
+<!--  binnedDataName  -->
+<label htmlFor="binnedDataName">Enter name for binned data</label>
+<alteryx-pluginwidget type="TextBox" password="false" id="binnedDataName" dataName="binnedDataName"></alteryx-pluginwidget>
+  
+
+    
+<!--  binnedIdField  -->
+<label htmlFor="binnedIdField">Select ID Field</label>
+<alteryx-pluginwidget type="DropDown" dataType="FieldSelector" inputNumber="0" connectionNumber="0" fieldType="All" id="binnedIdField" dataName="binnedIdField"></alteryx-pluginwidget>
+  
+
+    
+<!--  binnedValueField  -->
+<label htmlFor="binnedValueField">Select Value Field</label>
+<alteryx-pluginwidget type="DropDown" dataType="FieldSelector" inputNumber="0" connectionNumber="0" fieldType="All" id="binnedValueField" dataName="binnedValueField"></alteryx-pluginwidget>
+  
+
+  </div>
+  <div id='div-dataKind-manual'>
+    <b>Placeholder for Roulette</b>
+    
+<!--  jsonRouletteData  -->
+<label htmlFor="jsonRouletteData">Roulette Data</label>
+<alteryx-pluginwidget type="TextBox" password="false" placeholder="{&quot;100&quot;: 1, &quot;110&quot;: 2, &quot;120&quot;: 4}" id="jsonRouletteData" dataName="jsonRouletteData"></alteryx-pluginwidget>
+  
+
+  </div>
   <div id='div-distToFit'>
     
 <!--  distToFit  -->

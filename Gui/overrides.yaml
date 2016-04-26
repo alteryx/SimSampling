@@ -2,7 +2,3 @@ distribution:
   type: ComboBox
 samplingMode:
   type: RadioGroup
-jsonParameters:
-  placeholder: '{"mean": 0, "sd": 1}'
-jsonBounds:
-  placeholder: "[-5, 5]"
