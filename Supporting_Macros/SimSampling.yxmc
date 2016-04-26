@@ -3,35 +3,35 @@
   <Nodes>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
-        <Position x="0" y="0" width="59" height="59"/>
+        <Position x="0" y="0" width="59" height="59" />
       </GuiSettings>
       <Properties>
-        <Configuration/>
+        <Configuration />
         <Annotation DisplayMode="0">
-          <Name/>
-          <DefaultAnnotationText/>
-          <Left value="False"/>
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
         </Annotation>
       </Properties>
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="114" y="486"/>
+        <Position x="114" y="485" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <UseFileInput value="False"/>
+          <UseFileInput value="False" />
           <Name>SampleData</Name>
           <Abbrev>D</Abbrev>
-          <ShowFieldMap value="False"/>
-          <Optional value="True"/>
+          <ShowFieldMap value="False" />
+          <Optional value="True" />
           <TextInput>
             <Configuration>
-              <NumRows value="10"/>
+              <NumRows value="10" />
               <Fields>
-                <Field name="data"/>
-                <Field name="id"/>
-                <Field name="value"/>
+                <Field name="data" />
+                <Field name="id" />
+                <Field name="value" />
               </Fields>
               <Data>
                 <r>
@@ -60,29 +60,29 @@
                   <c>11</c>
                 </r>
                 <r>
-                  <c/>
-                  <c/>
-                  <c/>
+                  <c />
+                  <c />
+                  <c />
                 </r>
                 <r>
-                  <c/>
-                  <c/>
-                  <c/>
+                  <c />
+                  <c />
+                  <c />
                 </r>
                 <r>
-                  <c/>
-                  <c/>
-                  <c/>
+                  <c />
+                  <c />
+                  <c />
                 </r>
                 <r>
-                  <c/>
-                  <c/>
-                  <c/>
+                  <c />
+                  <c />
+                  <c />
                 </r>
                 <r>
-                  <c/>
-                  <c/>
-                  <c/>
+                  <c />
+                  <c />
+                  <c />
                 </r>
               </Data>
             </Configuration>
@@ -91,22 +91,22 @@
         <Annotation DisplayMode="2">
           <Name>SampleData</Name>
           <AnnotationText>Sample Data</AnnotationText>
-          <DefaultAnnotationText/>
-          <Left value="True"/>
+          <DefaultAnnotationText />
+          <Left value="True" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="data" source="TextInput:" type="Byte"/>
-            <Field name="id" source="TextInput:" type="Byte"/>
-            <Field name="value" source="TextInput:" type="Byte"/>
+            <Field name="data" source="TextInput:" type="Byte" />
+            <Field name="id" source="TextInput:" type="Byte" />
+            <Field name="value" source="TextInput:" type="Byte" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput"/>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxRPluginGui.R">
-        <Position x="258" y="551"/>
+        <Position x="258" y="550" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -145,29 +145,30 @@ print(config)
 # Read Data
 d &lt;- read.Alteryx2("#1", default = data.frame(x = 1:10))
 
+print(str(d))
+
 # Write Data to Output 1
-write.Alteryx2(d, 1)   
-</RScript>
-          <UseFullUpdate value="False"/>
+write.Alteryx2(d, 1)</RScript>
+          <UseFullUpdate value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
-          <Name/>
-          <DefaultAnnotationText/>
-          <Left value="False"/>
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
         </Annotation>
         <MetaInfo connection="Output1">
           <RecordInfo>
-            <Field name="data" source="R-DATA:" type="Int32"/>
-            <Field name="id" source="R-DATA:" type="Int32"/>
-            <Field name="value" source="R-DATA:" type="Int32"/>
+            <Field name="data" source="R-DATA:" type="Int32" />
+            <Field name="id" source="R-DATA:" type="Int32" />
+            <Field name="value" source="R-DATA:" type="Int32" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
-      <EngineSettings EngineDll="AlteryxRPluginEngine.dll" EngineDllEntryPoint="AlteryxR"/>
+      <EngineSettings EngineDll="AlteryxRPluginEngine.dll" EngineDllEntryPoint="AlteryxR" />
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="354" y="503"/>
+        <Position x="354" y="502" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -175,43 +176,43 @@ write.Alteryx2(d, 1)
           <Abbrev>D</Abbrev>
         </Configuration>
         <Annotation DisplayMode="0">
-          <Name/>
-          <DefaultAnnotationText/>
-          <Left value="False"/>
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput"/>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
-        <Position x="0" y="0" width="59" height="59"/>
+        <Position x="0" y="0" width="59" height="59" />
       </GuiSettings>
       <Properties>
-        <Configuration/>
+        <Configuration />
         <Annotation DisplayMode="0">
-          <Name/>
-          <DefaultAnnotationText/>
-          <Left value="False"/>
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
         </Annotation>
       </Properties>
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="114" y="594"/>
+        <Position x="114" y="593" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <UseFileInput value="False"/>
+          <UseFileInput value="False" />
           <Name>SimulationData</Name>
           <Abbrev>S</Abbrev>
-          <ShowFieldMap value="False"/>
-          <Optional value="True"/>
+          <ShowFieldMap value="False" />
+          <Optional value="True" />
           <TextInput>
             <Configuration>
-              <NumRows value="1"/>
+              <NumRows value="1" />
               <Fields>
-                <Field name="other_stuff"/>
-                <Field name="seed"/>
+                <Field name="other_stuff" />
+                <Field name="seed" />
               </Fields>
               <Data>
                 <r>
@@ -223,87 +224,87 @@ write.Alteryx2(d, 1)
           </TextInput>
         </Configuration>
         <Annotation DisplayMode="2">
-          <Name/>
-          <DefaultAnnotationText/>
-          <Left value="True"/>
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="True" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="other_stuff" size="4" source="TextInput:" type="String"/>
-            <Field name="seed" source="TextInput:" type="Byte"/>
+            <Field name="other_stuff" size="4" source="TextInput:" type="String" />
+            <Field name="seed" source="TextInput:" type="Byte" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput"/>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="90" y="462" width="100" height="24"/>
+        <Position x="90" y="461" width="100" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Text>Sample Data</Text>
-          <Font name="Segoe UI" size="8.25" style="0"/>
-          <TextColor name="Black"/>
-          <FillColor name="White"/>
-          <Shape shape="0"/>
-          <Justification Justification="4"/>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
         </Configuration>
         <Annotation DisplayMode="0">
-          <Name/>
-          <DefaultAnnotationText/>
-          <Left value="False"/>
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
         </Annotation>
       </Properties>
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="90" y="570" width="100" height="24"/>
+        <Position x="90" y="569" width="100" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Text>Simulation Data</Text>
-          <Font name="Segoe UI" size="8.25" style="0"/>
-          <TextColor name="Black"/>
-          <FillColor name="White"/>
-          <Shape shape="0"/>
-          <Justification Justification="4"/>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
         </Configuration>
         <Annotation DisplayMode="0">
-          <Name/>
-          <DefaultAnnotationText/>
-          <Left value="False"/>
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
         </Annotation>
       </Properties>
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="392" y="349" width="145" height="98"/>
+        <Position x="392" y="349" width="159" height="97" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption>Roulette</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10"/>
-          <Disabled value="False"/>
-          <Folded value="False"/>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
-          <Name/>
-          <DefaultAnnotationText/>
-          <Left value="False"/>
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
         </Annotation>
       </Properties>
       <ChildNodes>
         <Node ToolID="39">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="402" y="378" width="59" height="59"/>
+            <Position x="402" y="377" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>jsonRouletteData</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
@@ -311,58 +312,58 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="392" y="241" width="426" height="98"/>
+        <Position x="392" y="241" width="443" height="97" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption>Binned Data</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10"/>
-          <Disabled value="False"/>
-          <Folded value="False"/>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
-          <Name/>
-          <DefaultAnnotationText/>
-          <Left value="False"/>
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
         </Annotation>
       </Properties>
       <ChildNodes>
         <Node ToolID="33">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="402" y="270" width="59" height="59"/>
+            <Position x="402" y="269" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>binnedDataName</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
         <Node ToolID="36">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="534" y="270" width="59" height="59"/>
+            <Position x="534" y="269" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>binnedIdField</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
         <Node ToolID="37">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="666" y="270" width="59" height="59"/>
+            <Position x="666" y="269" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>binnedValueField</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
@@ -370,71 +371,84 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="462" y="54" width="471" height="170"/>
+        <Position x="534" y="54" width="457" height="169" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption>Data Sampling</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10"/>
-          <Disabled value="False"/>
-          <Folded value="False"/>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
-          <Name/>
-          <DefaultAnnotationText/>
-          <Left value="False"/>
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
         </Annotation>
       </Properties>
       <ChildNodes>
         <Node ToolID="24">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
-            <Position x="472" y="88.00002" width="59" height="59"/>
+            <Position x="544" y="87.00002" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>fields</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
         <Node ToolID="25">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="616" y="88" width="59" height="59"/>
+            <Position x="688" y="87" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>samplingStrategy</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
         <Node ToolID="26">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
-            <Position x="762" y="83" width="59" height="59"/>
+            <Position x="834" y="82" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>distToFit</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
         <Node ToolID="31">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="474" y="155" width="59" height="59"/>
+            <Position x="546" y="154" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>dataKind</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+            <Position x="690" y="149" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>replace</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
@@ -442,71 +456,71 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="246" width="322" height="165"/>
+        <Position x="54" y="246" width="308" height="164" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption>Parametric Sampling</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10"/>
-          <Disabled value="False"/>
-          <Folded value="False"/>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
-          <Name/>
-          <DefaultAnnotationText/>
-          <Left value="False"/>
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
         </Annotation>
       </Properties>
       <ChildNodes>
         <Node ToolID="19">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="64" y="280" width="59" height="59"/>
+            <Position x="64" y="279" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>stageName</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
         <Node ToolID="20">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="222" y="275" width="59" height="59"/>
+            <Position x="222" y="274" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>distribution</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
         <Node ToolID="21">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="222" y="342" width="59" height="59"/>
+            <Position x="222" y="341" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>jsonParameters</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
         <Node ToolID="22">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="66.00001" y="342" width="59" height="59"/>
+            <Position x="66.00001" y="341" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>jsonBounds</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
@@ -514,84 +528,97 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54.00002" y="61" width="395" height="170"/>
+        <Position x="54.00002" y="61" width="418" height="170" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption>Simulation Configuration</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10"/>
-          <Disabled value="False"/>
-          <Folded value="False"/>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
-          <Name/>
-          <DefaultAnnotationText/>
-          <Left value="False"/>
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
         </Annotation>
       </Properties>
       <ChildNodes>
         <Node ToolID="13">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="64.00002" y="95.00005" width="59" height="59"/>
+            <Position x="64.00002" y="94.00005" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="1">
               <Name>samplingMechanism</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
         <Node ToolID="14">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
-            <Position x="222" y="90" width="59" height="59"/>
+            <Position x="222" y="89" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>chunkSize</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
         <Node ToolID="15">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
-            <Position x="354" y="102" width="59" height="59"/>
+            <Position x="354" y="101" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>seed</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
         <Node ToolID="16">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
-            <Position x="66" y="162" width="59" height="59"/>
+            <Position x="66" y="161" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>numIterations</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
         <Node ToolID="27">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="222" y="162" width="59" height="59"/>
+            <Position x="222" y="161" width="59" height="59" />
           </GuiSettings>
           <Properties>
-            <Configuration/>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name>samplingMode</Name>
-              <DefaultAnnotationText/>
-              <Left value="False"/>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+            <Position x="354" y="162" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>displaySeed</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
@@ -600,190 +627,206 @@ write.Alteryx2(d, 1)
   </Nodes>
   <Connections>
     <Connection name="#1">
-      <Origin ToolID="3" Connection="Output"/>
-      <Destination ToolID="4" Connection="Input"/>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
     </Connection>
     <Connection name="#2">
-      <Origin ToolID="28" Connection="Output"/>
-      <Destination ToolID="4" Connection="Input"/>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
     </Connection>
     <Connection Wireless="True">
-      <Origin ToolID="3" Connection="Question"/>
-      <Destination ToolID="24" Connection="Question Input"/>
+      <Origin ToolID="3" Connection="Question" />
+      <Destination ToolID="24" Connection="Question Input" />
     </Connection>
     <Connection Wireless="True">
-      <Origin ToolID="3" Connection="Output"/>
-      <Destination ToolID="37" Connection="Question Input"/>
+      <Origin ToolID="3" Connection="Question" />
+      <Destination ToolID="36" Connection="Question Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="3" Connection="Question" />
+      <Destination ToolID="37" Connection="Question Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="4" Connection="Output1"/>
-      <Destination ToolID="5" Connection="Input"/>
+      <Origin ToolID="4" Connection="Output1" />
+      <Destination ToolID="5" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
-    <Memory default="True"/>
-    <GlobalRecordLimit value="0"/>
-    <TempFiles default="True"/>
-    <Annotation on="True" includeToolName="False"/>
-    <ConvErrorLimit value="10"/>
-    <ConvErrorLimit_Stop value="False"/>
-    <CancelOnError value="False"/>
-    <DisableBrowse value="False"/>
-    <EnablePerformanceProfiling value="False"/>
-    <DisableAllOutput value="False"/>
-    <ShowAllMacroMessages value="False"/>
-    <ShowConnectionStatusIsOn value="True"/>
-    <ShowConnectionStatusOnlyWhenRunning value="True"/>
-    <ZoomLevel value="0"/>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
     <Constants>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>samplingMechanism</Name>
-        <Value/>
-        <IsNumeric value="False"/>
+        <Value />
+        <IsNumeric value="False" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>chunkSize</Name>
-        <Value/>
-        <IsNumeric value="True"/>
+        <Value />
+        <IsNumeric value="True" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>seed</Name>
-        <Value/>
-        <IsNumeric value="True"/>
+        <Value />
+        <IsNumeric value="True" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>numIterations</Name>
-        <Value/>
-        <IsNumeric value="True"/>
+        <Value />
+        <IsNumeric value="True" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>stageName</Name>
-        <Value/>
-        <IsNumeric value="False"/>
+        <Value />
+        <IsNumeric value="False" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>distribution</Name>
-        <Value/>
-        <IsNumeric value="False"/>
+        <Value />
+        <IsNumeric value="False" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>jsonParameters</Name>
-        <Value/>
-        <IsNumeric value="False"/>
+        <Value />
+        <IsNumeric value="False" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>jsonBounds</Name>
-        <Value/>
-        <IsNumeric value="False"/>
+        <Value />
+        <IsNumeric value="False" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>fields</Name>
-        <Value/>
-        <IsNumeric value="False"/>
+        <Value />
+        <IsNumeric value="False" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>samplingStrategy</Name>
-        <Value/>
-        <IsNumeric value="False"/>
+        <Value />
+        <IsNumeric value="False" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>distToFit</Name>
-        <Value/>
-        <IsNumeric value="False"/>
+        <Value />
+        <IsNumeric value="False" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>samplingMode</Name>
-        <Value/>
-        <IsNumeric value="False"/>
+        <Value />
+        <IsNumeric value="False" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>dataKind</Name>
-        <Value/>
-        <IsNumeric value="False"/>
+        <Value />
+        <IsNumeric value="False" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>binnedDataName</Name>
-        <Value/>
-        <IsNumeric value="False"/>
+        <Value />
+        <IsNumeric value="False" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>binnedIdField</Name>
-        <Value/>
-        <IsNumeric value="False"/>
+        <Value />
+        <IsNumeric value="False" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>binnedValueField</Name>
-        <Value/>
-        <IsNumeric value="False"/>
+        <Value />
+        <IsNumeric value="False" />
       </Constant>
       <Constant>
         <Namespace>Question</Namespace>
         <Name>jsonRouletteData</Name>
-        <Value/>
-        <IsNumeric value="False"/>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>replace</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>displaySeed</Name>
+        <Value />
+        <IsNumeric value="False" />
       </Constant>
     </Constants>
     <MetaInfo>
-      <NameIsFileName value="False"/>
+      <NameIsFileName value="False" />
       <Name>Simulation Sampling</Name>
       <Description>Simulation Sampling</Description>
-      <RootToolName/>
-      <ToolVersion/>
-      <ToolInDb value="False"/>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
       <CategoryName>Prescriptive</CategoryName>
-      <SearchTags/>
+      <SearchTags />
       <Author>Dylan Blanchard</Author>
       <Company>Alteryx, Inc</Company>
       <Copyright>Alteryx, Inc</Copyright>
-      <DescriptionLink actual="" displayed=""/>
+      <DescriptionLink actual="" displayed="" />
     </MetaInfo>
     <Events>
-      <Enabled value="True"/>
+      <Enabled value="True" />
     </Events>
     <RuntimeProperties>
-      <Actions/>
+      <Actions />
       <Questions>
         <Question>
           <Type>Tab</Type>
           <Description>Questions</Description>
           <Name>Tab (2)</Name>
-          <ToolId value="2"/>
+          <ToolId value="2" />
           <Questions>
             <Question>
               <Type>MacroInput</Type>
               <Description>SampleData</Description>
               <Name>SampleData</Name>
-              <ToolId value="3"/>
+              <ToolId value="3" />
             </Question>
             <Question>
               <Type>MacroOutput</Type>
               <Description>Macro Output (5)</Description>
               <Name>Macro Output (5)</Name>
-              <ToolId value="5"/>
+              <ToolId value="5" />
             </Question>
             <Question>
               <Type>ListBox</Type>
               <Description>Select sampling mechanism</Description>
               <Name>samplingMechanism</Name>
-              <ToolId value="13"/>
-              <Multiple value="False"/>
+              <ToolId value="13" />
+              <Multiple value="False" />
               <Default>mc</Default>
               <Mode>Manual</Mode>
               <Manual_Values><![CDATA[Monte Carlo:mc
@@ -794,51 +837,51 @@ Latin HyperCube:lh
               <Type>NumericUpDown</Type>
               <Description>Chunk size</Description>
               <Name>chunkSize</Name>
-              <ToolId value="14"/>
-              <Minimum value="1"/>
-              <Maximum value="100000000"/>
-              <Increment value="1"/>
-              <Default value="256000"/>
-              <Decimals value="0"/>
+              <ToolId value="14" />
+              <Minimum value="1" />
+              <Maximum value="100000000" />
+              <Increment value="1" />
+              <Default value="256000" />
+              <Decimals value="0" />
             </Question>
             <Question>
               <Type>NumericUpDown</Type>
               <Description>Seed</Description>
               <Name>seed</Name>
-              <ToolId value="15"/>
-              <Minimum value="1"/>
-              <Maximum value="100000000"/>
-              <Increment value="1"/>
-              <Default value="1"/>
-              <Decimals value="0"/>
+              <ToolId value="15" />
+              <Minimum value="1" />
+              <Maximum value="100000000" />
+              <Increment value="1" />
+              <Default value="1" />
+              <Decimals value="0" />
             </Question>
             <Question>
               <Type>NumericUpDown</Type>
               <Description>Number of iterations</Description>
               <Name>numIterations</Name>
-              <ToolId value="16"/>
-              <Minimum value="1"/>
-              <Maximum value="100000000"/>
-              <Increment value="1"/>
-              <Default value="10"/>
-              <Decimals value="0"/>
+              <ToolId value="16" />
+              <Minimum value="1" />
+              <Maximum value="100000000" />
+              <Increment value="1" />
+              <Default value="10" />
+              <Decimals value="0" />
             </Question>
             <Question>
               <Type>TextBox</Type>
               <Description>Enter stage name</Description>
               <Name>stageName</Name>
-              <ToolId value="19"/>
-              <Default/>
-              <Password value="False"/>
-              <Multiline value="False"/>
-              <Hidden value="False"/>
+              <ToolId value="19" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
             </Question>
             <Question>
               <Type>ListBox</Type>
               <Description>Select distribution</Description>
               <Name>distribution</Name>
-              <ToolId value="20"/>
-              <Multiple value="False"/>
+              <ToolId value="20" />
+              <Multiple value="False" />
               <Default>norm</Default>
               <Mode>Manual</Mode>
               <Manual_Values><![CDATA[Normal:norm
@@ -856,41 +899,41 @@ Poisson:pois
               <Type>TextBox</Type>
               <Description>Parameters*</Description>
               <Name>jsonParameters</Name>
-              <ToolId value="21"/>
+              <ToolId value="21" />
               <Default>{"mean": 0, "sd": 1}</Default>
-              <Password value="False"/>
-              <Multiline value="False"/>
-              <Hidden value="False"/>
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
             </Question>
             <Question>
               <Type>TextBox</Type>
               <Description>Bounds*</Description>
               <Name>jsonBounds</Name>
-              <ToolId value="22"/>
+              <ToolId value="22" />
               <Default>[-4, 4]</Default>
-              <Password value="False"/>
-              <Multiline value="False"/>
-              <Hidden value="False"/>
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
             </Question>
             <Question>
               <Type>ListBox</Type>
               <Description>Select fields to sample</Description>
               <Name>fields</Name>
-              <ToolId value="24"/>
-              <Multiple value="True"/>
-              <Multiple_Custom value="False"/>
-              <Multiple_Default value="False"/>
+              <ToolId value="24" />
+              <Multiple value="True" />
+              <Multiple_Custom value="False" />
+              <Multiple_Default value="False" />
               <Mode>MacroField</Mode>
-              <MacroField_InputTool value="0"/>
-              <Field_IncludeNone value="False"/>
+              <MacroField_InputTool value="0" />
+              <Field_IncludeNone value="False" />
               <MacroField_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</MacroField_FilterTypes>
             </Question>
             <Question>
               <Type>ListBox</Type>
               <Description>Select sampling strategy</Description>
               <Name>samplingStrategy</Name>
-              <ToolId value="25"/>
-              <Multiple value="False"/>
+              <ToolId value="25" />
+              <Multiple value="False" />
               <Default>rows</Default>
               <Mode>Manual</Mode>
               <Manual_Values><![CDATA[Sample entire rows:rows
@@ -902,10 +945,10 @@ Sample from best fitting distribution:dist
               <Type>ListBox</Type>
               <Description>Select distributions to fit</Description>
               <Name>distToFit</Name>
-              <ToolId value="26"/>
-              <Multiple value="True"/>
-              <Multiple_Custom value="False"/>
-              <Multiple_Default value="False"/>
+              <ToolId value="26" />
+              <Multiple value="True" />
+              <Multiple_Custom value="False" />
+              <Multiple_Default value="False" />
               <Mode>Manual</Mode>
               <Manual_Values><![CDATA[Normal:norm
 LogNormal:lnorm
@@ -922,8 +965,8 @@ Poisson:pois
               <Type>ListBox</Type>
               <Description>Select sampling mode</Description>
               <Name>samplingMode</Name>
-              <ToolId value="27"/>
-              <Multiple value="False"/>
+              <ToolId value="27" />
+              <Multiple value="False" />
               <Default>parametric</Default>
               <Mode>Manual</Mode>
               <Manual_Values><![CDATA[Sample parametrically:parametric
@@ -934,14 +977,14 @@ Sample from data:data
               <Type>MacroInput</Type>
               <Description>Macro Input (28)</Description>
               <Name>Macro Input (28)</Name>
-              <ToolId value="28"/>
+              <ToolId value="28" />
             </Question>
             <Question>
               <Type>ListBox</Type>
               <Description>Specify kind of data</Description>
               <Name>dataKind</Name>
-              <ToolId value="31"/>
-              <Multiple value="False"/>
+              <ToolId value="31" />
+              <Multiple value="False" />
               <Default>raw</Default>
               <Mode>Manual</Mode>
               <Manual_Values><![CDATA[Raw Data (not binned):raw
@@ -953,51 +996,69 @@ Manual Entry:manual
               <Type>TextBox</Type>
               <Description>Enter name for binned data</Description>
               <Name>binnedDataName</Name>
-              <ToolId value="33"/>
-              <Default/>
-              <Password value="False"/>
-              <Multiline value="False"/>
-              <Hidden value="False"/>
+              <ToolId value="33" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
             </Question>
             <Question>
               <Type>ListBox</Type>
               <Description>Select ID Field</Description>
               <Name>binnedIdField</Name>
-              <ToolId value="36"/>
-              <Multiple value="False"/>
-              <Default/>
+              <ToolId value="36" />
+              <Multiple value="False" />
+              <Default />
               <Mode>Field</Mode>
-              <Field_ToolId value="0"/>
-              <Field_ConnectionName/>
-              <Field_Connection/>
-              <Field_IsOutput value="True"/>
-              <Field_IncludeNone value="False"/>
+              <Field_ToolId value="3" />
+              <Field_ConnectionName />
+              <Field_Connection>Question</Field_Connection>
+              <Field_IsOutput value="True" />
+              <Field_IncludeNone value="False" />
               <Field_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</Field_FilterTypes>
             </Question>
             <Question>
               <Type>ListBox</Type>
               <Description>Select Value Field</Description>
               <Name>binnedValueField</Name>
-              <ToolId value="37"/>
-              <Multiple value="False"/>
-              <Default/>
+              <ToolId value="37" />
+              <Multiple value="False" />
+              <Default />
               <Mode>Field</Mode>
-              <Field_ToolId value="3"/>
-              <Field_ConnectionName/>
-              <Field_Connection>Output</Field_Connection>
-              <Field_IsOutput value="True"/>
-              <Field_IncludeNone value="False"/>
+              <Field_ToolId value="3" />
+              <Field_ConnectionName />
+              <Field_Connection>Question</Field_Connection>
+              <Field_IsOutput value="True" />
+              <Field_IncludeNone value="False" />
               <Field_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</Field_FilterTypes>
             </Question>
             <Question>
               <Type>TextBox</Type>
               <Description>Roulette Data</Description>
               <Name>jsonRouletteData</Name>
-              <ToolId value="39"/>
+              <ToolId value="39" />
               <Default>{"100": 1, "110": 2, "120": 4}</Default>
-              <Password value="False"/>
-              <Multiline value="False"/>
-              <Hidden value="False"/>
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>BooleanGroup</Type>
+              <Description>Sample with replacement</Description>
+              <Name>replace</Name>
+              <ToolId value="40" />
+              <Questions />
+              <Default value="False" />
+              <Collapsable value="False" />
+            </Question>
+            <Question>
+              <Type>BooleanGroup</Type>
+              <Description>Set seed</Description>
+              <Name>displaySeed</Name>
+              <ToolId value="41" />
+              <Questions />
+              <Default value="False" />
+              <Collapsable value="False" />
             </Question>
           </Questions>
         </Question>
@@ -1005,27 +1066,27 @@ Manual Entry:manual
           <Type>Tab</Type>
           <Description>Debug</Description>
           <Name>Tab (12)</Name>
-          <ToolId value="12"/>
-          <Questions/>
+          <ToolId value="12" />
+          <Questions />
         </Question>
       </Questions>
       <ModuleType>Macro</ModuleType>
-      <MacroCustomHelp value="False"/>
-      <MacroDynamicOutputFields value="False"/>
-      <MacroImageStd value="39"/>
-      <MacroInputs/>
-      <MacroOutputs/>
-      <Wiz_CustomHelp value="False"/>
-      <Wiz_CustomGraphic value="False"/>
-      <Wiz_ShowOutput value="True"/>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
       <Wiz_OpenOutputTools>
-        <Tool ToolId="3" Selected="True"/>
-        <Tool ToolId="5" Selected="True"/>
-        <Tool ToolId="28" Selected="True"/>
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="5" Selected="True" />
+        <Tool ToolId="28" Selected="True" />
       </Wiz_OpenOutputTools>
-      <Wiz_OutputMessage/>
-      <Wiz_NoOutputFilesMessage/>
-      <Wiz_ChainRunWizard/>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
     </RuntimeProperties>
   </Properties>
 </AlteryxDocument>

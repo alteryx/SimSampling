@@ -36,6 +36,12 @@ SimSampling
   </div>
   <div id='isIntermediate'>
     
+<!--  displaySeed  -->
+<label htmlFor="displaySeed"></label>
+<alteryx-pluginwidget type="CheckBox" text="Set seed" default="FALSE" id="displaySeed" dataName="displaySeed"></alteryx-pluginwidget>
+  
+
+    
 <!--  seed  -->
 <label htmlFor="seed">Seed</label>
 <alteryx-pluginwidget type="NumericSpinner" default="1" minimum="1" maximum="100000000" step="1" id="seed" dataName="seed"></alteryx-pluginwidget>
@@ -49,6 +55,12 @@ SimSampling
 
   </div>
   
+<!--  replace  -->
+<label htmlFor="replace"></label>
+<alteryx-pluginwidget type="CheckBox" text="Sample with replacement" default="FALSE" id="replace" dataName="replace"></alteryx-pluginwidget>
+  
+
+  
 <!--  samplingMode  -->
 <label htmlFor="samplingMode">Select sampling mode</label>
 <alteryx-pluginwidget type="RadioGroup" id="samplingMode" dataName="samplingMode">
@@ -57,7 +69,7 @@ SimSampling
 </alteryx-pluginwidget>
   
 
-  <!-- <alteryx-pluginwidget type="Button" id="next" buttontext="Next" 
+  <!-- <alteryx-pluginwidget type="Button" id="next" buttontext="Next"
     onclick="buttonClicked(event)" isprimary="true">
   </alteryx-pluginwidget> -->
 </fieldset>
