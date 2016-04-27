@@ -4,7 +4,7 @@
 
 
 
-__Insert summary of the Simulation Scoring tool__
+__Insert summary of the Simulation Sampling tool__
 
 _Note: This tool uses the R tool. Install R and the necessary packages by going to Options > Download Predictive Tools._
 
@@ -17,7 +17,7 @@ There are 2 inputs.
 
 ### Configuration Properties
 
-1. __Select sampling mechanism__ We support two mechanisms. (1) Monte Carlo Sampling and (2) Latin HyperCube Sampling.
+1. __Select sampling mechanism__ We support two mechanisms. (1) Monte Carlo Sampling and (2) Latin HyperCube Sampling. See [Wikipedia](https://en.wikipedia.org/wiki/Latin_hypercube_sampling)
 2. __seed__ Set a random seed
 3. __Number of iterations__ Number of samples to select.
 4. __Enter stage name__ Choose a field name for the output.
