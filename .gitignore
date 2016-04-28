@@ -20,6 +20,7 @@ vignettes/*.pdf
 .Rproj.user
 
 README.html
+Supporting_Macros/*.html
 
 # Backup files
 *.bak
