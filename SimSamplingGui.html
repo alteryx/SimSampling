@@ -20,42 +20,37 @@ SimSampling
   <div>
     
 <!--  samplingMechanism  -->
-<label htmlFor="samplingMechanism">Select sampling mechanism</label>
+<label for="samplingMechanism">Select sampling mechanism</label>
 <alteryx-pluginwidget type="DropDown" id="samplingMechanism" dataName="samplingMechanism">
   <alteryx-option uiobject="Monte Carlo" default="true">mc</alteryx-option>
   <alteryx-option uiobject="Latin HyperCube">lh</alteryx-option>
 </alteryx-pluginwidget>
-  
 
     
 <!--  chunkSize  -->
-<label htmlFor="chunkSize">Chunk size</label>
+<label for="chunkSize">Chunk size</label>
 <alteryx-pluginwidget type="NumericSpinner" default="256000" minimum="1" maximum="100000000" step="1" id="chunkSize" dataName="chunkSize"></alteryx-pluginwidget>
-  
 
   </div>
   <div id='isIntermediate'>
     
 <!--  seed  -->
-<label htmlFor="seed">Seed</label>
+<label for="seed">seed</label>
 <alteryx-pluginwidget type="NumericSpinner" default="1" minimum="1" maximum="100000000" step="1" id="seed" dataName="seed"></alteryx-pluginwidget>
-  
 
     
 <!--  numIterations  -->
-<label htmlFor="numIterations">Number of iterations</label>
+<label for="numIterations">Number of iterations</label>
 <alteryx-pluginwidget type="NumericSpinner" default="10" minimum="1" maximum="100000000" step="1" id="numIterations" dataName="numIterations"></alteryx-pluginwidget>
-  
 
   </div>
   
 <!--  samplingMode  -->
-<label htmlFor="samplingMode">Select sampling mode</label>
+<label for="samplingMode">Select sampling mode</label>
 <alteryx-pluginwidget type="RadioGroup" id="samplingMode" dataName="samplingMode">
   <alteryx-option uiobject="Sample parametrically" default="true">parametric</alteryx-option>
   <alteryx-option uiobject="Sample from data">data</alteryx-option>
 </alteryx-pluginwidget>
-  
 
   <!-- <alteryx-pluginwidget type="Button" id="next" buttontext="Next" 
     onclick="buttonClicked(event)" isprimary="true">
@@ -65,13 +60,12 @@ SimSampling
   <legend>Parametric Sampling</legend>
   
 <!--  stageName  -->
-<label htmlFor="stageName">Enter stage name</label>
+<label for="stageName">Enter stage name</label>
 <alteryx-pluginwidget type="TextBox" password="false" id="stageName" dataName="stageName"></alteryx-pluginwidget>
-  
 
   
 <!--  distribution  -->
-<label htmlFor="distribution">Select distribution</label>
+<label for="distribution">Select distribution</label>
 <alteryx-pluginwidget type="ComboBox" id="distribution" dataName="distribution">
   <alteryx-option uiobject="Normal" default="true">norm</alteryx-option>
   <alteryx-option uiobject="LogNormal">lnorm</alteryx-option>
@@ -83,22 +77,19 @@ SimSampling
   <alteryx-option uiobject="Geometric">geom</alteryx-option>
   <alteryx-option uiobject="Poisson">pois</alteryx-option>
 </alteryx-pluginwidget>
-  
 
   <div>
   <b>Placeholder for Distribution Plot and Sliders</b>
   <p>For now use JSON strings to define parameters and bounds</p>
   
 <!--  jsonParameters  -->
-<label htmlFor="jsonParameters">Parameters*</label>
+<label for="jsonParameters">Parameters*</label>
 <alteryx-pluginwidget type="TextBox" password="false" placeholder="{&quot;mean&quot;: 0, &quot;sd&quot;: 1}" id="jsonParameters" dataName="jsonParameters"></alteryx-pluginwidget>
-  
 
   
 <!--  jsonBounds  -->
-<label htmlFor="jsonBounds">Bounds*</label>
+<label for="jsonBounds">Bounds*</label>
 <alteryx-pluginwidget type="TextBox" password="false" placeholder="[-4, 4]" id="jsonBounds" dataName="jsonBounds"></alteryx-pluginwidget>
-  
 
   </div>
 </fieldset>
@@ -106,65 +97,58 @@ SimSampling
   <legend>Data Sampling</legend>
   
 <!--  dataKind  -->
-<label htmlFor="dataKind">Specify kind of data</label>
+<label for="dataKind">Specify kind of data</label>
 <alteryx-pluginwidget type="DropDown" id="dataKind" dataName="dataKind">
   <alteryx-option uiobject="Raw Data (not binned)" default="true">raw</alteryx-option>
   <alteryx-option uiobject="Binned Data">binned</alteryx-option>
   <alteryx-option uiobject="Manual Entry">manual</alteryx-option>
 </alteryx-pluginwidget>
-  
 
   <div id='div-dataKind-raw'>
     
 <!--  fields  -->
-<label htmlFor="fields">Select fields to sample</label>
+<label for="fields">Select fields to sample</label>
 <alteryx-pluginwidget type="DropDown" dataType="FieldSelectorMulti" inputNumber="0" connectionNumber="0" fieldType="All" id="fields" dataName="fields"></alteryx-pluginwidget>
-  
 
     
 <!--  samplingStrategy  -->
-<label htmlFor="samplingStrategy">Select sampling strategy</label>
+<label for="samplingStrategy">Select sampling strategy</label>
 <alteryx-pluginwidget type="DropDown" id="samplingStrategy" dataName="samplingStrategy">
   <alteryx-option uiobject="Sample entire rows" default="true">rows</alteryx-option>
   <alteryx-option uiobject="Sample each column independently">columns</alteryx-option>
   <alteryx-option uiobject="Sample from best fitting distribution">dist</alteryx-option>
 </alteryx-pluginwidget>
-  
 
   </div>
   <div id='div-dataKind-binned'>
     
 <!--  binnedDataName  -->
-<label htmlFor="binnedDataName">Enter name for binned data</label>
+<label for="binnedDataName">Enter name for binned data</label>
 <alteryx-pluginwidget type="TextBox" password="false" id="binnedDataName" dataName="binnedDataName"></alteryx-pluginwidget>
-  
 
     
 <!--  binnedIdField  -->
-<label htmlFor="binnedIdField">Select ID Field</label>
+<label for="binnedIdField">Select ID Field</label>
 <alteryx-pluginwidget type="DropDown" dataType="FieldSelector" inputNumber="0" connectionNumber="0" fieldType="All" id="binnedIdField" dataName="binnedIdField"></alteryx-pluginwidget>
-  
 
     
 <!--  binnedValueField  -->
-<label htmlFor="binnedValueField">Select Value Field</label>
+<label for="binnedValueField">Select Value Field</label>
 <alteryx-pluginwidget type="DropDown" dataType="FieldSelector" inputNumber="0" connectionNumber="0" fieldType="All" id="binnedValueField" dataName="binnedValueField"></alteryx-pluginwidget>
-  
 
   </div>
   <div id='div-dataKind-manual'>
     <b>Placeholder for Roulette</b>
     
 <!--  jsonRouletteData  -->
-<label htmlFor="jsonRouletteData">Roulette Data</label>
+<label for="jsonRouletteData">Roulette Data</label>
 <alteryx-pluginwidget type="TextBox" password="false" placeholder="{&quot;100&quot;: 1, &quot;110&quot;: 2, &quot;120&quot;: 4}" id="jsonRouletteData" dataName="jsonRouletteData"></alteryx-pluginwidget>
-  
 
   </div>
   <div id='div-distToFit'>
     
 <!--  distToFit  -->
-<label htmlFor="distToFit">Select distributions to fit</label>
+<label for="distToFit">Select distributions to fit</label>
 <alteryx-pluginwidget type="MultiSelectListBox" dataType="MultiStringSelector" id="distToFit" dataName="distToFit">
   <alteryx-option uiobject="Normal">norm</alteryx-option>
   <alteryx-option uiobject="LogNormal">lnorm</alteryx-option>
@@ -176,7 +160,6 @@ SimSampling
   <alteryx-option uiobject="Geometric">geom</alteryx-option>
   <alteryx-option uiobject="Poisson">pois</alteryx-option>
 </alteryx-pluginwidget>
-  
 
   </div>
 </fieldset>
