@@ -14,96 +14,6 @@
         </Annotation>
       </Properties>
     </Node>
-    <Node ToolID="3">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="114" y="526" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <UseFileInput value="False" />
-          <Name>SampleData</Name>
-          <Abbrev>D</Abbrev>
-          <ShowFieldMap value="False" />
-          <Optional value="True" />
-          <TextInput>
-            <Configuration>
-              <NumRows value="10" />
-              <Fields>
-                <Field name="data" />
-                <Field name="id" />
-                <Field name="value" />
-              </Fields>
-              <Data>
-                <r>
-                  <c>1</c>
-                  <c>0</c>
-                  <c>4</c>
-                </r>
-                <r>
-                  <c>2</c>
-                  <c>1</c>
-                  <c>2</c>
-                </r>
-                <r>
-                  <c>3</c>
-                  <c>2</c>
-                  <c>6</c>
-                </r>
-                <r>
-                  <c>4</c>
-                  <c>3</c>
-                  <c>12</c>
-                </r>
-                <r>
-                  <c>5</c>
-                  <c>4</c>
-                  <c>11</c>
-                </r>
-                <r>
-                  <c />
-                  <c />
-                  <c />
-                </r>
-                <r>
-                  <c />
-                  <c />
-                  <c />
-                </r>
-                <r>
-                  <c />
-                  <c />
-                  <c />
-                </r>
-                <r>
-                  <c />
-                  <c />
-                  <c />
-                </r>
-                <r>
-                  <c />
-                  <c />
-                  <c />
-                </r>
-              </Data>
-            </Configuration>
-          </TextInput>
-        </Configuration>
-        <Annotation DisplayMode="2">
-          <Name>SampleData</Name>
-          <AnnotationText>__D Input__ Sample Data</AnnotationText>
-          <DefaultAnnotationText />
-          <Left value="True" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="data" source="TextInput:" type="Byte" />
-            <Field name="id" source="TextInput:" type="Byte" />
-            <Field name="value" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
-    </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxRPluginGui.R">
         <Position x="894" y="591" />
@@ -112,6 +22,7 @@
         <Configuration>
           <RScript>## DO NOT MODIFY: Auto Inserted by AlteryxRhelper ----
 library(AlteryxRhelper)
+library(AlteryxSim)
 config &lt;- list(
   binnedDataName = textInput('%Question.binnedDataName%'),
   binnedIdField = dropdownInput('%Question.binnedIdField%'),
@@ -123,6 +34,7 @@ config &lt;- list(
   fields = listInput('%Question.fields%'),
   jsonBounds = textInput('%Question.jsonBounds%' , '[-4, 4]'),
   jsonParameters = textInput('%Question.jsonParameters%' , '{"mean": 0, "sd": 1}'),
+  jsonRouletteData = textInput('%Question.jsonRouletteData%' , '{"100": 1, "110": 2, "120": 4}'),
   numIterations = numericInput('%Question.numIterations%' , 10),
   samplingMechanism = dropdownInput('%Question.samplingMechanism%' , 'mc'),
   samplingMode = dropdownInput('%Question.samplingMode%' , 'parametric'),
@@ -136,15 +48,37 @@ options(alteryx.debug = config$debug)
 
 config$bounds = jsonlite::fromJSON(config$jsonBounds)
 config$parameters = jsonlite::fromJSON(config$jsonParameters)
+config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
+
+config$replace &lt;- '%Question.replace%'=="True"
+
+readRecordCount &lt;- AlteryxRhelper::read.Alteryx2("totalSize")
+readRecordCount &lt;- as.numeric(readRecordCount$Count[[1]])
+
+config$totalSize &lt;- ifelse(readRecordCount==0, config$numIterations, readRecordCount)
 
 print(config)
 
-
-# Read Data
-d &lt;- read.Alteryx2("#1", default = data.frame(x = 1:10))
-
-# Write Data to Output 1
-write.Alteryx2(d, 1)</RScript>
+tool_process(
+  method = config$samplingMechanism,
+  chunkSize = config$chunkSize,
+  seed = config$seed,
+  count = config$numIterations,
+  distribution = config$distribution,
+  params = config$parameters,
+  bounds = config$bounds,
+  process = config$samplingStrategy,
+  possible = config$distToFit,
+  type = config$dataKind,
+  id = config$binnedIdField,
+  value = config$binnedValueField,
+  name = config$stageName,
+  roulette = config$rouletteData,
+  dataName = config$binnedDataName,
+  sampleSource = config$samplingMode,
+  replace = config$replace,
+  totalSize = config$totalSize
+)</RScript>
           <UseFullUpdate value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
@@ -293,7 +227,7 @@ write.Alteryx2(d, 1)</RScript>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <DetourRight value="True" />
+          <DetourRight value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -424,11 +358,76 @@ write.Alteryx2(d, 1)</RScript>
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="seed" source="Formula: 1" type="Int32" />
+            <Field name="seed" source="TextInput:" type="Byte" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetourEnd" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="102" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>SampleData</Name>
+          <Abbrev>D</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="True" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="5" />
+              <Fields>
+                <Field name="data" />
+                <Field name="id" />
+                <Field name="value" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>3</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>4</c>
+                  <c>11</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="2">
+          <Name>SampleData</Name>
+          <AnnotationText>__D Input__ Sample Data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="data" source="TextInput:" type="Byte" />
+            <Field name="id" source="TextInput:" type="Byte" />
+            <Field name="value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
@@ -1220,30 +1219,6 @@ write.Alteryx2(d, 1)</RScript>
     </Node>
   </Nodes>
   <Connections>
-    <Connection name="#1">
-      <Origin ToolID="3" Connection="Output" />
-      <Destination ToolID="4" Connection="Input" />
-    </Connection>
-    <Connection name="totalSize">
-      <Origin ToolID="61" Connection="Output9" />
-      <Destination ToolID="4" Connection="Input" />
-    </Connection>
-    <Connection name="seed">
-      <Origin ToolID="75" Connection="Output" />
-      <Destination ToolID="4" Connection="Input" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="3" Connection="Question" />
-      <Destination ToolID="24" Connection="Question Input" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="3" Connection="Question" />
-      <Destination ToolID="37" Connection="Question Input" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="3" Connection="Question" />
-      <Destination ToolID="36" Connection="Question Input" />
-    </Connection>
     <Connection>
       <Origin ToolID="4" Connection="Output1" />
       <Destination ToolID="5" Connection="Input" />
@@ -1255,6 +1230,18 @@ write.Alteryx2(d, 1)</RScript>
     <Connection>
       <Origin ToolID="28" Connection="Output" />
       <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection name="totalSize">
+      <Origin ToolID="61" Connection="Output9" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection name="seed">
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="68" Connection="Right" />
@@ -1287,6 +1274,18 @@ write.Alteryx2(d, 1)</RScript>
     <Connection>
       <Origin ToolID="74" Connection="Output" />
       <Destination ToolID="75" Connection="Right" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="77" Connection="Question" />
+      <Destination ToolID="36" Connection="Question Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="77" Connection="Question" />
+      <Destination ToolID="37" Connection="Question Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="77" Connection="Question" />
+      <Destination ToolID="24" Connection="Question Input" />
     </Connection>
     <Connection name="#1">
       <Origin ToolID="15" Connection="Question" />
@@ -1484,12 +1483,6 @@ write.Alteryx2(d, 1)</RScript>
           <ToolId value="2" />
           <Questions>
             <Question>
-              <Type>MacroInput</Type>
-              <Description>SampleData</Description>
-              <Name>SampleData</Name>
-              <ToolId value="3" />
-            </Question>
-            <Question>
               <Type>MacroOutput</Type>
               <Description>Macro Output (5)</Description>
               <Name>Macro Output (5)</Name>
@@ -1503,8 +1496,8 @@ write.Alteryx2(d, 1)</RScript>
               <Multiple value="False" />
               <Default>mc</Default>
               <Mode>Manual</Mode>
-              <Manual_Values><![CDATA[Monte Carlo:mc
-Latin HyperCube:lh
+              <Manual_Values><![CDATA[Monte Carlo:MC
+Latin HyperCube:LH
 ]]></Manual_Values>
             </Question>
             <Question>
@@ -1683,13 +1676,10 @@ Manual Entry:manual
               <ToolId value="36" />
               <Multiple value="False" />
               <Default />
-              <Mode>Field</Mode>
-              <Field_ToolId value="3" />
-              <Field_ConnectionName />
-              <Field_Connection>Question</Field_Connection>
-              <Field_IsOutput value="True" />
+              <Mode>MacroField</Mode>
+              <MacroField_InputTool value="0" />
               <Field_IncludeNone value="False" />
-              <Field_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</Field_FilterTypes>
+              <MacroField_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</MacroField_FilterTypes>
             </Question>
             <Question>
               <Type>ListBox</Type>
@@ -1698,13 +1688,10 @@ Manual Entry:manual
               <ToolId value="37" />
               <Multiple value="False" />
               <Default />
-              <Mode>Field</Mode>
-              <Field_ToolId value="3" />
-              <Field_ConnectionName />
-              <Field_Connection>Question</Field_Connection>
-              <Field_IsOutput value="True" />
+              <Mode>MacroField</Mode>
+              <MacroField_InputTool value="0" />
               <Field_IncludeNone value="False" />
-              <Field_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</Field_FilterTypes>
+              <MacroField_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</MacroField_FilterTypes>
             </Question>
             <Question>
               <Type>TextBox</Type>
@@ -1734,6 +1721,12 @@ Manual Entry:manual
               <Default value="False" />
               <Collapsable value="False" />
             </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>SampleData</Description>
+              <Name>SampleData</Name>
+              <ToolId value="77" />
+            </Question>
           </Questions>
         </Question>
         <Question>
@@ -1754,10 +1747,10 @@ Manual Entry:manual
       <Wiz_CustomGraphic value="False" />
       <Wiz_ShowOutput value="True" />
       <Wiz_OpenOutputTools>
-        <Tool ToolId="3" Selected="True" />
         <Tool ToolId="5" Selected="True" />
         <Tool ToolId="28" Selected="True" />
         <Tool ToolId="61" Selected="True" />
+        <Tool ToolId="77" Selected="True" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />
