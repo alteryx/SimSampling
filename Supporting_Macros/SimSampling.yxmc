@@ -106,7 +106,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxRPluginGui.R">
-        <Position x="438" y="591" />
+        <Position x="894" y="591" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -157,7 +157,7 @@ write.Alteryx2(d, 1)</RScript>
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="678" y="594" />
+        <Position x="1134" y="594" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -188,7 +188,7 @@ write.Alteryx2(d, 1)</RScript>
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="114" y="629" />
+        <Position x="114" y="630" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -286,6 +286,149 @@ write.Alteryx2(d, 1)</RScript>
         </MetaInfo>
       </Properties>
       <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
+        <Position x="318" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <DetourRight value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="other_stuff" size="4" source="TextInput:" type="String" />
+            <Field name="seed" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="other_stuff" size="4" source="TextInput:" type="String" />
+            <Field name="seed" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetour" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="438" y="798" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="_seed_" type="Int32" size="4" expression="1" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>_seed_=1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="other_stuff" size="4" source="TextInput:" type="String" />
+            <Field name="seed" source="TextInput:" type="Byte" />
+            <Field name="_seed_" source="Formula: 1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="222" y="726" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields orderChanged="False" />
+          <Mode>First</Mode>
+          <N>1</N>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="other_stuff" size="4" source="TextInput:" type="String" />
+            <Field name="seed" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
+        <Position x="438" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Formula</Mode>
+          <Expression>[Name]=="seed"</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="seed" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="546" y="798" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="_seed_" selected="True" rename="seed" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="seed" source="Formula: 1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DetourEnd.DetourEnd">
+        <Position x="666" y="750" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="seed" source="Formula: 1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetourEnd" />
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
@@ -994,11 +1137,24 @@ write.Alteryx2(d, 1)</RScript>
             </Annotation>
           </Properties>
         </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="354" y="186" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
       </ChildNodes>
     </Node>
     <Node ToolID="66">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="894" y="54" width="140" height="133" />
+        <Position x="894" y="54" width="140" height="213" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1047,6 +1203,19 @@ write.Alteryx2(d, 1)</RScript>
             </Annotation>
           </Properties>
         </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="942" y="198" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
       </ChildNodes>
     </Node>
   </Nodes>
@@ -1057,6 +1226,10 @@ write.Alteryx2(d, 1)</RScript>
     </Connection>
     <Connection name="totalSize">
       <Origin ToolID="61" Connection="Output9" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection name="seed">
+      <Origin ToolID="75" Connection="Output" />
       <Destination ToolID="4" Connection="Input" />
     </Connection>
     <Connection Wireless="True">
@@ -1074,6 +1247,50 @@ write.Alteryx2(d, 1)</RScript>
     <Connection>
       <Origin ToolID="28" Connection="Output" />
       <Destination ToolID="61" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Right" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="72" Connection="Action" />
+      <Destination ToolID="70" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Left" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="69" Connection="Action" />
+      <Destination ToolID="68" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="75" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="75" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Question" />
+      <Destination ToolID="72" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="67" Connection="Question" />
+      <Destination ToolID="69" Connection="Question" />
     </Connection>
   </Connections>
   <Properties>
@@ -1226,7 +1443,35 @@ write.Alteryx2(d, 1)</RScript>
       <Enabled value="True" />
     </Events>
     <RuntimeProperties>
-      <Actions />
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="69" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>68/DetourRight/@value</Destination>
+              <Mapping>Update Detour Direction from Question</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration />
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="72" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>1</ReplaceText>
+              <Destination>70/FormulaFields/FormulaField/@size</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
       <Questions>
         <Question>
           <Type>Tab</Type>
