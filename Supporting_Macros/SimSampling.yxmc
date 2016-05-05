@@ -16,7 +16,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="114" y="527" />
+        <Position x="114" y="526" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -106,7 +106,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxRPluginGui.R">
-        <Position x="438" y="592" />
+        <Position x="438" y="591" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -165,7 +165,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="534" y="544" />
+        <Position x="534" y="543" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -196,7 +196,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="114" y="630" />
+        <Position x="114" y="629" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -238,7 +238,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="90" y="503" width="100" height="24" />
+        <Position x="90" y="502" width="100" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -258,7 +258,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="90" y="611" width="100" height="24" />
+        <Position x="90" y="610" width="100" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -278,7 +278,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="61">
       <GuiSettings>
-        <Position x="282" y="630" />
+        <Position x="282" y="629" />
       </GuiSettings>
       <Properties>
         <Configuration />
@@ -287,9 +287,6 @@ write.Alteryx2(d, 1)
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output9">
           <RecordInfo>
             <Field name="Count" source="(Multiple Sources)" type="Int64" />
@@ -300,7 +297,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="462" y="271" width="140" height="128" />
+        <Position x="462" y="270" width="140" height="128" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -318,7 +315,7 @@ write.Alteryx2(d, 1)
       <ChildNodes>
         <Node ToolID="39">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="498" y="330" width="59" height="59" />
+            <Position x="498" y="329" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -332,7 +329,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="59">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="472" y="299" width="120" height="24" />
+            <Position x="472" y="298" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -354,7 +351,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54.00002" y="271" width="404" height="128" />
+        <Position x="54.00002" y="270" width="404" height="128" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -372,7 +369,7 @@ write.Alteryx2(d, 1)
       <ChildNodes>
         <Node ToolID="33">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="90" y="330" width="59" height="59" />
+            <Position x="90" y="329" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -386,7 +383,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="36">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="222" y="330" width="59" height="59" />
+            <Position x="222" y="329" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -400,7 +397,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="37">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="366" y="330" width="59" height="59" />
+            <Position x="366" y="329" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -414,7 +411,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="56">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="64.00002" y="299" width="120" height="24" />
+            <Position x="64.00002" y="298" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -434,7 +431,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="57">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="196" y="299" width="120" height="24" />
+            <Position x="196" y="298" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -454,7 +451,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="58">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="328" y="299" width="120" height="24" />
+            <Position x="328" y="298" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -476,7 +473,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="462" y="55" width="416" height="205" />
+        <Position x="462" y="54" width="416" height="205" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -494,7 +491,7 @@ write.Alteryx2(d, 1)
       <ChildNodes>
         <Node ToolID="24">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
-            <Position x="508" y="107" width="59" height="59" />
+            <Position x="508" y="106" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -508,7 +505,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="25">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="628" y="107" width="59" height="59" />
+            <Position x="628" y="106" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -522,7 +519,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="26">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
-            <Position x="772" y="107" width="59" height="59" />
+            <Position x="772" y="106" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -536,7 +533,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="31">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="508" y="191" width="59" height="59" />
+            <Position x="508" y="190" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -550,7 +547,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="49">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="472" y="83.00002" width="120" height="24" />
+            <Position x="472" y="82.00002" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -570,7 +567,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="50">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="604" y="83" width="120" height="24" />
+            <Position x="604" y="82" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -590,7 +587,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="51">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="748" y="83" width="120" height="24" />
+            <Position x="748" y="82" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -610,7 +607,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="52">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="472" y="167" width="120" height="24" />
+            <Position x="472" y="166" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -628,11 +625,45 @@ write.Alteryx2(d, 1)
             </Annotation>
           </Properties>
         </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+            <Position x="630" y="186" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>replace</Name>
+              <AnnotationText>Check to sample with replacement.</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="606" y="162" width="120" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>replace</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="128" g="128" b="255" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
       </ChildNodes>
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="606" y="271" width="272" height="188" />
+        <Position x="606" y="270" width="272" height="188" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -650,7 +681,7 @@ write.Alteryx2(d, 1)
       <ChildNodes>
         <Node ToolID="19">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="640" y="318" width="59" height="59" />
+            <Position x="640" y="317" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -664,7 +695,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="20">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="772" y="318" width="59" height="59" />
+            <Position x="772" y="317" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -678,7 +709,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="21">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="772" y="390" width="59" height="59" />
+            <Position x="772" y="389" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -691,7 +722,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="22">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="640" y="390" width="59" height="59" />
+            <Position x="640" y="389" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -704,7 +735,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="45">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="616" y="299" width="120" height="24" />
+            <Position x="616" y="298" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -724,7 +755,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="46">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="748" y="299" width="120" height="24" />
+            <Position x="748" y="298" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -744,7 +775,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="47">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="616" y="371" width="120" height="24" />
+            <Position x="616" y="370" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -764,7 +795,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="48">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="748" y="371" width="120" height="24" />
+            <Position x="748" y="370" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -786,7 +817,7 @@ write.Alteryx2(d, 1)
     </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="55" width="404" height="205" />
+        <Position x="54" y="54" width="404" height="205" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -804,7 +835,7 @@ write.Alteryx2(d, 1)
       <ChildNodes>
         <Node ToolID="13">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="88.00002" y="107" width="59" height="59" />
+            <Position x="88.00002" y="106" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -818,7 +849,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="14">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
-            <Position x="220" y="107" width="59" height="59" />
+            <Position x="220" y="106" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -831,7 +862,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="15">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
-            <Position x="352" y="107" width="59" height="59" />
+            <Position x="352" y="106" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -845,7 +876,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="40">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="64" y="83" width="120" height="24" />
+            <Position x="64" y="82" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -865,7 +896,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="42">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="196" y="83" width="120" height="24" />
+            <Position x="196" y="82" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -885,7 +916,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="44">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="328" y="83" width="120" height="24" />
+            <Position x="328" y="82" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -905,7 +936,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="43">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="196" y="167" width="120" height="24" />
+            <Position x="196" y="166" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -925,7 +956,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="41">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="64.00001" y="167" width="120" height="24" />
+            <Position x="64.00001" y="166" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -945,7 +976,7 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="27">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="220" y="191" width="59" height="59" />
+            <Position x="220" y="190" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -959,13 +990,66 @@ write.Alteryx2(d, 1)
         </Node>
         <Node ToolID="16">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
-            <Position x="88.00001" y="191" width="59" height="59" />
+            <Position x="88.00001" y="190" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>numIterations</Name>
               <AnnotationText>Number of samples to select.</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="894" y="54" width="140" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Hidden</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="904" y="82" width="120" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>jsonRouletteData</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="128" g="128" b="255" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+            <Position x="940" y="118" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>displaySeed</Name>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -1116,6 +1200,18 @@ write.Alteryx2(d, 1)
       <Constant>
         <Namespace>Question</Namespace>
         <Name>jsonRouletteData</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>replace</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>displaySeed</Name>
         <Value />
         <IsNumeric value="False" />
       </Constant>
@@ -1378,6 +1474,24 @@ Manual Entry:manual
               <Password value="False" />
               <Multiline value="False" />
               <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>BooleanGroup</Type>
+              <Description>Sample with replacement</Description>
+              <Name>replace</Name>
+              <ToolId value="62" />
+              <Questions />
+              <Default value="False" />
+              <Collapsable value="False" />
+            </Question>
+            <Question>
+              <Type>BooleanGroup</Type>
+              <Description>Display Seed</Description>
+              <Name>displaySeed</Name>
+              <ToolId value="67" />
+              <Questions />
+              <Default value="False" />
+              <Collapsable value="False" />
             </Question>
           </Questions>
         </Question>
