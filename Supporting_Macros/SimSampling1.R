@@ -27,6 +27,8 @@ config$bounds = jsonlite::fromJSON(config$jsonBounds)
 config$parameters = jsonlite::fromJSON(config$jsonParameters)
 config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
 
+config$replace <- '%Question.replace%'=="True"
+
 readRecordCount <- AlteryxRhelper::read.Alteryx2("totalSize")
 readRecordCount <- as.numeric(readRecordCount$Count[[1]])
 
@@ -51,6 +53,6 @@ tool_process(
   roulette = config$rouletteData,
   dataName = config$binnedDataName,
   sampleSource = config$samplingMode,
-  replace = TRUE,
+  replace = config$replace,
   totalSize = config$totalSize
 )
