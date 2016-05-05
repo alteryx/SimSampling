@@ -1028,7 +1028,7 @@ write.Alteryx2(d, 1)
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Text>jsonRouletteData</Text>
+              <Text>displaySeed</Text>
               <Font name="Segoe UI" size="8.25" style="0" />
               <TextColor name="Black" />
               <FillColor r="128" g="128" b="255" />
