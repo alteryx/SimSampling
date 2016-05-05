@@ -1220,7 +1220,7 @@ write.Alteryx2(d, 1)</RScript>
     </Node>
   </Nodes>
   <Connections>
-    <Connection name="toSample">
+    <Connection name="#1">
       <Origin ToolID="3" Connection="Output" />
       <Destination ToolID="4" Connection="Input" />
     </Connection>
@@ -1237,8 +1237,12 @@ write.Alteryx2(d, 1)</RScript>
       <Destination ToolID="24" Connection="Question Input" />
     </Connection>
     <Connection Wireless="True">
-      <Origin ToolID="3" Connection="Output" />
+      <Origin ToolID="3" Connection="Question" />
       <Destination ToolID="37" Connection="Question Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="3" Connection="Question" />
+      <Destination ToolID="36" Connection="Question Input" />
     </Connection>
     <Connection>
       <Origin ToolID="4" Connection="Output1" />
@@ -1680,9 +1684,9 @@ Manual Entry:manual
               <Multiple value="False" />
               <Default />
               <Mode>Field</Mode>
-              <Field_ToolId value="0" />
+              <Field_ToolId value="3" />
               <Field_ConnectionName />
-              <Field_Connection />
+              <Field_Connection>Question</Field_Connection>
               <Field_IsOutput value="True" />
               <Field_IncludeNone value="False" />
               <Field_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</Field_FilterTypes>
@@ -1697,7 +1701,7 @@ Manual Entry:manual
               <Mode>Field</Mode>
               <Field_ToolId value="3" />
               <Field_ConnectionName />
-              <Field_Connection>Output</Field_Connection>
+              <Field_Connection>Question</Field_Connection>
               <Field_IsOutput value="True" />
               <Field_IncludeNone value="False" />
               <Field_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</Field_FilterTypes>
