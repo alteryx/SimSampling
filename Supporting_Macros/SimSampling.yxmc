@@ -144,8 +144,7 @@ print(config)
 d &lt;- read.Alteryx2("#1", default = data.frame(x = 1:10))
 
 # Write Data to Output 1
-write.Alteryx2(d, 1)  
-</RScript>
+write.Alteryx2(d, 1)</RScript>
           <UseFullUpdate value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
@@ -153,19 +152,12 @@ write.Alteryx2(d, 1)
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <MetaInfo connection="Output1">
-          <RecordInfo>
-            <Field name="data" source="R-DATA:" type="Int32" />
-            <Field name="id" source="R-DATA:" type="Int32" />
-            <Field name="value" source="R-DATA:" type="Int32" />
-          </RecordInfo>
-        </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxRPluginEngine.dll" EngineDllEntryPoint="AlteryxR" />
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="534" y="543" />
+        <Position x="678" y="594" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1059,11 +1051,11 @@ write.Alteryx2(d, 1)
     </Node>
   </Nodes>
   <Connections>
-    <Connection name="#1">
+    <Connection name="toSample">
       <Origin ToolID="3" Connection="Output" />
       <Destination ToolID="4" Connection="Input" />
     </Connection>
-    <Connection name="#2">
+    <Connection name="totalSize">
       <Origin ToolID="61" Connection="Output9" />
       <Destination ToolID="4" Connection="Input" />
     </Connection>
