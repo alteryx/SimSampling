@@ -1,5 +1,6 @@
 ## DO NOT MODIFY: Auto Inserted by AlteryxRhelper ----
 library(AlteryxRhelper)
+library(AlteryxSim)
 config <- list(
   binnedDataName = textInput('%Question.binnedDataName%'),
   binnedIdField = dropdownInput('%Question.binnedIdField%'),
