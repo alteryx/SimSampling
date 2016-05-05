@@ -29,25 +29,9 @@ config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
 
 print(config)
 
-tool_process(
-  method = config$samplingMechanism,
-  chunkSize = config$chunkSize,
-  seed = config$seed,
-  count = config$numIterations,
-  distribution = config$distribution,
-  params = config$parameters,
-  bounds = config$bounds,
-  process = config$samplingStrategy,
-  possible = config$distToFit,
-  type = config$dataKind,
-  id = config$binnedIdField,
-  value = config$binnedValueField,
-  name = config$stageName,
-  roulette = config$rouletteData,
-  dataName = config$binnedDataName,
-  sampleSource = config$samplingMode,
-  replace = TRUE, #NEEDS TO BE EXPOSED IN MACRO!!!!!!!!!!
-  ##########
-  # totalSize = 
-  # HOW TO READ OPTIONAL INPUTS
-)
+
+# Read Data
+d <- read.Alteryx2("#1", default = data.frame(x = 1:10))
+
+# Write Data to Output 1
+write.Alteryx2(d, 1)  
