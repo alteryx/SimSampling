@@ -27,6 +27,11 @@ config$bounds = jsonlite::fromJSON(config$jsonBounds)
 config$parameters = jsonlite::fromJSON(config$jsonParameters)
 config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
 
+readRecordCount <- AlteryxRhelper::read.Alteryx2("totalSize")
+readRecordCount <- as.numeric(readRecordCount$Count[[1]])
+
+config$totalSize <- ifelse(readRecordCount==0, config$numIterations, readRecordCount)
+
 print(config)
 
 tool_process(
@@ -46,8 +51,6 @@ tool_process(
   roulette = config$rouletteData,
   dataName = config$binnedDataName,
   sampleSource = config$samplingMode,
-  replace = TRUE, #NEEDS TO BE EXPOSED IN MACRO!!!!!!!!!!
-  ##########
-  # totalSize = 
-  # HOW TO READ OPTIONAL
+  replace = TRUE,
+  totalSize = config$totalSize
 )
