@@ -14,7 +14,7 @@ config <- list(
   jsonParameters = textInput('%Question.jsonParameters%' , '{"mean": 0, "sd": 1}'),
   jsonRouletteData = textInput('%Question.jsonRouletteData%' , '{"100": 1, "110": 2, "120": 4}'),
   numIterations = numericInput('%Question.numIterations%' , 10),
-  samplingMechanism = dropdownInput('%Question.samplingMechanism%' , 'mc'),
+  samplingMechanism = dropdownInput('%Question.samplingMechanism%' , 'MC'),
   samplingMode = dropdownInput('%Question.samplingMode%' , 'parametric'),
   samplingStrategy = dropdownInput('%Question.samplingStrategy%' , 'rows'),
   seed = numericInput('%Question.seed%' , 1),
@@ -35,10 +35,8 @@ readRecordCount <- as.numeric(readRecordCount$Count[[1]])
 
 config$totalSize <- ifelse(readRecordCount==0, config$numIterations, readRecordCount)
 
-print(config)
-
 tool_process(
-  method = config$samplingMechanism,
+  method = toupper(config$samplingMechanism),
   chunkSize = config$chunkSize,
   seed = config$seed,
   count = config$numIterations,
