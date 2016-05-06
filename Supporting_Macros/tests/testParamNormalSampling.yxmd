@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <AlteryxDocument yxmdVer="10.5">
   <Nodes>
-    <Node ToolID="1">
+    <Node ToolID="2">
       <GuiSettings Plugin="SimSampling">
-        <Position x="54" y="54" />
+        <Position x="78" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -26,10 +26,11 @@
           <Value name="distribution">norm</Value>
           <Value name="stageName">asdf</Value>
           <Value name="samplingMode">parametric</Value>
-          <Value name="numIterations">100</Value>
+          <Value name="numIterations">10</Value>
           <Value name="seed">1</Value>
+          <Value name="displaySeed">True</Value>
           <Value name="chunkSize">256000</Value>
-          <Value name="samplingMechanism">mc</Value>
+          <Value name="samplingMechanism">MC</Value>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
