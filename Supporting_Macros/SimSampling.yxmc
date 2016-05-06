@@ -105,7 +105,7 @@ tool_process(
           <Abbrev>D</Abbrev>
         </Configuration>
         <Annotation DisplayMode="0">
-          <Name />
+          <Name>Data Output</Name>
           <AnnotationText>__D Output__ Data Output</AnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
@@ -300,7 +300,7 @@ tool_process(
     </Node>
     <Node ToolID="77">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="102" y="526" />
+        <Position x="102" y="522" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -527,6 +527,35 @@ tool_process(
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetourEnd" />
     </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="246" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="data" selected="True" />
+            <SelectField field="id" selected="True" />
+            <SelectField field="value" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="data" source="TextInput:" type="Byte" />
+            <Field name="id" source="TextInput:" type="Byte" />
+            <Field name="value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
         <Position x="462" y="274" width="140" height="128" />
@@ -705,7 +734,7 @@ tool_process(
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="606" y="58" width="416" height="205" />
+        <Position x="606" y="58" width="416" height="217" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -765,13 +794,13 @@ tool_process(
         </Node>
         <Node ToolID="31">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="652" y="194" width="59" height="59" />
+            <Position x="784" y="206" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>dataKind</Name>
-              <AnnotationText>You can supply data in three ways. (1) Raw Data, (2) Binned Data or (3) Manually enter it using the Roulette widget.</AnnotationText>
+              <AnnotationText>You can supply data in three ways. (1) Raw Data, (2) Binned Data or (3) Manually entered data via the Roulette widget.</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -839,7 +868,7 @@ tool_process(
         </Node>
         <Node ToolID="52">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="616" y="170" width="120" height="24" />
+            <Position x="748" y="182" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -859,7 +888,7 @@ tool_process(
         </Node>
         <Node ToolID="62">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
-            <Position x="774" y="190" width="59" height="59" />
+            <Position x="906" y="202" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -873,7 +902,7 @@ tool_process(
         </Node>
         <Node ToolID="63">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="750" y="166" width="120" height="24" />
+            <Position x="882" y="178" width="120" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -884,6 +913,19 @@ tool_process(
               <Shape shape="0" />
               <Justification Justification="1" />
             </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="92">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="654" y="198" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
             <Annotation DisplayMode="0">
               <Name />
               <DefaultAnnotationText />
@@ -1087,6 +1129,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>chunkSize</Name>
+              <AnnotationText>Maximal size of chunk to evaluate at a time. For stratified sampling from data, this is the maximal size of the strata.</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -1100,7 +1143,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>seed</Name>
-              <AnnotationText>Set a random seed</AnnotationText>
+              <AnnotationText>Random seed</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -1214,7 +1257,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>samplingMode</Name>
-              <AnnotationText>We can sample from a parametric distribution or from data.</AnnotationText>
+              <AnnotationText>Choose to sample from a parametric distribution or from data</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -1228,7 +1271,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>numIterations</Name>
-              <AnnotationText>Number of samples to select.</AnnotationText>
+              <AnnotationText>Number of samples to select</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -1393,7 +1436,7 @@ tool_process(
       <Destination ToolID="4" Connection="Input" />
     </Connection>
     <Connection name="#1">
-      <Origin ToolID="77" Connection="Output" />
+      <Origin ToolID="91" Connection="Output" />
       <Destination ToolID="4" Connection="Input" />
     </Connection>
     <Connection>
@@ -1441,6 +1484,14 @@ tool_process(
       <Destination ToolID="24" Connection="Question Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="92" Connection="Action" />
+      <Destination ToolID="91" Connection="Action" />
+    </Connection>
+    <Connection>
       <Origin ToolID="78" Connection="Output" />
       <Destination ToolID="74" Connection="Input" />
     </Connection>
@@ -1483,6 +1534,10 @@ tool_process(
     <Connection>
       <Origin ToolID="87" Connection="Output" />
       <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="24" Connection="Question" />
+      <Destination ToolID="92" Connection="Question" />
     </Connection>
     <Connection name="#1">
       <Origin ToolID="15" Connection="Question" />
@@ -1704,6 +1759,13 @@ tool_process(
               <DynamicConfiguration />
               <DefaultConfiguration value="True" />
             </Action>
+            <Action>
+              <Type>UpdateSelect</Type>
+              <Description />
+              <ToolId value="92" />
+              <Variable />
+              <SelectTool value="-1" />
+            </Action>
           </True>
         </NoCondition>
       </Actions>
@@ -1716,8 +1778,8 @@ tool_process(
           <Questions>
             <Question>
               <Type>MacroOutput</Type>
-              <Description>Macro Output (5)</Description>
-              <Name>Macro Output (5)</Name>
+              <Description>Data Output</Description>
+              <Name>Data Output</Name>
               <ToolId value="5" />
             </Question>
             <Question>
