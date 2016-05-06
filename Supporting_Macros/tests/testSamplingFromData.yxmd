@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="66" y="114" />
+        <Position x="54" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -24,9 +24,9 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
     </Node>
-    <Node ToolID="2">
+    <Node ToolID="4">
       <GuiSettings Plugin="SimSampling">
-        <Position x="210" y="54" />
+        <Position x="162" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -51,9 +51,10 @@
           <Value name="samplingMode">data</Value>
           <Value name="numIterations">10</Value>
           <Value name="seed">1</Value>
+          <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
-          <Value name="chunkSize">5</Value>
-          <Value name="samplingMechanism">MC</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">LH</Value>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -63,9 +64,9 @@
       </Properties>
       <EngineSettings Macro="Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="Supporting_Macros/SimSampling.yxmc" />
     </Node>
-    <Node ToolID="3">
+    <Node ToolID="5">
       <GuiSettings Plugin="SimSampling">
-        <Position x="210" y="162" />
+        <Position x="162" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -89,7 +90,8 @@
           </Value>
           <Value name="samplingMode">data</Value>
           <Value name="numIterations">10</Value>
-          <Value name="seed">1</Value>
+          <Value name="seed">4</Value>
+          <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
           <Value name="chunkSize">256000</Value>
           <Value name="samplingMechanism">MC</Value>
@@ -106,11 +108,11 @@
   <Connections>
     <Connection>
       <Origin ToolID="1" Connection="Output" />
-      <Destination ToolID="2" Connection="SampleData" />
+      <Destination ToolID="4" Connection="SampleData" />
     </Connection>
     <Connection>
       <Origin ToolID="1" Connection="Output" />
-      <Destination ToolID="3" Connection="SampleData" />
+      <Destination ToolID="5" Connection="SampleData" />
     </Connection>
   </Connections>
   <Properties>

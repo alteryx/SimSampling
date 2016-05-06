@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <AlteryxDocument yxmdVer="10.5">
   <Nodes>
-    <Node ToolID="2">
+    <Node ToolID="3">
       <GuiSettings Plugin="SimSampling">
-        <Position x="78" y="78" />
+        <Position x="210" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -15,7 +15,8 @@
           <Value name="binnedIdField" />
           <Value name="binnedDataName">
           </Value>
-          <Value name="samplingStrategy">rows</Value>
+          <Value name="samplingStrategy">
+          </Value>
           <Value name="fields">
           </Value>
           <Value name="dataKind">raw</Value>
@@ -27,8 +28,50 @@
           <Value name="stageName">asdf</Value>
           <Value name="samplingMode">parametric</Value>
           <Value name="numIterations">10</Value>
-          <Value name="seed">1</Value>
+          <Value name="seed">1234</Value>
+          <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">LH</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="210" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="jsonRouletteData">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">
+          </Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="jsonBounds">
+          </Value>
+          <Value name="jsonParameters">
+          </Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">asdf</Value>
+          <Value name="samplingMode">parametric</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1234</Value>
+          <Value name="intermediate">True</Value>
+          <Value name="displaySeed">False</Value>
           <Value name="chunkSize">256000</Value>
           <Value name="samplingMechanism">MC</Value>
         </Configuration>
@@ -40,8 +83,39 @@
       </Properties>
       <EngineSettings Macro="Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="Supporting_Macros/SimSampling.yxmc" />
     </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="102" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="a" />
+            <Field name="seed" />
+          </Fields>
+          <Data>
+            <r>
+              <c>asdfasdf</c>
+              <c>4</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
   </Nodes>
-  <Connections />
+  <Connections>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="SimulationData" />
+    </Connection>
+  </Connections>
   <Properties>
     <Memory default="True" />
     <GlobalRecordLimit value="0" />
