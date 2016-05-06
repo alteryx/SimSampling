@@ -26,10 +26,8 @@
           <Value name="distribution">norm</Value>
           <Value name="stageName">asdf</Value>
           <Value name="samplingMode">parametric</Value>
-          <Value name="replace">False</Value>
           <Value name="numIterations">100</Value>
           <Value name="seed">1</Value>
-          <Value name="displaySeed">True</Value>
           <Value name="chunkSize">256000</Value>
           <Value name="samplingMechanism">mc</Value>
         </Configuration>
