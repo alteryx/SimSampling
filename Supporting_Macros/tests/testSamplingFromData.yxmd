@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="102" y="66" />
+        <Position x="66" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -16,9 +16,6 @@
           <DefaultAnnotationText>norm.yxdb</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="asdf" source="R-DATA:" type="Double" />
@@ -29,7 +26,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="SimSampling">
-        <Position x="246" y="54" />
+        <Position x="210" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -41,7 +38,46 @@
           <Value name="binnedIdField" />
           <Value name="binnedDataName">
           </Value>
-          <Value name="samplingStrategy">rows</Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">asdf</Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="jsonBounds">
+          </Value>
+          <Value name="jsonParameters">
+          </Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">
+          </Value>
+          <Value name="samplingMode">data</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="chunkSize">5</Value>
+          <Value name="samplingMechanism">MC</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="210" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="jsonRouletteData">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">each</Value>
           <Value name="fields">asdf</Value>
           <Value name="dataKind">raw</Value>
           <Value name="jsonBounds">
@@ -71,6 +107,10 @@
     <Connection>
       <Origin ToolID="1" Connection="Output" />
       <Destination ToolID="2" Connection="SampleData" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="SampleData" />
     </Connection>
   </Connections>
   <Properties>
