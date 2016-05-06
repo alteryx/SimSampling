@@ -38,6 +38,12 @@ config$seed <- ifelse(config$displaySeed, config$seed, (AlteryxRhelper::read.Alt
 
 config$totalSize <- ifelse(readRecordCount==0, config$numIterations, readRecordCount)
 
+print("SamplingMode")
+print(config$samplingMode)
+print(config$stageName)
+config$name <- ifelse(config$samplingMode=="parametric", config$stageName, config$binnedDataName)
+  
+
 tool_process(
   method = toupper(config$samplingMechanism),
   chunkSize = config$chunkSize,
@@ -53,7 +59,7 @@ tool_process(
   value = config$binnedValueField,
   name = config$stageName,
   roulette = config$rouletteData,
-  dataName = config$binnedDataName,
+  dataName = "#1",
   sampleSource = config$samplingMode,
   replace = config$replace,
   totalSize = config$totalSize
