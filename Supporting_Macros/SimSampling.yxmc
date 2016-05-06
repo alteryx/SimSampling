@@ -1521,8 +1521,8 @@ tool_process(
               <Multiple value="False" />
               <Default>mc</Default>
               <Mode>Manual</Mode>
-              <Manual_Values><![CDATA[Monte Carlo:MC
-Latin HyperCube:LH
+              <Manual_Values><![CDATA[Monte Carlo/ Simple Sampling:MC
+Latin HyperCube/ Stratified Sampling:LH
 ]]></Manual_Values>
             </Question>
             <Question>
