@@ -35,12 +35,11 @@ readRecordCount <- AlteryxRhelper::read.Alteryx2("totalSize")
 readRecordCount <- as.numeric(readRecordCount$Count[[1]])
 
 config$seed <- ifelse(config$displaySeed, config$seed, (AlteryxRhelper::read.Alteryx2("seed"))$seed[[1]])
+dfSeed <- data.frame(seed = 1+config$seed)
+write.Alteryx(dfSeed, 2)
 
 config$totalSize <- ifelse(readRecordCount==0, config$numIterations, readRecordCount)
 
-print("SamplingMode")
-print(config$samplingMode)
-print(config$stageName)
 config$name <- ifelse(config$samplingMode=="parametric", config$stageName, config$binnedDataName)
   
 
