@@ -29,9 +29,12 @@ config$parameters = jsonlite::fromJSON(config$jsonParameters)
 config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
 
 config$replace <- '%Question.replace%'=="True"
+config$displaySeed <- '%Question.displaySeed%'=="True"
 
 readRecordCount <- AlteryxRhelper::read.Alteryx2("totalSize")
 readRecordCount <- as.numeric(readRecordCount$Count[[1]])
+
+config$seed <- ifelse(config$displaySeed, config$seed, (AlteryxRhelper::read.Alteryx2("seed"))$seed[[1]])
 
 config$totalSize <- ifelse(readRecordCount==0, config$numIterations, readRecordCount)
 
