@@ -1788,7 +1788,7 @@ tool_process(
               <Name>samplingMechanism</Name>
               <ToolId value="13" />
               <Multiple value="False" />
-              <Default>mc</Default>
+              <Default>MC</Default>
               <Mode>Manual</Mode>
               <Manual_Values><![CDATA[Monte Carlo/ Simple Sampling:MC
 Latin HyperCube/ Stratified Sampling:LH
