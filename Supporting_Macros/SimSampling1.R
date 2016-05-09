@@ -1,5 +1,6 @@
 ## DO NOT MODIFY: Auto Inserted by AlteryxRhelper ----
 library(AlteryxRhelper)
+library(AlteryxSim)
 config <- list(
   binnedDataName = textInput('%Question.binnedDataName%'),
   binnedIdField = dropdownInput('%Question.binnedIdField%'),
@@ -13,7 +14,7 @@ config <- list(
   jsonParameters = textInput('%Question.jsonParameters%' , '{"mean": 0, "sd": 1}'),
   jsonRouletteData = textInput('%Question.jsonRouletteData%' , '{"100": 1, "110": 2, "120": 4}'),
   numIterations = numericInput('%Question.numIterations%' , 10),
-  samplingMechanism = dropdownInput('%Question.samplingMechanism%' , 'mc'),
+  samplingMechanism = dropdownInput('%Question.samplingMechanism%' , 'MC'),
   samplingMode = dropdownInput('%Question.samplingMode%' , 'parametric'),
   samplingStrategy = dropdownInput('%Question.samplingStrategy%' , 'rows'),
   seed = numericInput('%Question.seed%' , 1),
@@ -27,11 +28,38 @@ config$bounds = jsonlite::fromJSON(config$jsonBounds)
 config$parameters = jsonlite::fromJSON(config$jsonParameters)
 config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
 
-print(config)
+config$replace <- '%Question.replace%'=="True"
+config$displaySeed <- '%Question.displaySeed%'=="True"
 
+readRecordCount <- AlteryxRhelper::read.Alteryx2("totalSize")
+readRecordCount <- as.numeric(readRecordCount$Count[[1]])
 
-# Read Data
-d <- read.Alteryx2("#1", default = data.frame(x = 1:10))
+config$seed <- ifelse(config$displaySeed, config$seed, (AlteryxRhelper::read.Alteryx2("seed"))$seed[[1]])
+dfSeed <- data.frame(seed = 1+config$seed)
+write.Alteryx(dfSeed, 2)
 
-# Write Data to Output 1
-write.Alteryx2(d, 1)  
+config$totalSize <- ifelse(readRecordCount==0, config$numIterations, readRecordCount)
+
+config$name <- ifelse(config$samplingMode=="parametric", config$stageName, config$binnedDataName)
+  
+
+tool_process(
+  method = toupper(config$samplingMechanism),
+  chunkSize = config$chunkSize,
+  seed = config$seed,
+  count = config$numIterations,
+  distribution = config$distribution,
+  params = config$parameters,
+  bounds = config$bounds,
+  process = config$samplingStrategy,
+  possible = config$distToFit,
+  type = config$dataKind,
+  id = config$binnedIdField,
+  value = config$binnedValueField,
+  name = config$stageName,
+  roulette = config$rouletteData,
+  dataName = "#1",
+  sampleSource = config$samplingMode,
+  replace = config$replace,
+  totalSize = config$totalSize
+)
