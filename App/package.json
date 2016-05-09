@@ -1,0 +1,36 @@
+{
+  "name": "ComboNumericSlider",
+  "version": "1.0.0",
+  "description": "Describe ComboNumericSlider here",
+  "private": true,
+  "scripts": {
+    "build": "nwb build",
+    "clean": "nwb clean",
+    "start": "nwb serve",
+    "test": "nwb test",
+    "test:watch": "nwb test --server"
+  },
+  "dependencies": {
+    "d3": "^3.5.16",
+    "d3kit": "^1.1.0",
+    "d3tip": "^0.4.2",
+    "mobx": "^2.1.5",
+    "mobx-react": "^3.0.5",
+    "react": "0.14.x",
+    "react-dom": "0.14.x",
+    "react-select": "^1.0.0-beta13"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^8.0.0",
+    "eslint-plugin-import": "^1.6.1",
+    "eslint-plugin-jsx-a11y": "^1.0.4",
+    "eslint-plugin-react": "^5.0.1",
+    "nwb": "0.9.x",
+    "nwb-sass": "^0.3.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": ""
+}

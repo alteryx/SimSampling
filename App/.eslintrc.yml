@@ -1,0 +1,13 @@
+extends: airbnb
+plugins:
+  - react
+rules:
+  "new-cap":
+  - "error"
+  - capIsNewExceptions:
+    - manager.GetDataItemByDataName
+    - manager.GetDataItem
+    - manager.AddDataItem
+    - Alteryx.Gui.BeforeLoad
+    - Alteryx.Gui.AfterLoad
+    - d.BindUserDataChanged
