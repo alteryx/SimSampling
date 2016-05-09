@@ -22,14 +22,24 @@ SimSampling
 <!--  samplingMechanism  -->
 <label for="samplingMechanism">Select sampling mechanism</label>
 <alteryx-pluginwidget type="DropDown" id="samplingMechanism" dataName="samplingMechanism">
-  <alteryx-option uiobject="Monte Carlo" default="true">mc</alteryx-option>
-  <alteryx-option uiobject="Latin HyperCube">lh</alteryx-option>
+  <alteryx-option uiobject="Monte Carlo/ Simple Sampling" default="true">MC</alteryx-option>
+  <alteryx-option uiobject="Latin HyperCube/ Stratified Sampling">LH</alteryx-option>
 </alteryx-pluginwidget>
 
     
 <!--  chunkSize  -->
 <label for="chunkSize">Chunk size</label>
 <alteryx-pluginwidget type="NumericSpinner" default="256000" minimum="1" maximum="100000000" step="1" id="chunkSize" dataName="chunkSize"></alteryx-pluginwidget>
+
+    
+<!--  displaySeed  -->
+<label for="displaySeed"></label>
+<alteryx-pluginwidget type="CheckBox" text="Display Seed" default="false" id="displaySeed" dataName="displaySeed"></alteryx-pluginwidget>
+
+    
+<!--  intermediate  -->
+<label for="intermediate"></label>
+<alteryx-pluginwidget type="CheckBox" text="Intermediate tool" default="false" id="intermediate" dataName="intermediate"></alteryx-pluginwidget>
 
   </div>
   <div id='isIntermediate'>
@@ -114,9 +124,9 @@ SimSampling
 <!--  samplingStrategy  -->
 <label for="samplingStrategy">Select sampling strategy</label>
 <alteryx-pluginwidget type="DropDown" id="samplingStrategy" dataName="samplingStrategy">
-  <alteryx-option uiobject="Sample entire rows" default="true">rows</alteryx-option>
-  <alteryx-option uiobject="Sample each column independently">columns</alteryx-option>
-  <alteryx-option uiobject="Sample from best fitting distribution">dist</alteryx-option>
+  <alteryx-option uiobject="Sample entire rows">entire</alteryx-option>
+  <alteryx-option uiobject="Sample each column independently">each</alteryx-option>
+  <alteryx-option uiobject="Sample from best fitting distribution">best</alteryx-option>
 </alteryx-pluginwidget>
 
   </div>

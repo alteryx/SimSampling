@@ -7,7 +7,7 @@
       <Connection Name="SimulationData" AllowMultiple="False" Optional="True" Type="Connection" Label="S"/>
     </InputConnections>
     <OutputConnections>
-      <Connection Name="Data" AllowMultiple="False" Optional="True" Type="Connection" Label="D"/>
+      <Connection Name="Data" AllowMultiple="False" Optional="False" Type="Connection" Label="D"/>
     </OutputConnections>
   </GuiSettings>
   <Properties>
