@@ -1,32 +1,6 @@
-/* Be consistent with TextBox */
-.Select-control{
-  border-radius: 0px !important;
-}
-.Select{
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.radioGroup input[type="radio"]{
-  display: none;
-}
-.radioGroup li {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-ul.radioGroup {
-  margin-top: -5px;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.clearfix {
-  zoom: 1; /* ie 6/7 */
-}
+/*!
+ * ComboNumericSlider 1.0.0
+ * MIT Licensed
+ */
+.alteryx-numeric-slider input[type=number]{margin:0;width:65px}.alteryx-numeric-slider input[type=range]{width:100%;border:none}.alteryx-numeric-slider .param-max,.alteryx-numeric-slider .param-min{margin-top:4px;background:#1891c7;color:#fff;padding-left:5px;padding-right:5px;border-radius:5px;font-size:11px}.alteryx-numeric-slider .pull-right{float:right}.alteryx-numeric-slider .comboslider-controls{height:40px}.alteryx-numeric-slider .comboslider-slider{margin-bottom:30px}.alteryx-numeric-slider input[type=range]{-webkit-appearance:none}.alteryx-numeric-slider input[type=range]:focus{outline:none}.alteryx-numeric-slider input[type=range]::-webkit-slider-runnable-track{width:100%;height:5px;cursor:pointer;box-shadow:.1px .1px 0 #005900,0 0 .1px #007200;background:#1891c7}.alteryx-numeric-slider input[type=range]::-webkit-slider-thumb{box-shadow:0 0 0 #00003e,0 0 0 rgba(0,0,88,.67);height:24px;width:12px;cursor:pointer;-webkit-appearance:none;margin-top:-8.65px}.alteryx-numeric-slider label{width:20%}#main{margin-top:20px}.x-axis-layer line,.x-axis-layer path,.y-axis-layer line,.y-axis-layer path{fill:none;stroke:#d3d3d3;stroke-opacity:.6;shape-rendering:crispEdges}.x-axis-layer text,.y-axis-layer text{fill:#000;fill-opacity:.6;font-size:11px}.cell{fill:#eee;stroke:#fff}.active{fill:#4682b4}.d3-tip{line-height:1;font-weight:700;padding:8px;background:#006400;border-color:#fff;color:#fff;border-radius:2px}.d3-tip:after{box-sizing:border-box;display:inline;font-size:10px;width:100%;line-height:1;color:#006400;content:"\25BC";position:absolute;text-align:center}.d3-tip.n:after{margin:-3px 0 0;top:100%;left:0}.panel-heading{padding-bottom:0}.panel-body{padding-top:0}.Select-control{border-radius:0!important}.Select{margin-top:5px;margin-bottom:5px}.radioGroup input[type=radio]{display:none}.radioGroup li{margin-top:10px;margin-bottom:10px}ul.radioGroup{margin-top:-5px}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}
+/*# sourceMappingURL=main.css.map*/
