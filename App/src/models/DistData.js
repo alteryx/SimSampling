@@ -1,3 +1,5 @@
+/* Reference: http://jstat.github.io/distributions.html */
+/* To add more distributions, consult jstat documentation */
 const DistData = {
   distributions: {
     normal: [
