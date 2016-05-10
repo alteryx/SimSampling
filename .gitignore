@@ -24,3 +24,5 @@ Supporting_Macros/*.html
 
 # Backup files
 *.bak
+.DS_Store
+
