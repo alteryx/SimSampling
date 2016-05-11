@@ -76,9 +76,31 @@ function displayTarget(targetId, di, cond){
 
 function controlDisplayIntermediate(manager){
   const targetDiv = document.getElementById('isIntermediate')
+  const intermediate =  manager.GetDataItemByDataName("intermediate")
   if (manager.incomingMetaInfo && manager.incomingMetaInfo[1]){
+    intermediate.setValue(true);
     targetDiv.style.display = 'none';
+  } else {
+    intermediate.setValue(false);
   }
 }
 
-export { createUIObject, makeDataItem, syncDataItems, displayTarget, controlDisplayIntermediate };
+function hasField(manager, i, name){
+  if (!manager.incomingMetaInfo) return false;
+  if (!manager.incomingMetaInfo[i]) return false;
+  const fields = manager.incomingMetaInfo[i].MetaInfo.RecordInfo.Field.map(d => d["@name"])
+  return fields.indexOf(name) >= 0;
+}
+
+function controlDisplaySeed(manager){
+  const targetDiv = document.getElementById('display-seed')
+  const displaySeed = manager.GetDataItemByDataName("displaySeed")
+  if (hasField(manager, 1, 'seed')){
+    displaySeed.setValue(false)
+    targetDiv.style.display = 'none';
+  } else {
+    displaySeed.setValue(true)
+  }
+}
+
+export { createUIObject, makeDataItem, syncDataItems, displayTarget, controlDisplayIntermediate, controlDisplaySeed };

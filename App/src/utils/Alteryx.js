@@ -1,4 +1,4 @@
-import { makeDataItem, controlDisplayIntermediate, displayTarget } from './AlteryxUtils.js';
+import { makeDataItem, controlDisplayIntermediate, controlDisplaySeed, displayTarget } from './AlteryxUtils.js';
 import store from '../stores/Storage';
 
 class DataItem {
@@ -42,4 +42,4 @@ window.Alteryx = window.Alteryx || {
   browser: true,
 };
 
-export default { MakeDataItem, controlDisplayIntermediate, displayTarget };
+export default { MakeDataItem, controlDisplayIntermediate, controlDisplaySeed, displayTarget };

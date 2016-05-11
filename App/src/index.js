@@ -1,5 +1,5 @@
 /* global Alteryx */
-import { MakeDataItem as makeDataItem, controlDisplayIntermediate, displayTarget } from './utils/Alteryx';
+import { MakeDataItem as makeDataItem, controlDisplayIntermediate, displayTarget, controlDisplaySeed } from './utils/Alteryx';
 import DistData from './models/DistData';
 import RouletteData from './models/RouletteData';
 import renderComboNumericSliders from './views/ComboNumericSliderView';
@@ -20,6 +20,8 @@ Alteryx.Gui.BeforeLoad = function BeforeLoad(manager, AlteryxDataItems) {
   const dataItem = makeDataItem(manager, AlteryxDataItems);
   //dataItem('distribution', { value: DistData.distribution });
   //dataItem('distributions', { value: JSON.stringify(DistData.distributions) });
+  dataItem('displaySeed', {value: true}, 'SimpleBool')
+  dataItem('intermediate', {value: false}, 'SimpleBool')
   dataItem('rouletteData', { value: JSON.stringify(RouletteData) });
   dataItem('jsonRouletteData', { value: '{"20": 5, "30": 6}' });
 };
@@ -36,7 +38,8 @@ Alteryx.Gui.AfterLoad = function AfterLoad(manager) {
     { key: 'jsonRouletteData', type: 'json' },
   ];
   //renderComboNumericSliders(manager, collection, 'combonumericslider');
-  //controlDisplayIntermediate(manager)
+  controlDisplayIntermediate(manager)
+  controlDisplaySeed(manager)
   displayControls.forEach(function(d){displayTarget.apply(null, d)})
   renderRoulette(manager, collection2, 'rouletteChart');
   Alteryx.Gui.manager.GetDataItemByDataName("dataKind").BindUserDataChanged(function(d){

@@ -31,23 +31,15 @@ SimSampling
 <label for="chunkSize">Chunk size</label>
 <alteryx-pluginwidget type="NumericSpinner" default="256000" minimum="1" maximum="100000000" step="1" id="chunkSize" dataName="chunkSize"></alteryx-pluginwidget>
 
-    
-<!--  displaySeed  -->
-<label for="displaySeed"></label>
-<alteryx-pluginwidget type="CheckBox" text="Display Seed" default="false" id="displaySeed" dataName="displaySeed"></alteryx-pluginwidget>
-
-    
-<!--  intermediate  -->
-<label for="intermediate"></label>
-<alteryx-pluginwidget type="CheckBox" text="Intermediate tool" default="false" id="intermediate" dataName="intermediate"></alteryx-pluginwidget>
-
   </div>
-  <div id='isIntermediate'>
+  <div id='display-seed'>
     
 <!--  seed  -->
 <label for="seed">seed</label>
 <alteryx-pluginwidget type="NumericSpinner" default="1" minimum="1" maximum="100000000" step="1" id="seed" dataName="seed"></alteryx-pluginwidget>
 
+  </div>
+  <div id='isIntermediate'>
     
 <!--  numIterations  -->
 <label for="numIterations">Number of iterations</label>
