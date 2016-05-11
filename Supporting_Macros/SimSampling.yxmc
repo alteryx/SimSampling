@@ -593,7 +593,7 @@ tool_process(
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="462" y="274" width="140" height="129" />
+        <Position x="462" y="275" width="140" height="128" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -647,7 +647,7 @@ tool_process(
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54.00002" y="274" width="404" height="129" />
+        <Position x="54.00002" y="275" width="404" height="128" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -685,7 +685,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>binnedIdField</Name>
-              <AnnotationText>The id field.</AnnotationText>
+              <AnnotationText>The ID field for the binned data</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -699,7 +699,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>binnedValueField</Name>
-              <AnnotationText>The value field.</AnnotationText>
+              <AnnotationText>The value field for the binned data</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -769,7 +769,7 @@ tool_process(
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="606" y="58" width="416" height="218" />
+        <Position x="606" y="59" width="416" height="220" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -793,7 +793,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>fields</Name>
-              <AnnotationText>Choose the fields to sample data from.</AnnotationText>
+              <AnnotationText>Choose the fields to sample from.</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -807,7 +807,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>samplingStrategy</Name>
-              <AnnotationText>Choose how you would like to sample your data. Currently you can sample by row, by column or by a best fit distribution.</AnnotationText>
+              <AnnotationText>Choose how you would like to sample your data. You can sample entire records, sample independently with respect to columns, or fit data to a distribution and sample from the best-fitting distribution.</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -829,13 +829,13 @@ tool_process(
         </Node>
         <Node ToolID="31">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="784" y="207" width="59" height="59" />
+            <Position x="774" y="210" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>dataKind</Name>
-              <AnnotationText>You can supply data in three ways. (1) Raw Data, (2) Binned Data or (3) Manually entered data via the Roulette widget.</AnnotationText>
+              <AnnotationText>You can supply data in three ways. (1) Raw Data, (2) Binned Data (with an ID field and a value field with equally spaced bins) or (3) Manually entered data via the Roulette widget.</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -972,7 +972,7 @@ tool_process(
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="606" y="274" width="272" height="189" />
+        <Position x="606" y="275" width="272" height="188" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1010,7 +1010,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>distribution</Name>
-              <AnnotationText>You can select from one of several distributions.</AnnotationText>
+              <AnnotationText>Select from the list of supported distributions.</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -1126,7 +1126,7 @@ tool_process(
     </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="54" width="538" height="218" />
+        <Position x="54" y="55" width="538" height="217" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1292,7 +1292,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>samplingMode</Name>
-              <AnnotationText>Choose to sample from a parametric distribution or from data</AnnotationText>
+              <AnnotationText>Choose to sample parametrically from a distribution or from data</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -1388,7 +1388,7 @@ tool_process(
     </Node>
     <Node ToolID="66">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="894" y="274" width="140" height="214" />
+        <Position x="894" y="275" width="140" height="213" />
       </GuiSettings>
       <Properties>
         <Configuration>
