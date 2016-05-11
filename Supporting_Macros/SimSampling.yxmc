@@ -117,7 +117,7 @@ tool_process(
         </Configuration>
         <Annotation DisplayMode="0">
           <Name>Data Output</Name>
-          <AnnotationText>__D Output__ Data Output</AnnotationText>
+          <AnnotationText>__D Output__ Data Output. Result of the simulation.</AnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
@@ -360,7 +360,7 @@ tool_process(
         </Configuration>
         <Annotation DisplayMode="2">
           <Name>SampleData</Name>
-          <AnnotationText>__D Input__ Sample Data</AnnotationText>
+          <AnnotationText>__D Input__ Sample Data. This is an optional input. It is required when sampling from data (except when entering via the roulette widget) and not required when sampling parametrically.</AnnotationText>
           <DefaultAnnotationText />
           <Left value="True" />
         </Annotation>
@@ -426,7 +426,7 @@ tool_process(
         </Configuration>
         <Annotation DisplayMode="2">
           <Name>Simulated Data</Name>
-          <AnnotationText>__S Input__ Simulation Data</AnnotationText>
+          <AnnotationText>__S Input__ Simulation Data. This is an optional input. If previous simulation tools have been used, the data from them can be connected to appropriately append it and get an iteration count and seed.</AnnotationText>
           <DefaultAnnotationText />
           <Left value="True" />
         </Annotation>
