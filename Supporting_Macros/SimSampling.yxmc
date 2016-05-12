@@ -2077,7 +2077,7 @@ Manual Entry:manual
       </Questions>
       <ModuleType>Macro</ModuleType>
       <MacroCustomHelp value="False" />
-      <MacroDynamicOutputFields value="False" />
+      <MacroDynamicOutputFields value="True" />
       <MacroImageStd value="39" />
       <MacroInputs />
       <MacroOutputs />
