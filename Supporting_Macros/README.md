@@ -12,26 +12,28 @@ _Note: This tool uses the R tool. Install R and the necessary packages by going 
 
 There are 2 inputs.
 
-1. __D Input__ Sample Data
-2. __S Input__ Simulation Data
+1. __D Input__ Sample Data. This is an optional input. It is required when sampling from data (except when entering via the roulette widget) and not required when sampling parametrically.
+2. __S Input__ Simulation Data. This is an optional input. If previous simulation tools have been used, the data from them can be connected to appropriately append it and get an iteration count and seed.
 
 ### Configuration Properties
 
-1. __Select sampling mechanism__ We support two mechanisms. (1) Monte Carlo Sampling and (2) Latin HyperCube Sampling. See [Wikipedia](https://en.wikipedia.org/wiki/Latin_hypercube_sampling)
-2. __seed__ Set a random seed
-3. __Number of iterations__ Number of samples to select.
-4. __Enter stage name__ Choose a field name for the output.
-5. __Select distribution__ You can select from one of several distributions.
-6. __Select fields to sample__ Choose the fields to sample data from.
-7. __Select sampling strategy__ Choose how you would like to sample your data. Currently you can sample by row, by column or by a best fit distribution.
-8. __Select distributions to fit__ Choose the distributions you want to fit the data with.
-9. __Select sampling mode__ We can sample from a parametric distribution or from data.
-10. __Specify kind of data__ You can supply data in three ways. (1) Raw Data, (2) Binned Data or (3) Manually enter it using the Roulette widget.
-11. __Enter name for binned data__ The field name for the binned data.
-12. __Select ID Field__ The id field.
-13. __Select Value Field__ The value field.
-14. __Roulette Data__ This is roulette data.
+1. __Select sampling mechanism:__ We support two mechanisms. (1) Monte Carlo Sampling / Simple Random Sampling and (2) Latin HyperCube Sampling/ Stratified Random Sampling. See [Wikipedia](https://en.wikipedia.org/wiki/Latin_hypercube_sampling). For stratified sampling from data, the maximum strata size is given by the choice of chunk size.
+2. __Chunk size:__ Maximal size of chunk to evaluate at a time. This can be used to avoid R's in-memory processing limitation. For stratified sampling from data, this is also the maximal size of the strata.
+3. __seed:__ This will be the random seed used for sampling. If a dataset containing a "seed" field is connected to the S input of this macro, this option will not be available; that seed will be incremented and used here.
+4. __Number of iterations:__ Number of samples to select. This option is not available when there is a dataset connected to the S input, as the size of that dataset determines the number of iterations in that case.
+5. __Enter stage name:__ Choose a field name for the output.
+6. __Select distribution:__ Select from the list of supported distributions.
+7. __Select fields to sample:__ Choose the fields to sample from.
+8. __Select sampling strategy:__ This option is available when sampling from data. Choose how you would like to sample your data. You can sample entire records, sample independently with respect to columns, or fit data to a distribution and sample from the best-fitting distribution.
+9. __Select distributions to fit:__ Choose the distributions you want to fit the data to. This option is available for sampling from data and from a best-fitting distribution.
+10. __Select sampling mode:__ Sampling can be done parametrically from a distribution or to sample from a dataset. In the case of sampling from data, a data stream should be connected to the D input or sampling is done via manually specifying data. For parametric sampling, there should be no connected data stream to the D input.
+11. __Specify kind of data:__ This option is available when choosing to sample from data. You can supply data in three ways. (1) Raw Data, (2) Binned Data (with an ID field and a value field with equally spaced bins) or (3) Manually entered data via the Roulette widget.
+12. __Enter name for binned data:__ The output field name for the binned data. This option is available 
+13. __Select ID Field:__ The ID field for the binned data
+14. __Select Value Field:__ The value field for the binned data
+15. __Roulette Data:__ This is roulette data.
+16. __Sample with replacement:__ Check to sample with replacement.
 
 ### Output
 
-1. __D Output__ Data Output
+1. __D Output__ Data Output. Result of the simulation.
