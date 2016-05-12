@@ -671,7 +671,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>binnedDataName</Name>
-              <AnnotationText>The field name for the binned data.</AnnotationText>
+              <AnnotationText><![CDATA[The output field name for the binned data. This option is available ]]></AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -693,7 +693,7 @@ tool_process(
         </Node>
         <Node ToolID="37">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="366" y="334" width="59" height="59" />
+            <Position x="366" y="330" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -807,7 +807,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>samplingStrategy</Name>
-              <AnnotationText>Choose how you would like to sample your data. You can sample entire records, sample independently with respect to columns, or fit data to a distribution and sample from the best-fitting distribution.</AnnotationText>
+              <AnnotationText>This option is available when sampling from data. Choose how you would like to sample your data. You can sample entire records, sample independently with respect to columns, or fit data to a distribution and sample from the best-fitting distribution.</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -821,7 +821,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>distToFit</Name>
-              <AnnotationText>Choose the distributions you want to fit the data with.</AnnotationText>
+              <AnnotationText>Choose the distributions you want to fit the data to. This option is available for sampling from data and from a best-fitting distribution.</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -835,7 +835,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>dataKind</Name>
-              <AnnotationText>You can supply data in three ways. (1) Raw Data, (2) Binned Data (with an ID field and a value field with equally spaced bins) or (3) Manually entered data via the Roulette widget.</AnnotationText>
+              <AnnotationText>This option is available when choosing to sample from data. You can supply data in three ways. (1) Raw Data, (2) Binned Data (with an ID field and a value field with equally spaced bins) or (3) Manually entered data via the Roulette widget.</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -990,7 +990,7 @@ tool_process(
       <ChildNodes>
         <Node ToolID="19">
           <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="640" y="322" width="59" height="59" />
+            <Position x="642" y="318" width="59" height="59" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -1150,7 +1150,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>samplingMechanism</Name>
-              <AnnotationText><![CDATA[We support two mechanisms. (1) Monte Carlo Sampling and (2) Latin HyperCube Sampling. See [Wikipedia](https://en.wikipedia.org/wiki/Latin_hypercube_sampling) ]]></AnnotationText>
+              <AnnotationText>We support two mechanisms. (1) Monte Carlo Sampling / Simple Random Sampling and (2) Latin HyperCube Sampling/ Stratified Random Sampling. See [Wikipedia](https://en.wikipedia.org/wiki/Latin_hypercube_sampling). For stratified sampling from data, the maximum strata size is given by the choice of chunk size.</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -1164,7 +1164,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>chunkSize</Name>
-              <AnnotationText>Maximal size of chunk to evaluate at a time. For stratified sampling from data, this is the maximal size of the strata.</AnnotationText>
+              <AnnotationText>Maximal size of chunk to evaluate at a time. This can be used to avoid R's in-memory processing limitation. For stratified sampling from data, this is also the maximal size of the strata.</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -1178,7 +1178,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>seed</Name>
-              <AnnotationText>Random seed</AnnotationText>
+              <AnnotationText>This will be the random seed used for sampling. If a dataset containing a "seed" field is connected to the S input of this macro, this option will not be available; that seed will be incremented and used here.</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -1292,7 +1292,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>samplingMode</Name>
-              <AnnotationText>Choose to sample parametrically from a distribution or from data</AnnotationText>
+              <AnnotationText>Sampling can be done parametrically from a distribution or to sample from a dataset. In the case of sampling from data, a data stream should be connected to the D input or sampling is done via manually specifying data. For parametric sampling, there should be no connected data stream to the D input.</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -1306,7 +1306,7 @@ tool_process(
             <Configuration />
             <Annotation DisplayMode="0">
               <Name>numIterations</Name>
-              <AnnotationText>Number of samples to select</AnnotationText>
+              <AnnotationText>Number of samples to select. This option is not available when there is a dataset connected to the S input, as the size of that dataset determines the number of iterations in that case.</AnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
