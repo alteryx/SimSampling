@@ -14,13 +14,65 @@
         </Annotation>
       </Properties>
     </Node>
-    <Node ToolID="4">
-      <GuiSettings Plugin="AlteryxRPluginGui.R">
-        <Position x="894" y="599" />
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="18" width="926.9999" height="84" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <RScript>## DO NOT MODIFY: Auto Inserted by AlteryxRhelper ----
+          <Text>Alteryx Macro:
+Simulation Sampling</Text>
+          <Font name="Microsoft Sans Serif" size="18" style="0" />
+          <TextColor name="White" />
+          <FillColor r="95" g="152" b="171" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="118">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="654" width="1609" height="488" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>MACRO</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#d3b6d2" BorderColor="#2f4f4f" Transparency="66" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxRPluginGui.R">
+            <Position x="883" y="810" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RScript>## DO NOT MODIFY: Auto Inserted by AlteryxRhelper ----
 library(AlteryxRhelper)
 library(AlteryxSim)
 config &lt;- list(
@@ -86,555 +138,610 @@ tool_process(
   replace = config$replace,
   totalSize = config$totalSize
 )</RScript>
-          <UseFullUpdate value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output1">
-          <RecordInfo>
-            <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
-          </RecordInfo>
-        </MetaInfo>
-        <MetaInfo connection="Output2">
-          <RecordInfo>
-            <Field name="seed" source="R-DATA:" type="Double" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxRPluginEngine.dll" EngineDllEntryPoint="AlteryxR" />
-    </Node>
-    <Node ToolID="5">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="1590" y="623" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Name>Data</Name>
-          <Abbrev>D</Abbrev>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name>Data Output</Name>
-          <AnnotationText>__D Output__ Data Output</AnnotationText>
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
-    </Node>
-    <Node ToolID="12">
-      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
-        <Position x="0" y="0" width="59" height="59" />
-      </GuiSettings>
-      <Properties>
-        <Configuration />
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-    </Node>
-    <Node ToolID="29">
-      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="90" y="507" width="100" height="24" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Text>Sample Data</Text>
-          <Font name="Segoe UI" size="8.25" style="0" />
-          <TextColor name="Black" />
-          <FillColor name="White" />
-          <Shape shape="0" />
-          <Justification Justification="4" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-    </Node>
-    <Node ToolID="30">
-      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="90" y="615" width="100" height="24" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Text>Simulation Data</Text>
-          <Font name="Segoe UI" size="8.25" style="0" />
-          <TextColor name="Black" />
-          <FillColor name="White" />
-          <Shape shape="0" />
-          <Justification Justification="4" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-    </Node>
-    <Node ToolID="61">
-      <GuiSettings>
-        <Position x="282" y="634" />
-      </GuiSettings>
-      <Properties>
-        <Configuration />
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output9">
-          <RecordInfo>
-            <Field name="Count" source="(Multiple Sources)" type="Int64" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings Macro="CountRecords.yxmc" />
-    </Node>
-    <Node ToolID="68">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
-        <Position x="318" y="767" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <DetourRight value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Left">
-          <RecordInfo>
-            <Field name="other_stuff" size="4" source="TextInput:" type="String" />
-            <Field name="seed" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-        <MetaInfo connection="Right">
-          <RecordInfo>
-            <Field name="other_stuff" size="4" source="TextInput:" type="String" />
-            <Field name="seed" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetour" />
-    </Node>
-    <Node ToolID="71">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-        <Position x="222" y="731" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <GroupFields orderChanged="False" />
-          <Mode>First</Mode>
-          <N>1</N>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>First 1</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="other_stuff" size="4" source="TextInput:" type="String" />
-            <Field name="seed" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
-    </Node>
-    <Node ToolID="73">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="438" y="719" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Mode>Formula</Mode>
-          <Expression>[Name]=="seed"</Expression>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="seed" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
-    </Node>
-    <Node ToolID="74">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="546" y="803" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="False" />
-          <SelectFields>
-            <SelectField field="_seed_" selected="True" rename="seed" type="Int64" size="8" />
-            <SelectField field="*Unknown" selected="False" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
-    <Node ToolID="75">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DetourEnd.DetourEnd">
-        <Position x="666" y="755" />
-      </GuiSettings>
-      <Properties>
-        <Configuration />
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="seed" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetourEnd" />
-    </Node>
-    <Node ToolID="77">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="102" y="523" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <UseFileInput value="False" />
-          <Name>SampleData</Name>
-          <Abbrev>D</Abbrev>
-          <ShowFieldMap value="False" />
-          <Optional value="True" />
-          <TextInput>
-            <Configuration>
-              <NumRows value="5" />
-              <Fields>
-                <Field name="data" />
-                <Field name="id" />
-                <Field name="value" />
-              </Fields>
-              <Data>
-                <r>
-                  <c>1</c>
-                  <c>0</c>
-                  <c>4</c>
-                </r>
-                <r>
-                  <c>2</c>
-                  <c>1</c>
-                  <c>2</c>
-                </r>
-                <r>
-                  <c>3</c>
-                  <c>2</c>
-                  <c>6</c>
-                </r>
-                <r>
-                  <c>4</c>
-                  <c>3</c>
-                  <c>12</c>
-                </r>
-                <r>
-                  <c>5</c>
-                  <c>4</c>
-                  <c>11</c>
-                </r>
-              </Data>
+              <UseFullUpdate value="False" />
             </Configuration>
-          </TextInput>
-        </Configuration>
-        <Annotation DisplayMode="2">
-          <Name>SampleData</Name>
-          <AnnotationText>__D Input__ Sample Data</AnnotationText>
-          <DefaultAnnotationText />
-          <Left value="True" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="data" source="TextInput:" type="Byte" />
-            <Field name="id" source="TextInput:" type="Byte" />
-            <Field name="value" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
-    </Node>
-    <Node ToolID="78">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="426" y="803" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <UpdateField value="False" />
-          <UpdateField_Name />
-          <CreateField_Name>_seed_</CreateField_Name>
-          <CreateField_Type>Int32</CreateField_Type>
-          <CreateField_Size>4</CreateField_Size>
-          <Expression_Init>1</Expression_Init>
-          <Expression_Cond>_seed_ &lt;= 1</Expression_Cond>
-          <Expression_Loop>_seed_ + 1</Expression_Loop>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
-    </Node>
-    <Node ToolID="82">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="102" y="647" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <UseFileInput value="False" />
-          <Name>SimulationData</Name>
-          <Abbrev>S</Abbrev>
-          <ShowFieldMap value="False" />
-          <Optional value="True" />
-          <TextInput>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output1">
+              <RecordInfo>
+                <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Output2">
+              <RecordInfo>
+                <Field name="seed" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxRPluginEngine.dll" EngineDllEntryPoint="AlteryxR" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+            <Position x="1579" y="834" />
+          </GuiSettings>
+          <Properties>
             <Configuration>
-              <NumRows value="1" />
-              <Fields>
-                <Field name="other_stuff" />
-                <Field name="seed" />
-              </Fields>
-              <Data>
-                <r>
-                  <c>blah</c>
-                  <c>100</c>
-                </r>
-              </Data>
+              <Name>Data</Name>
+              <Abbrev>D</Abbrev>
             </Configuration>
-          </TextInput>
-        </Configuration>
-        <Annotation DisplayMode="2">
-          <Name>Simulated Data</Name>
-          <AnnotationText>__S Input__ Simulation Data</AnnotationText>
-          <DefaultAnnotationText />
-          <Left value="True" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="other_stuff" size="4" source="TextInput:" type="String" />
-            <Field name="seed" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
-    </Node>
-    <Node ToolID="84">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="1026" y="767" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Mode>Formula</Mode>
-          <Expression>[Name]!="seed"</Expression>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="other_stuff" size="4" source="TextInput:" type="String" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
-    </Node>
-    <Node ToolID="83">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-        <Position x="1146" y="599" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <CartesianMode>Error</CartesianMode>
-          <SelectConfiguration>
-            <Configuration outputConnection="Output">
+            <Annotation DisplayMode="0">
+              <Name>Data Output</Name>
+              <AnnotationText>__D Output__ Data Output. Result of the simulation.</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="79" y="718.0001" width="100" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Sample Data</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="79.00003" y="826" width="100" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Simulation Data</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings>
+            <Position x="271" y="845" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output9">
+              <RecordInfo>
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="CountRecords.yxmc" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
+            <Position x="307" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <DetourRight value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="other_stuff" size="4" source="TextInput:" type="String" />
+                <Field name="seed" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="other_stuff" size="4" source="TextInput:" type="String" />
+                <Field name="seed" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetour" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="211" y="942" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields orderChanged="False" />
+              <Mode>First</Mode>
+              <N>1</N>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="other_stuff" size="4" source="TextInput:" type="String" />
+                <Field name="seed" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
+            <Position x="427" y="930" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Formula</Mode>
+              <Expression>[Name]=="seed"</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="seed" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="535" y="1014" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
               <OrderChanged value="False" />
               <SelectFields>
-                <SelectField field="*Unknown" selected="True" />
+                <SelectField field="_seed_" selected="True" rename="seed" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="False" />
               </SelectFields>
             </Configuration>
-          </SelectConfiguration>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
-            <Field name="seed" source="R-DATA:" type="Double" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
-    </Node>
-    <Node ToolID="85">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
-        <Position x="1254" y="611" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <DetourRight value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Left">
-          <RecordInfo>
-            <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
-            <Field name="seed" source="R-DATA:" type="Double" />
-          </RecordInfo>
-        </MetaInfo>
-        <MetaInfo connection="Right">
-          <RecordInfo>
-            <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
-            <Field name="seed" source="R-DATA:" type="Double" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetour" />
-    </Node>
-    <Node ToolID="86">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="1362" y="671" />
-      </GuiSettings>
-      <Properties>
-        <Configuration joinByRecordPos="True">
-          <SelectConfiguration>
-            <Configuration outputConnection="Join">
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DetourEnd.DetourEnd">
+            <Position x="655" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="seed" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetourEnd" />
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+            <Position x="91" y="734.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UseFileInput value="False" />
+              <Name>SampleData</Name>
+              <Abbrev>D</Abbrev>
+              <ShowFieldMap value="False" />
+              <Optional value="True" />
+              <TextInput>
+                <Configuration>
+                  <NumRows value="5" />
+                  <Fields>
+                    <Field name="data" />
+                    <Field name="id" />
+                    <Field name="value" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>1</c>
+                      <c>0</c>
+                      <c>4</c>
+                    </r>
+                    <r>
+                      <c>2</c>
+                      <c>1</c>
+                      <c>2</c>
+                    </r>
+                    <r>
+                      <c>3</c>
+                      <c>2</c>
+                      <c>6</c>
+                    </r>
+                    <r>
+                      <c>4</c>
+                      <c>3</c>
+                      <c>12</c>
+                    </r>
+                    <r>
+                      <c>5</c>
+                      <c>4</c>
+                      <c>11</c>
+                    </r>
+                  </Data>
+                </Configuration>
+              </TextInput>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name>SampleData</Name>
+              <AnnotationText>__D Input__ Sample Data. This is an optional input. It is required when sampling from data (except when entering via the roulette widget) and not required when sampling parametrically.</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="True" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="data" source="TextInput:" type="Byte" />
+                <Field name="id" source="TextInput:" type="Byte" />
+                <Field name="value" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+            <Position x="415" y="1014" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name />
+              <CreateField_Name>_seed_</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <Expression_Init>1</Expression_Init>
+              <Expression_Cond>_seed_ &lt;= 1</Expression_Cond>
+              <Expression_Loop>_seed_ + 1</Expression_Loop>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+            <Position x="90.99997" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UseFileInput value="False" />
+              <Name>SimulationData</Name>
+              <Abbrev>S</Abbrev>
+              <ShowFieldMap value="False" />
+              <Optional value="True" />
+              <TextInput>
+                <Configuration>
+                  <NumRows value="1" />
+                  <Fields>
+                    <Field name="other_stuff" />
+                    <Field name="seed" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>blah</c>
+                      <c>100</c>
+                    </r>
+                  </Data>
+                </Configuration>
+              </TextInput>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name>Simulated Data</Name>
+              <AnnotationText>__S Input__ Simulation Data. This is an optional input. If previous simulation tools have been used, the data from them can be connected to appropriately append it and get an iteration count and seed.</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="True" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="other_stuff" size="4" source="TextInput:" type="String" />
+                <Field name="seed" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+        </Node>
+        <Node ToolID="84">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
+            <Position x="1015" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Formula</Mode>
+              <Expression>[Name]!="seed"</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="other_stuff" size="4" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="1135" y="810" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
+                <Field name="seed" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="85">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
+            <Position x="1243" y="822" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <DetourRight value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
+                <Field name="seed" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
+                <Field name="seed" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetour" />
+        </Node>
+        <Node ToolID="86">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1351" y="882" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="True">
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="87">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DetourEnd.DetourEnd">
+            <Position x="1471" y="846" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
+                <Field name="seed" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetourEnd" />
+        </Node>
+        <Node ToolID="91">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="234.9999" y="734" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
               <OrderChanged value="False" />
               <SelectFields>
-                <SelectField field="*Unknown" selected="True" />
+                <SelectField field="data" selected="True" />
+                <SelectField field="id" selected="True" />
+                <SelectField field="value" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
               </SelectFields>
             </Configuration>
-          </SelectConfiguration>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
-    </Node>
-    <Node ToolID="87">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DetourEnd.DetourEnd">
-        <Position x="1482" y="635" />
-      </GuiSettings>
-      <Properties>
-        <Configuration />
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
-            <Field name="seed" source="R-DATA:" type="Double" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetourEnd" />
-    </Node>
-    <Node ToolID="91">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="246" y="523" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="False" />
-          <SelectFields>
-            <SelectField field="data" selected="True" />
-            <SelectField field="id" selected="True" />
-            <SelectField field="value" selected="True" />
-            <SelectField field="*Unknown" selected="False" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="data" source="TextInput:" type="Byte" />
-            <Field name="id" source="TextInput:" type="Byte" />
-            <Field name="value" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
-    <Node ToolID="38">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="462" y="274" width="140" height="129" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Caption>Roulette</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
-          <Disabled value="False" />
-          <Folded value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <ChildNodes>
-        <Node ToolID="39">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="498" y="334" width="59" height="59" />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="data" source="TextInput:" type="Byte" />
+                <Field name="id" source="TextInput:" type="Byte" />
+                <Field name="value" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="93">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="235" y="1093" width="504" height="24" />
           </GuiSettings>
           <Properties>
-            <Configuration />
+            <Configuration>
+              <Text>Get seed</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
             <Annotation DisplayMode="0">
-              <Name>jsonRouletteData</Name>
-              <AnnotationText>This is roulette data.</AnnotationText>
+              <Name />
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
           </Properties>
         </Node>
-        <Node ToolID="59">
+        <Node ToolID="94">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="472" y="303" width="120" height="24" />
+            <Position x="211" y="816.9999" width="168" height="24" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Text>jsonRouletteData</Text>
+              <Text>Get size of sample</Text>
               <Font name="Segoe UI" size="8.25" style="0" />
               <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
+              <FillColor name="White" />
               <Shape shape="0" />
-              <Justification Justification="1" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="95">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="187" y="697" width="168" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Select fields to sample</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="96">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="955" y="1057" width="168" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Get non-seed fields</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="97">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1063" y="757" width="168" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Append simulated data and incremented seed</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="98">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1303" y="949" width="168" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Join back in simulation data</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -645,16 +752,16 @@ tool_process(
         </Node>
       </ChildNodes>
     </Node>
-    <Node ToolID="32">
+    <Node ToolID="101">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54.00002" y="274" width="404" height="129" />
+        <Position x="848" y="26" width="125.7694" height="18" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Caption>Binned Data</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Caption>Macro Description</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ffffff" BorderColor="#2f4f4f" Transparency="10" Margin="10" />
           <Disabled value="False" />
-          <Folded value="False" />
+          <Folded value="True" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -663,100 +770,18 @@ tool_process(
         </Annotation>
       </Properties>
       <ChildNodes>
-        <Node ToolID="33">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="90" y="334" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>binnedDataName</Name>
-              <AnnotationText>The field name for the binned data.</AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="36">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="222" y="334" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>binnedIdField</Name>
-              <AnnotationText>The id field.</AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="37">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="366" y="334" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>binnedValueField</Name>
-              <AnnotationText>The value field.</AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="56">
+        <Node ToolID="100">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="64.00002" y="303" width="120" height="24" />
+            <Position x="858" y="54" width="398.0001" height="60" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Text>binnedDataName</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
+              <Text>Simulation Sampling allows for sampling. The sampling can be done parametrically from a distribution, from input data, or as a combination - best fitting to a distribution and sampling from that.</Text>
+              <Font name="Microsoft Sans Serif" size="9.75" style="0" />
               <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
+              <FillColor name="White" />
               <Shape shape="0" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="57">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="196" y="303" width="120" height="24" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>binnedIdField</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="58">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="328" y="303" width="120" height="24" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>binnedValueField</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
+              <Justification Justification="3" />
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -767,16 +792,16 @@ tool_process(
         </Node>
       </ChildNodes>
     </Node>
-    <Node ToolID="23">
+    <Node ToolID="103">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="606" y="58" width="416" height="218" />
+        <Position x="848" y="62" width="93.57408" height="18" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Caption>Data Sampling</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Caption>Tools Used</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ffffff" BorderColor="#2f4f4f" Transparency="10" Margin="10" />
           <Disabled value="False" />
-          <Folded value="False" />
+          <Folded value="True" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -785,335 +810,45 @@ tool_process(
         </Annotation>
       </Properties>
       <ChildNodes>
-        <Node ToolID="24">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
-            <Position x="652" y="111" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>fields</Name>
-              <AnnotationText>Choose the fields to sample data from.</AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="25">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="772" y="111" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>samplingStrategy</Name>
-              <AnnotationText>Choose how you would like to sample your data. Currently you can sample by row, by column or by a best fit distribution.</AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="26">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
-            <Position x="916" y="111" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>distToFit</Name>
-              <AnnotationText>Choose the distributions you want to fit the data with.</AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="31">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="784" y="207" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>dataKind</Name>
-              <AnnotationText>You can supply data in three ways. (1) Raw Data, (2) Binned Data or (3) Manually entered data via the Roulette widget.</AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="49">
+        <Node ToolID="102">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="616" y="87.00003" width="120" height="24" />
+            <Position x="858" y="90" width="179" height="548.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Text>fields</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
+              <Text>TOOLS USED:
+
+Developer
+  - Detour
+  - Detour End
+  - Dynamic Select
+  - R
+Documentation
+  - TextBox
+  - Tool Container
+Interface
+  - Action
+  - Check Box
+  - Drop Down
+  - List Box
+  - Macro Input
+  - Macro Output
+  - Numeric Up-Down
+  - Text Box
+Join
+  - Append Fields
+  - Join
+Preparation
+  - Generate Rows
+  - Select
+  - Sample
+Transform
+  - Count Records</Text>
+              <Font name="Microsoft Sans Serif" size="9.75" style="0" />
               <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
+              <FillColor r="255" g="243" b="196" />
               <Shape shape="0" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="50">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="748" y="87" width="120" height="24" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>samplingStrategy</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="51">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="892" y="87" width="120" height="24" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>distToFit</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="52">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="748" y="183" width="120" height="24" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>dataKind</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="62">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
-            <Position x="906" y="203" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>replace</Name>
-              <AnnotationText>Check to sample with replacement.</AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="63">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="882" y="179" width="120" height="24" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>replace</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="92">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
-            <Position x="654" y="199" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-      </ChildNodes>
-    </Node>
-    <Node ToolID="18">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="606" y="274" width="272" height="189" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Caption>Parametric Sampling</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
-          <Disabled value="False" />
-          <Folded value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <ChildNodes>
-        <Node ToolID="19">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="640" y="322" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>stageName</Name>
-              <AnnotationText>Choose a field name for the output.</AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="20">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="772" y="322" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>distribution</Name>
-              <AnnotationText>You can select from one of several distributions.</AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="21">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="772" y="394" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>jsonParameters</Name>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="22">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-            <Position x="640" y="394" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>jsonBounds</Name>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="45">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="616" y="303" width="120" height="24" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>stageName</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="46">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="748" y="303" width="120" height="24" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>distribution</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="47">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="616" y="375" width="120" height="24" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>jsonBounds</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="48">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="748" y="375" width="120" height="24" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>jsonParameters</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
+              <Justification Justification="3" />
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -1124,14 +859,14 @@ tool_process(
         </Node>
       </ChildNodes>
     </Node>
-    <Node ToolID="17">
+    <Node ToolID="112">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="54" width="538" height="218" />
+        <Position x="54" y="138" width="1122" height="482" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Caption>Simulation Configuration</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Caption>Interface</Caption>
+          <Style TextColor="#314c4a" FillColor="#defe9c" BorderColor="#314c4a" Transparency="80" Margin="10" />
           <Disabled value="False" />
           <Folded value="False" />
         </Configuration>
@@ -1142,60 +877,16 @@ tool_process(
         </Annotation>
       </Properties>
       <ChildNodes>
-        <Node ToolID="13">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="90" y="119" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>samplingMechanism</Name>
-              <AnnotationText><![CDATA[We support two mechanisms. (1) Monte Carlo Sampling and (2) Latin HyperCube Sampling. See [Wikipedia](https://en.wikipedia.org/wiki/Latin_hypercube_sampling) ]]></AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="14">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
-            <Position x="220" y="111" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>chunkSize</Name>
-              <AnnotationText>Maximal size of chunk to evaluate at a time. For stratified sampling from data, this is the maximal size of the strata.</AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="15">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
-            <Position x="352" y="111" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>seed</Name>
-              <AnnotationText>Random seed</AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="40">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="64" y="87" width="120" height="24" />
+        <Node ToolID="113">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="64" y="166" width="670" height="217" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Text>samplingMechanism</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
+              <Caption>General</Caption>
+              <Style TextColor="#314c4a" FillColor="#defe9c" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -1203,19 +894,307 @@ tool_process(
               <Left value="False" />
             </Annotation>
           </Properties>
+          <ChildNodes>
+            <Node ToolID="13">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+                <Position x="100" y="230" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>samplingMechanism</Name>
+                  <AnnotationText>We support two mechanisms. (1) Monte Carlo Sampling / Simple Random Sampling and (2) Latin HyperCube Sampling/ Stratified Random Sampling. See [Wikipedia](https://en.wikipedia.org/wiki/Latin_hypercube_sampling). For stratified sampling from data, the maximum strata size is given by the choice of chunk size.</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="14">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+                <Position x="230" y="222.0001" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>chunkSize</Name>
+                  <AnnotationText>Maximal size of chunk to evaluate at a time. This can be used to avoid R's in-memory processing limitation. For stratified sampling from data, this is also the maximal size of the strata.</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="15">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+                <Position x="362" y="222" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>seed</Name>
+                  <AnnotationText>This will be the random seed used for sampling. If a dataset containing a "seed" field is connected to the S input of this macro, this option will not be available; that seed will be incremented and used here.</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="40">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="74" y="198" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>samplingMechanism</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="42">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="206" y="198" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>chunkSize</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="44">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="338" y="198" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>seed</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="43">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="206" y="282" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>samplingMode</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="41">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="74" y="282.0001" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>numIterations</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="27">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+                <Position x="230" y="306" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>samplingMode</Name>
+                  <AnnotationText>Sampling can be done parametrically from a distribution or to sample from a dataset. In the case of sampling from data, a data stream should be connected to the D input or sampling is done via manually specifying data. For parametric sampling, there should be no connected data stream to the D input.</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="16">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+                <Position x="98" y="306.0001" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>numIterations</Name>
+                  <AnnotationText>Number of samples to select. This option is not available when there is a dataset connected to the S input, as the size of that dataset determines the number of iterations in that case.</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="79">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+                <Position x="364" y="314" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="80">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+                <Position x="448" y="314" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="88">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+                <Position x="520" y="218" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>intermediate</Name>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="89">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="472" y="194" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>intermediate</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="90">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+                <Position x="520" y="302" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="65">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="604" y="195" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>displaySeed</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="67">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+                <Position x="640" y="231" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>displaySeed</Name>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="69">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+                <Position x="642" y="311" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
         </Node>
-        <Node ToolID="42">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="196" y="87" width="120" height="24" />
+        <Node ToolID="114">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="66" y="390" width="272" height="188" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Text>chunkSize</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
+              <Caption>Parametric Sampling</Caption>
+              <Style TextColor="#314c4a" FillColor="#defe9c" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -1223,19 +1202,153 @@ tool_process(
               <Left value="False" />
             </Annotation>
           </Properties>
+          <ChildNodes>
+            <Node ToolID="19">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+                <Position x="102" y="433" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>stageName</Name>
+                  <AnnotationText>Choose a field name for the output.</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="20">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+                <Position x="232" y="437" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>distribution</Name>
+                  <AnnotationText>Select from the list of supported distributions.</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="21">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+                <Position x="232" y="509" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>jsonParameters</Name>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="22">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+                <Position x="100" y="509" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>jsonBounds</Name>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="45">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="76" y="418" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>stageName</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="46">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="208" y="418" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>distribution</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="47">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="76" y="490" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>jsonBounds</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="48">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="208" y="490" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>jsonParameters</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
         </Node>
-        <Node ToolID="44">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="328" y="87" width="120" height="24" />
+        <Node ToolID="115">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="354" y="390" width="416" height="220" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Text>seed</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
+              <Caption>Data Sampling</Caption>
+              <Style TextColor="#314c4a" FillColor="#defe9c" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -1243,19 +1356,202 @@ tool_process(
               <Left value="False" />
             </Annotation>
           </Properties>
+          <ChildNodes>
+            <Node ToolID="24">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
+                <Position x="400" y="442" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>fields</Name>
+                  <AnnotationText>Choose the fields to sample from.</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="25">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+                <Position x="520" y="442" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>samplingStrategy</Name>
+                  <AnnotationText>This option is available when sampling from data. Choose how you would like to sample your data. You can sample entire records, sample independently with respect to columns, or fit data to a distribution and sample from the best-fitting distribution.</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="26">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
+                <Position x="664" y="442" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>distToFit</Name>
+                  <AnnotationText>Choose the distributions you want to fit the data to. This option is available for sampling from data and from a best-fitting distribution.</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="31">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+                <Position x="522" y="541" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>dataKind</Name>
+                  <AnnotationText>This option is available when choosing to sample from data. You can supply data in three ways. (1) Raw Data, (2) Binned Data (with an ID field and a value field with equally spaced bins) or (3) Manually entered data via the Roulette widget.</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="49">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="364" y="418" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>fields</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="50">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="496" y="418" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>samplingStrategy</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="51">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="640" y="418" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>distToFit</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="52">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="496" y="514" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>dataKind</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="62">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+                <Position x="654" y="534" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>replace</Name>
+                  <AnnotationText>Check to sample with replacement.</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="63">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="630" y="510" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>replace</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="92">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+                <Position x="402" y="530" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
         </Node>
-        <Node ToolID="43">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="196" y="171" width="120" height="24" />
+        <Node ToolID="116">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="762" y="174" width="404" height="128" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Text>samplingMode</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
+              <Caption>Binned Data</Caption>
+              <Style TextColor="#314c4a" FillColor="#defe9c" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -1263,19 +1559,121 @@ tool_process(
               <Left value="False" />
             </Annotation>
           </Properties>
+          <ChildNodes>
+            <Node ToolID="33">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+                <Position x="798" y="233" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>binnedDataName</Name>
+                  <AnnotationText><![CDATA[The output field name for the binned data. This option is available ]]></AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="36">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+                <Position x="930" y="233" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>binnedIdField</Name>
+                  <AnnotationText>The ID field for the binned data</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="37">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+                <Position x="1074" y="229" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>binnedValueField</Name>
+                  <AnnotationText>The value field for the binned data</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="56">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="772" y="202" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>binnedDataName</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="57">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="904" y="202" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>binnedIdField</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="58">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1036" y="202" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>binnedValueField</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
         </Node>
-        <Node ToolID="41">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="64.00001" y="171" width="120" height="24" />
+        <Node ToolID="117">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="786" y="402" width="140" height="128" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Text>numIterations</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
+              <Caption>Roulette</Caption>
+              <Style TextColor="#314c4a" FillColor="#defe9c" BorderColor="#314c4a" Transparency="80" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -1283,172 +1681,42 @@ tool_process(
               <Left value="False" />
             </Annotation>
           </Properties>
-        </Node>
-        <Node ToolID="27">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
-            <Position x="220" y="195" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>samplingMode</Name>
-              <AnnotationText>Choose to sample from a parametric distribution or from data</AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="16">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
-            <Position x="88.00001" y="195" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>numIterations</Name>
-              <AnnotationText>Number of samples to select</AnnotationText>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="79">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
-            <Position x="354" y="203" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="80">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
-            <Position x="438" y="203" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="88">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
-            <Position x="510" y="107" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>intermediate</Name>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="89">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="462" y="83" width="120" height="24" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>intermediate</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="90">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
-            <Position x="510" y="191" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-      </ChildNodes>
-    </Node>
-    <Node ToolID="66">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="894" y="274" width="140" height="214" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Caption>Hidden</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
-          <Disabled value="False" />
-          <Folded value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <ChildNodes>
-        <Node ToolID="65">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="904" y="303" width="120" height="24" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>displaySeed</Text>
-              <Font name="Segoe UI" size="8.25" style="0" />
-              <TextColor name="Black" />
-              <FillColor r="128" g="128" b="255" />
-              <Shape shape="0" />
-              <Justification Justification="1" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="67">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
-            <Position x="940" y="339" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name>displaySeed</Name>
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-        <Node ToolID="69">
-          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
-            <Position x="942" y="419" width="59" height="59" />
-          </GuiSettings>
-          <Properties>
-            <Configuration />
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
+          <ChildNodes>
+            <Node ToolID="39">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+                <Position x="822" y="461" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>jsonRouletteData</Name>
+                  <AnnotationText>This is roulette data.</AnnotationText>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="59">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="796" y="430" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>jsonRouletteData</Text>
+                  <Font name="Segoe UI" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="128" g="128" b="255" />
+                  <Shape shape="0" />
+                  <Justification Justification="1" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
         </Node>
       </ChildNodes>
     </Node>
@@ -1571,10 +1839,6 @@ tool_process(
       <Destination ToolID="5" Connection="Input" />
     </Connection>
     <Connection name="#1">
-      <Origin ToolID="24" Connection="Question" />
-      <Destination ToolID="92" Connection="Question" />
-    </Connection>
-    <Connection name="#1">
       <Origin ToolID="15" Connection="Question" />
       <Destination ToolID="79" Connection="Question" />
     </Connection>
@@ -1589,6 +1853,10 @@ tool_process(
     <Connection name="#1">
       <Origin ToolID="67" Connection="Question" />
       <Destination ToolID="69" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="24" Connection="Question" />
+      <Destination ToolID="92" Connection="Question" />
     </Connection>
   </Connections>
   <Properties>
@@ -2077,7 +2345,7 @@ Manual Entry:manual
       </Questions>
       <ModuleType>Macro</ModuleType>
       <MacroCustomHelp value="False" />
-      <MacroDynamicOutputFields value="False" />
+      <MacroDynamicOutputFields value="True" />
       <MacroImageStd value="39" />
       <MacroInputs />
       <MacroOutputs />
