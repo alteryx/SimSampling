@@ -15,7 +15,7 @@ SimSampling
 </head>
 <body>
     
-<fieldset>
+<fieldset id='landingPage' class='page'>
   <legend>Simulation Configuration</legend>
   <div>
     
@@ -54,12 +54,15 @@ SimSampling
   <alteryx-option uiobject="Sample from data">data</alteryx-option>
 </alteryx-pluginwidget>
 
-  <!-- <alteryx-pluginwidget type="Button" id="next" buttontext="Next" 
-    onclick="buttonClicked(event)" isprimary="true">
-  </alteryx-pluginwidget> -->
+  <alteryx-pluginwidget type="Button" id="next" buttontext="Next" 
+    onclick="nextPage(event)" isprimary="true">
+  </alteryx-pluginwidget>
 </fieldset>
-<fieldset id='parametricSampling'>
+<fieldset id='parametricSampling' style='display:none;' class='page'>
   <legend>Parametric Sampling</legend>
+  <alteryx-pluginwidget type="Button" id="prev" buttontext="Previous" 
+    onclick="landingPage(event)" isprimary="true">
+  </alteryx-pluginwidget>
   
 <!--  stageName  -->
 <label for="stageName">Enter stage name</label>
@@ -95,8 +98,11 @@ SimSampling
 
   </div>
 </fieldset>
-<fieldset id='dataSampling'>
+<fieldset id='dataSampling' style='display:none;' class='page'>
   <legend>Data Sampling</legend>
+  <alteryx-pluginwidget type="Button" id="prev2" buttontext="Previous" 
+    onclick="landingPage(event)" isprimary="true">
+  </alteryx-pluginwidget>
   
 <!--  dataKind  -->
 <label for="dataKind">Specify kind of data</label>
