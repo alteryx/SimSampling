@@ -32,6 +32,10 @@ config$bounds = jsonlite::fromJSON(config$jsonBounds)
 config$parameters = jsonlite::fromJSON(config$jsonParameters)
 config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
 
+dists <- jsonlite::fromJSON('%Question._distributions%')
+dist <- '%Question._distribution%'
+print(dists[dist])
+
 readRecordCount <- read.Alteryx("totalSize")
 readRecordCount <- as.numeric(readRecordCount$Count[[1]])
 
