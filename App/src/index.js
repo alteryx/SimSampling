@@ -1,4 +1,4 @@
-/* global Alteryx */
+/* global Alteryx $ */
 import { MakeDataItem as makeDataItem, controlDisplayIntermediate, displayTarget, controlDisplaySeed } from './utils/Alteryx';
 import DistData from './models/DistData';
 import RouletteData from './models/RouletteData';
@@ -7,13 +7,36 @@ import renderRoulette from './views/RouletteView';
 import './styles/app.css';
 
 var displayControls = [
-  ['parametricSampling', 'samplingMode', 'parametric'],
-  ['dataSampling', 'samplingMode', 'data'],
+  //['parametricSampling', 'samplingMode', 'parametric'],
+  //['dataSampling', 'samplingMode', 'data'],
+  ['parametricSampling', 'activePage', 'parametric'],
+  ['dataSampling', 'activePage', 'data'],
+  ['landingPage', 'activePage', 'landing'],
   ['div-distToFit', 'samplingStrategy', 'best'],
   ['div-dataKind-raw', 'dataKind', 'raw'],
   ['div-dataKind-binned', 'dataKind', 'binned'],
   ['div-dataKind-manual', 'dataKind', 'manual']
 ];
+
+/* 
+These need to be global in order for the buttons to pick them up as global functions.
+It would be nice if they can be namespaced. Something to consider while refactoring.
+*/
+
+window.nextPage = function(){
+  var v = Alteryx.Gui.manager
+    .GetDataItemByDataName("samplingMode")
+    .getValue()
+  Alteryx.Gui.manager
+    .GetDataItemByDataName("activePage")
+    .setValue(v)
+  window.dispatchEvent(new Event('resize'));
+}
+window.landingPage = function(){
+  Alteryx.Gui.manager
+    .GetDataItemByDataName("activePage")
+    .setValue('landing')
+}
 
 
 Alteryx.Gui.BeforeLoad = function BeforeLoad(manager, AlteryxDataItems) {
@@ -25,6 +48,7 @@ Alteryx.Gui.BeforeLoad = function BeforeLoad(manager, AlteryxDataItems) {
   if (!window.Alteryx.browser){
     dataItem('displaySeed', {value: true}, 'SimpleBool')
     dataItem('intermediate', {value: false}, 'SimpleBool')
+    dataItem('activePage', {value: 'landing'})
   }
 };
 
