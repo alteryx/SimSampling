@@ -1,5 +1,7 @@
 import d3 from 'd3';
-import d3Kit from 'd3-kit'
+import d3Kit from 'd3kit';
+
+import './AreaChart.scss';
 
 const chartDefaults = {
   margin: { top: 20, right: 20, bottom: 20, left: 30 },
@@ -30,7 +32,7 @@ const chartConstructor = (skeleton) => {
     areaL
       .transition('area').duration(750)
       .attr({ d: area, stroke: "steelblue", fill: "steelblue", 
-        "fill-opacity": 0.2      
+        "fill-opacity": 0.9      
       })
       
     const xAxis = d3.svg.axis()
