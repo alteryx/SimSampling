@@ -12,10 +12,10 @@ var displayControls = [
   ['parametricSampling', 'activePage', 'parametric'],
   ['dataSampling', 'activePage', 'data'],
   ['landingPage', 'activePage', 'landing'],
-  ['div-distToFit', 'samplingStrategy', 'best'],
+  ['div-distToFit', 'samplingStrategy', 'best', true],
   ['div-dataKind-raw', 'dataKind', 'raw'],
   ['div-dataKind-binned', 'dataKind', 'binned'],
-  ['div-dataKind-manual', 'dataKind', 'manual']
+  ['div-dataKind-manual', 'dataKind', 'manual', true]
 ];
 
 /* 
@@ -73,16 +73,6 @@ Alteryx.Gui.AfterLoad = function AfterLoad(manager) {
     displayControls.forEach(function(d){displayTarget.apply(null, d)})
     renderRoulette(manager, collection2, 'rouletteChart');
     renderComboNumericSliders(manager, collection, 'combonumericslider');
-    Alteryx.Gui.manager
-      .GetDataItemByDataName("dataKind")
-      .BindUserDataChanged(function(d){
-        if (d === 'manual') window.dispatchEvent(new Event('resize'));
-      })
-    Alteryx.Gui.manager
-      .GetDataItemByDataName("samplingMode")
-      .BindUserDataChanged(function(d){
-         window.dispatchEvent(new Event('resize'));
-      })
   }
 };
 
