@@ -30,7 +30,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_384_dafc5728506149c5bcc10d9cd1941dbe_\Engine_2172_2fdb07958d224f38a09e2eafa6c77165_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2804_002060101bb44c389b6efe7ac71045df_\Engine_2172_4fbb437f6f794ef7a92d88e6ed3fa15a_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -96,7 +96,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_384_dafc5728506149c5bcc10d9cd1941dbe_\Engine_2172_0decffad880c4c3eadd986a919a1a399_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2804_002060101bb44c389b6efe7ac71045df_\Engine_2172_808e5559b4084891864fd69b87557129_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -119,16 +119,14 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="distToFit">
-          </Value>
+          <Value name="distToFit">norm,lnorm,pareto</Value>
           <Value name="binnedValueField" />
           <Value name="binnedIdField" />
           <Value name="binnedDataName">
           </Value>
           <Value name="samplingStrategy">best</Value>
-          <Value name="fields">
-          </Value>
-          <Value name="dataKind">manual</Value>
+          <Value name="fields">asdf</Value>
+          <Value name="dataKind">raw</Value>
           <Value name="jsonBounds">
           </Value>
           <Value name="jsonParameters">
