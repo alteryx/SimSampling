@@ -1,0 +1,21 @@
+#combonumericslider {
+  .x-axis-layer path,
+  .y-axis-layer path,
+  .y-axis-layer line,
+  .x-axis-layer line {
+    fill: none;
+    stroke: lightgray;
+    stroke-opacity: 0.6;
+    shape-rendering: crispEdges;
+  }
+  .y-axis-layer path{
+    stroke: none;
+  }
+  .x-axis-layer text,
+  .y-axis-layer text{
+    fill: black;
+    fill-opacity: 0.6;
+    font-size: 11px;
+  }
+}
+  
