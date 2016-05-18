@@ -28,7 +28,9 @@ function ComboNumericSlider({ state }) {
       <div className="comboslider-slider">
         <input
           type="range"
-          {...state}
+          min={state.min}
+          max={state.max}
+          value={state.value}
           onChange={handleChange}
         />
         <span className="param-min pull-left">
