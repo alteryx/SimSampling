@@ -35,7 +35,7 @@ SimSampling
   <div id='display-seed'>
     
 <!--  seed  -->
-<label for="seed">Seed</label>
+<label for="seed">seed</label>
 <alteryx-pluginwidget type="NumericSpinner" default="1" minimum="1" maximum="100000000" step="1" id="seed" dataName="seed"></alteryx-pluginwidget>
 
   </div>
@@ -103,6 +103,11 @@ SimSampling
   <alteryx-pluginwidget type="Button" id="prev2" buttontext="Previous" 
     onclick="landingPage(event)" isprimary="true">
   </alteryx-pluginwidget>
+  
+<!--  replace  -->
+<label for="replace"></label>
+<alteryx-pluginwidget type="CheckBox" text="Sample with replacement" default="false" id="replace" dataName="replace"></alteryx-pluginwidget>
+
   
 <!--  dataKind  -->
 <label for="dataKind">Specify kind of data</label>
