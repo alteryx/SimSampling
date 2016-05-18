@@ -50,7 +50,7 @@ Simulation Sampling</Text>
     </Node>
     <Node ToolID="118">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="690" width="1609" height="488" />
+        <Position x="54" y="689" width="1609" height="489" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -73,7 +73,6 @@ Simulation Sampling</Text>
           <Properties>
             <Configuration>
               <RScript>## DO NOT MODIFY: Auto Inserted by AlteryxRhelper ----
-library(AlteryxRhelper)
 library(AlteryxSim)
 config &lt;- list(
   binnedDataName = textInput('%Question.binnedDataName%'),
@@ -100,15 +99,18 @@ config &lt;- list(
 options(alteryx.wd = '%Engine.WorkflowDirectory%')
 options(alteryx.debug = config$debug)
 ##----
+print(config)
 
 # Deserialize JSON values into R objects
 config$bounds = jsonlite::fromJSON(config$jsonBounds)
 config$parameters = jsonlite::fromJSON(config$jsonParameters)
 config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
 
-dists &lt;- jsonlite::fromJSON('%Question._distributions%')
-dist &lt;- '%Question._distribution%'
-print(dists[dist])
+print(config)
+
+#dists &lt;- jsonlite::fromJSON('%Question._distributions%')
+#dist &lt;- '%Question._distribution%'
+#print(dists[dist])
 
 readRecordCount &lt;- read.Alteryx("totalSize")
 readRecordCount &lt;- as.numeric(readRecordCount$Count[[1]])
@@ -141,8 +143,7 @@ tool_process(
   sampleSource = config$samplingMode,
   replace = config$replace,
   totalSize = config$totalSize
-) 
-</RScript>
+)</RScript>
               <UseFullUpdate value="False" />
             </Configuration>
             <Annotation DisplayMode="0">
@@ -150,14 +151,14 @@ tool_process(
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
-            <MetaInfo connection="Output1">
-              <RecordInfo>
-                <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
-              </RecordInfo>
-            </MetaInfo>
             <MetaInfo connection="Output2">
               <RecordInfo>
                 <Field name="seed" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Output1">
+              <RecordInfo>
+                <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -756,7 +757,7 @@ tool_process(
     </Node>
     <Node ToolID="101">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="848" y="62" width="125.7694" height="18" />
+        <Position x="848" y="62" width="132.9484" height="19" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -796,7 +797,7 @@ tool_process(
     </Node>
     <Node ToolID="103">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="848" y="98" width="93.57408" height="18" />
+        <Position x="848" y="98" width="98.89567" height="19" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -863,7 +864,7 @@ Transform
     </Node>
     <Node ToolID="112">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="174" width="1122" height="482" />
+        <Position x="54" y="172" width="1122" height="484" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -881,7 +882,7 @@ Transform
       <ChildNodes>
         <Node ToolID="113">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="64" y="202" width="670" height="217" />
+            <Position x="64" y="201" width="670" height="218" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1189,7 +1190,7 @@ Transform
         </Node>
         <Node ToolID="114">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="66" y="426" width="272" height="188" />
+            <Position x="66" y="425" width="272" height="189" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1343,7 +1344,7 @@ Transform
         </Node>
         <Node ToolID="115">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="354" y="426" width="416" height="220" />
+            <Position x="354" y="425" width="416" height="221" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1546,7 +1547,7 @@ Transform
         </Node>
         <Node ToolID="116">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="762" y="210" width="404" height="128" />
+            <Position x="762" y="209" width="404" height="129" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1668,7 +1669,7 @@ Transform
         </Node>
         <Node ToolID="117">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="786" y="438" width="140" height="128" />
+            <Position x="786" y="437" width="140" height="129" />
           </GuiSettings>
           <Properties>
             <Configuration>
