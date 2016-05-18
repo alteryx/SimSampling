@@ -50,7 +50,7 @@ Simulation Sampling</Text>
     </Node>
     <Node ToolID="118">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="689" width="1609" height="489" />
+        <Position x="54" y="690" width="1609" height="488" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -106,10 +106,14 @@ config$bounds = jsonlite::fromJSON(config$jsonBounds)
 config$parameters = jsonlite::fromJSON(config$jsonParameters)
 config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
 
-readRecordCount &lt;- AlteryxRhelper::read.Alteryx2("totalSize")
+dists &lt;- jsonlite::fromJSON('%Question._distributions%')
+dist &lt;- '%Question._distribution%'
+print(dists[dist])
+
+readRecordCount &lt;- read.Alteryx("totalSize")
 readRecordCount &lt;- as.numeric(readRecordCount$Count[[1]])
 
-config$seed &lt;- ifelse(config$displaySeed, config$seed, (AlteryxRhelper::read.Alteryx2("seed"))$seed[[1]])
+config$seed &lt;- ifelse(config$displaySeed, config$seed, read.Alteryx("seed")$seed[[1]])
 dfSeed &lt;- data.frame(seed = 1+config$seed)
 write.Alteryx(dfSeed, 2)
 
@@ -137,7 +141,8 @@ tool_process(
   sampleSource = config$samplingMode,
   replace = config$replace,
   totalSize = config$totalSize
-)</RScript>
+) 
+</RScript>
               <UseFullUpdate value="False" />
             </Configuration>
             <Annotation DisplayMode="0">
@@ -609,10 +614,7 @@ tool_process(
             <Configuration>
               <OrderChanged value="False" />
               <SelectFields>
-                <SelectField field="data" selected="True" />
-                <SelectField field="id" selected="True" />
-                <SelectField field="value" selected="True" />
-                <SelectField field="*Unknown" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
               </SelectFields>
             </Configuration>
             <Annotation DisplayMode="0">
@@ -754,14 +756,14 @@ tool_process(
     </Node>
     <Node ToolID="101">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="848" y="61" width="418.0001" height="99" />
+        <Position x="848" y="62" width="125.7694" height="18" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption>Macro Description</Caption>
           <Style TextColor="#2f4f4f" FillColor="#ffffff" BorderColor="#2f4f4f" Transparency="10" Margin="10" />
           <Disabled value="False" />
-          <Folded value="False" />
+          <Folded value="True" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -794,7 +796,7 @@ tool_process(
     </Node>
     <Node ToolID="103">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="848" y="98" width="98.89567" height="19" />
+        <Position x="848" y="98" width="93.57408" height="18" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -861,7 +863,7 @@ Transform
     </Node>
     <Node ToolID="112">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="172" width="1122" height="484" />
+        <Position x="54" y="174" width="1122" height="482" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -879,7 +881,7 @@ Transform
       <ChildNodes>
         <Node ToolID="113">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="64" y="201" width="670" height="218" />
+            <Position x="64" y="202" width="670" height="217" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1187,7 +1189,7 @@ Transform
         </Node>
         <Node ToolID="114">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="66" y="425" width="272" height="189" />
+            <Position x="66" y="426" width="272" height="188" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1341,7 +1343,7 @@ Transform
         </Node>
         <Node ToolID="115">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="354" y="425" width="416" height="221" />
+            <Position x="354" y="426" width="416" height="220" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1529,7 +1531,7 @@ Transform
             </Node>
             <Node ToolID="92">
               <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
-                <Position x="402" y="570" width="59" height="59" />
+                <Position x="402" y="566" width="59" height="59" />
               </GuiSettings>
               <Properties>
                 <Configuration />
@@ -1544,7 +1546,7 @@ Transform
         </Node>
         <Node ToolID="116">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="762" y="209" width="404" height="129" />
+            <Position x="762" y="210" width="404" height="128" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1666,7 +1668,7 @@ Transform
         </Node>
         <Node ToolID="117">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="786" y="437" width="140" height="129" />
+            <Position x="786" y="438" width="140" height="128" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1854,7 +1856,7 @@ Transform
       <Origin ToolID="67" Connection="Question" />
       <Destination ToolID="69" Connection="Question" />
     </Connection>
-    <Connection name="fields">
+    <Connection name="#1">
       <Origin ToolID="24" Connection="Question" />
       <Destination ToolID="92" Connection="Question" />
     </Connection>
@@ -2063,17 +2065,11 @@ Transform
               <DefaultConfiguration value="True" />
             </Action>
             <Action>
-              <Type>UpdateRawXml</Type>
+              <Type>UpdateSelect</Type>
               <Description />
               <ToolId value="92" />
-              <Expression>' &lt;SelectFields&gt;
-    &lt;SelectField field="' + 
-    replace(EscapeXMLMetacharacters([fields]), ",", '" selected="True" /&gt;
-    &lt;SelectField field="') + '" selected="True" /&gt;
-    &lt;SelectField field="*Unknown" selected="False" /&gt;
-  &lt;/SelectFields&gt;'</Expression>
-              <Destination>91/SelectFields</Destination>
-              <OuterXml value="True" />
+              <Variable />
+              <SelectTool value="-1" />
             </Action>
           </True>
         </NoCondition>
@@ -2116,7 +2112,7 @@ Latin HyperCube/ Stratified Sampling:LH
             </Question>
             <Question>
               <Type>NumericUpDown</Type>
-              <Description>Seed</Description>
+              <Description>seed</Description>
               <Name>seed</Name>
               <ToolId value="15" />
               <Minimum value="1" />
@@ -2191,10 +2187,7 @@ Poisson:pois
               <Name>fields</Name>
               <ToolId value="24" />
               <Multiple value="True" />
-              <Multiple_Custom value="True" />
-              <Multiple_Start>"</Multiple_Start>
-              <Multiple_Separator>","</Multiple_Separator>
-              <Multiple_End>"</Multiple_End>
+              <Multiple_Custom value="False" />
               <Multiple_Default value="False" />
               <Mode>MacroField</Mode>
               <MacroField_InputTool value="0" />
