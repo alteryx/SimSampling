@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="102" />
+        <Position x="54" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -26,11 +26,11 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="282" y="42" />
+        <Position x="282" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2804_002060101bb44c389b6efe7ac71045df_\Engine_2172_4fbb437f6f794ef7a92d88e6ed3fa15a_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_1276_2c892f8479584dbfbccf66307895d4df_\Engine_3624_4d7aa841258141d3935bd3564d381495_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -47,9 +47,32 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
-    <Node ToolID="8">
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="282" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_1276_2c892f8479584dbfbccf66307895d4df_\Engine_3624_7237b353aa524ac4b1476f49ae21012e_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
       <GuiSettings Plugin="SimSampling">
-        <Position x="174" y="42" />
+        <Position x="174" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -62,6 +85,7 @@
           <Value name="samplingStrategy">entire</Value>
           <Value name="fields">asdf</Value>
           <Value name="dataKind">raw</Value>
+          <Value name="replace">True</Value>
           <Value name="jsonBounds">
           </Value>
           <Value name="jsonParameters">
@@ -70,7 +94,7 @@
           <Value name="stageName">
           </Value>
           <Value name="samplingMode">data</Value>
-          <Value name="numIterations">10</Value>
+          <Value name="numIterations">5</Value>
           <Value name="seed">1</Value>
           <Value name="chunkSize">256000</Value>
           <Value name="samplingMechanism">MC</Value>
@@ -88,45 +112,24 @@
           <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings Macro="Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="Supporting_Macros/SimSampling.yxmc" />
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
     </Node>
-    <Node ToolID="11">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="282" y="138" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2804_002060101bb44c389b6efe7ac71045df_\Engine_2172_808e5559b4084891864fd69b87557129_.yxdb</TempFile>
-          <Layout>
-            <View1>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
-    <Node ToolID="18">
+    <Node ToolID="22">
       <GuiSettings Plugin="SimSampling">
-        <Position x="174" y="138" />
+        <Position x="174" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="distToFit">norm,lnorm,pareto</Value>
+          <Value name="distToFit">
+          </Value>
           <Value name="binnedValueField" />
           <Value name="binnedIdField" />
           <Value name="binnedDataName">
           </Value>
-          <Value name="samplingStrategy">best</Value>
+          <Value name="samplingStrategy">entire</Value>
           <Value name="fields">asdf</Value>
           <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
           <Value name="jsonBounds">
           </Value>
           <Value name="jsonParameters">
@@ -135,7 +138,7 @@
           <Value name="stageName">
           </Value>
           <Value name="samplingMode">data</Value>
-          <Value name="numIterations">10</Value>
+          <Value name="numIterations">5</Value>
           <Value name="seed">1</Value>
           <Value name="chunkSize">256000</Value>
           <Value name="samplingMechanism">MC</Value>
@@ -153,24 +156,24 @@
           <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings Macro="Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="Supporting_Macros/SimSampling.yxmc" />
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
     </Node>
   </Nodes>
   <Connections>
     <Connection>
       <Origin ToolID="1" Connection="Output" />
-      <Destination ToolID="8" Connection="SampleData" />
+      <Destination ToolID="21" Connection="SampleData" />
     </Connection>
     <Connection>
       <Origin ToolID="1" Connection="Output" />
-      <Destination ToolID="18" Connection="SampleData" />
+      <Destination ToolID="22" Connection="SampleData" />
     </Connection>
     <Connection>
-      <Origin ToolID="8" Connection="Data" />
+      <Origin ToolID="21" Connection="Data" />
       <Destination ToolID="7" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="18" Connection="Data" />
+      <Origin ToolID="22" Connection="Data" />
       <Destination ToolID="11" Connection="Input" />
     </Connection>
   </Connections>
