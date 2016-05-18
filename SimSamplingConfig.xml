@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <AlteryxJavaScriptPlugin>
-  <EngineSettings EngineDLL="Macro" EngineDLLEntryPoint="Supporting_Macros/SimSampling.yxmc" SDKVersion="10.1"/>
+  <EngineSettings EngineDLL="Macro" EngineDLLEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" SDKVersion="10.1"/>
   <GuiSettings Html="SimSamplingGui.html" Icon="SimSamplingIcon.png" SDKVersion="10.1">
     <InputConnections>
       <Connection Name="SampleData" AllowMultiple="False" Optional="True" Type="Connection" Label="D"/>
