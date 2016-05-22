@@ -1,0 +1,694 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.5">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="546" y="198" width="219.0988" height="245" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Manual Entry</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="556" y="227" width="175" height="98" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Sample entire rows</Caption>
+              <Style TextColor="#314c4a" FillColor="#ff8080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="1">
+              <GuiSettings Plugin="SimSampling">
+                <Position x="566" y="256" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Value name="distToFit">
+                  </Value>
+                  <Value name="binnedValueField" />
+                  <Value name="binnedIdField" />
+                  <Value name="binnedDataName">
+                  </Value>
+                  <Value name="samplingStrategy">entire</Value>
+                  <Value name="fields">
+                  </Value>
+                  <Value name="dataKind">manual</Value>
+                  <Value name="replace">False</Value>
+                  <Value name="jsonBounds">
+                  </Value>
+                  <Value name="jsonParameters">
+                  </Value>
+                  <Value name="distribution">norm</Value>
+                  <Value name="stageName">
+                  </Value>
+                  <Value name="samplingMode">data</Value>
+                  <Value name="numIterations">10</Value>
+                  <Value name="seed">1</Value>
+                  <Value name="chunkSize">256000</Value>
+                  <Value name="samplingMechanism">MC</Value>
+                  <Value name="activePage">data</Value>
+                  <Value name="intermediate">False</Value>
+                  <Value name="displaySeed">True</Value>
+                  <Value name="jsonRouletteData">{"20":8,"30":6,"40":7,"50":4,"60":3,"70":7}</Value>
+                  <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+                  <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+                  <Value name="_distribution">normal</Value>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+            </Node>
+            <Node ToolID="2">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="662" y="256" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4964_1670adf19b99415d820ec2453a08f0be_\Engine_2276_d40d7e6c10f04554bd0fdc0c6f02a678_.yxdb</TempFile>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="556" y="335" width="199.0988" height="98" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Sample columns independently</Caption>
+              <Style TextColor="#314c4a" FillColor="#ff8080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="5">
+              <GuiSettings Plugin="SimSampling">
+                <Position x="566" y="364" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Value name="distToFit">
+                  </Value>
+                  <Value name="binnedValueField" />
+                  <Value name="binnedIdField" />
+                  <Value name="binnedDataName">
+                  </Value>
+                  <Value name="samplingStrategy">each</Value>
+                  <Value name="fields">
+                  </Value>
+                  <Value name="dataKind">manual</Value>
+                  <Value name="replace">False</Value>
+                  <Value name="jsonBounds">
+                  </Value>
+                  <Value name="jsonParameters">
+                  </Value>
+                  <Value name="distribution">norm</Value>
+                  <Value name="stageName">
+                  </Value>
+                  <Value name="samplingMode">data</Value>
+                  <Value name="numIterations">10</Value>
+                  <Value name="seed">1</Value>
+                  <Value name="chunkSize">256000</Value>
+                  <Value name="samplingMechanism">MC</Value>
+                  <Value name="activePage">data</Value>
+                  <Value name="intermediate">False</Value>
+                  <Value name="displaySeed">True</Value>
+                  <Value name="jsonRouletteData">{"20":8,"30":6,"40":7,"50":4,"60":3,"70":7}</Value>
+                  <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+                  <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+                  <Value name="_distribution">normal</Value>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+            </Node>
+            <Node ToolID="6">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="662" y="364" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4964_1670adf19b99415d820ec2453a08f0be_\Engine_2276_2411fff7cb6648829c9997c085b701c0_.yxdb</TempFile>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="233" y="198" width="300" height="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Roulette Mode</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="259" y="242" width="247" height="113" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Sample entire rows</Caption>
+              <Style TextColor="#314c4a" FillColor="#80ff80" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="9">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="437" y="283" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4964_1670adf19b99415d820ec2453a08f0be_\Engine_2276_41635141c4c646c8b2269d3ca00394a3_.yxdb</TempFile>
+                  <Layout>
+                    <View1>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="17">
+              <GuiSettings Plugin="SimSampling">
+                <Position x="353" y="283" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Value name="distToFit">
+                  </Value>
+                  <Value name="binnedValueField" />
+                  <Value name="binnedIdField" />
+                  <Value name="binnedDataName">
+                  </Value>
+                  <Value name="samplingStrategy">entire</Value>
+                  <Value name="fields">HR,X3B</Value>
+                  <Value name="dataKind">raw</Value>
+                  <Value name="replace">False</Value>
+                  <Value name="jsonBounds">
+                  </Value>
+                  <Value name="jsonParameters">
+                  </Value>
+                  <Value name="distribution">norm</Value>
+                  <Value name="stageName">
+                  </Value>
+                  <Value name="samplingMode">data</Value>
+                  <Value name="numIterations">10</Value>
+                  <Value name="seed">1</Value>
+                  <Value name="chunkSize">256000</Value>
+                  <Value name="samplingMechanism">MC</Value>
+                  <Value name="activePage">data</Value>
+                  <Value name="intermediate">False</Value>
+                  <Value name="displaySeed">True</Value>
+                  <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
+                  <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+                  <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+                  <Value name="_distribution">normal</Value>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+            </Node>
+            <Node ToolID="18">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+                <Position x="269" y="271" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Passwords />
+                  <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\ramnath\Desktop\R_Packages\SampleData\SABRmetrics.yxdb</File>
+                  <FormatSpecificOptions />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>SABRmetrics.yxdb</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <Dependencies>
+                  <Implicit />
+                </Dependencies>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="Tm" size="1073741823" source="R-DATA:" type="V_WString" />
+                    <Field name="Games" source="R-DATA:" type="Int32" />
+                    <Field name="Wins" source="R-DATA:" type="Int32" />
+                    <Field name="Win_Pct" source="R-DATA:" type="Double" />
+                    <Field name="X_Bat" source="R-DATA:" type="Int32" />
+                    <Field name="BatAge" source="R-DATA:" type="Double" />
+                    <Field name="R_G" source="R-DATA:" type="Double" />
+                    <Field name="PA" source="R-DATA:" type="Int32" />
+                    <Field name="AB" source="R-DATA:" type="Int32" />
+                    <Field name="R" source="R-DATA:" type="Int32" />
+                    <Field name="H" source="R-DATA:" type="Int32" />
+                    <Field name="X2B" source="R-DATA:" type="Int32" />
+                    <Field name="X3B" source="R-DATA:" type="Int32" />
+                    <Field name="HR" source="R-DATA:" type="Int32" />
+                    <Field name="RBI" source="R-DATA:" type="Int32" />
+                    <Field name="SB" source="R-DATA:" type="Int32" />
+                    <Field name="CS" source="R-DATA:" type="Int32" />
+                    <Field name="BB" source="R-DATA:" type="Int32" />
+                    <Field name="SO" source="R-DATA:" type="Int32" />
+                    <Field name="BA" source="R-DATA:" type="Double" />
+                    <Field name="OBP" source="R-DATA:" type="Double" />
+                    <Field name="SLG" source="R-DATA:" type="Double" />
+                    <Field name="OPS" source="R-DATA:" type="Double" />
+                    <Field name="OPS_Adj" source="R-DATA:" type="Int32" />
+                    <Field name="TB" source="R-DATA:" type="Int32" />
+                    <Field name="GDP" source="R-DATA:" type="Int32" />
+                    <Field name="HBP" source="R-DATA:" type="Int32" />
+                    <Field name="SH" source="R-DATA:" type="Int32" />
+                    <Field name="SF" source="R-DATA:" type="Int32" />
+                    <Field name="IBB" source="R-DATA:" type="Int32" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="258" y="498" width="247" height="113" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Sample columns independently</Caption>
+              <Style TextColor="#314c4a" FillColor="#80ff80" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="19">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="436" y="539.0001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4964_1670adf19b99415d820ec2453a08f0be_\Engine_2276_cc7460f053c54c6b8d0714ce31b9349b_.yxdb</TempFile>
+                  <Layout>
+                    <View1>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="20">
+              <GuiSettings Plugin="SimSampling">
+                <Position x="352" y="539.0001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Value name="distToFit">norm,lnorm,unif</Value>
+                  <Value name="binnedValueField" />
+                  <Value name="binnedIdField" />
+                  <Value name="binnedDataName">
+                  </Value>
+                  <Value name="samplingStrategy">best</Value>
+                  <Value name="fields">HR,X3B</Value>
+                  <Value name="dataKind">raw</Value>
+                  <Value name="replace">False</Value>
+                  <Value name="jsonBounds">
+                  </Value>
+                  <Value name="jsonParameters">
+                  </Value>
+                  <Value name="distribution">norm</Value>
+                  <Value name="stageName">
+                  </Value>
+                  <Value name="samplingMode">data</Value>
+                  <Value name="numIterations">10</Value>
+                  <Value name="seed">1</Value>
+                  <Value name="chunkSize">256000</Value>
+                  <Value name="samplingMechanism">MC</Value>
+                  <Value name="activePage">data</Value>
+                  <Value name="intermediate">False</Value>
+                  <Value name="displaySeed">True</Value>
+                  <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
+                  <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+                  <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+                  <Value name="_distribution">normal</Value>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+            </Node>
+            <Node ToolID="21">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+                <Position x="268" y="527" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Passwords />
+                  <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\ramnath\Desktop\R_Packages\SampleData\SABRmetrics.yxdb</File>
+                  <FormatSpecificOptions />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>SABRmetrics.yxdb</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="Tm" size="1073741823" source="R-DATA:" type="V_WString" />
+                    <Field name="Games" source="R-DATA:" type="Int32" />
+                    <Field name="Wins" source="R-DATA:" type="Int32" />
+                    <Field name="Win_Pct" source="R-DATA:" type="Double" />
+                    <Field name="X_Bat" source="R-DATA:" type="Int32" />
+                    <Field name="BatAge" source="R-DATA:" type="Double" />
+                    <Field name="R_G" source="R-DATA:" type="Double" />
+                    <Field name="PA" source="R-DATA:" type="Int32" />
+                    <Field name="AB" source="R-DATA:" type="Int32" />
+                    <Field name="R" source="R-DATA:" type="Int32" />
+                    <Field name="H" source="R-DATA:" type="Int32" />
+                    <Field name="X2B" source="R-DATA:" type="Int32" />
+                    <Field name="X3B" source="R-DATA:" type="Int32" />
+                    <Field name="HR" source="R-DATA:" type="Int32" />
+                    <Field name="RBI" source="R-DATA:" type="Int32" />
+                    <Field name="SB" source="R-DATA:" type="Int32" />
+                    <Field name="CS" source="R-DATA:" type="Int32" />
+                    <Field name="BB" source="R-DATA:" type="Int32" />
+                    <Field name="SO" source="R-DATA:" type="Int32" />
+                    <Field name="BA" source="R-DATA:" type="Double" />
+                    <Field name="OBP" source="R-DATA:" type="Double" />
+                    <Field name="SLG" source="R-DATA:" type="Double" />
+                    <Field name="OPS" source="R-DATA:" type="Double" />
+                    <Field name="OPS_Adj" source="R-DATA:" type="Int32" />
+                    <Field name="TB" source="R-DATA:" type="Int32" />
+                    <Field name="GDP" source="R-DATA:" type="Int32" />
+                    <Field name="HBP" source="R-DATA:" type="Int32" />
+                    <Field name="SH" source="R-DATA:" type="Int32" />
+                    <Field name="SF" source="R-DATA:" type="Int32" />
+                    <Field name="IBB" source="R-DATA:" type="Int32" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="261" y="369" width="247" height="113" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Sample columns independently</Caption>
+              <Style TextColor="#314c4a" FillColor="#80ff80" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="23">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="439" y="410" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4964_1670adf19b99415d820ec2453a08f0be_\Engine_2276_7769010a6aa44e26852d048217957087_.yxdb</TempFile>
+                  <Layout>
+                    <View1>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="24">
+              <GuiSettings Plugin="SimSampling">
+                <Position x="355" y="410" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Value name="distToFit">
+                  </Value>
+                  <Value name="binnedValueField" />
+                  <Value name="binnedIdField" />
+                  <Value name="binnedDataName">
+                  </Value>
+                  <Value name="samplingStrategy">each</Value>
+                  <Value name="fields">HR,X3B</Value>
+                  <Value name="dataKind">raw</Value>
+                  <Value name="replace">False</Value>
+                  <Value name="jsonBounds">
+                  </Value>
+                  <Value name="jsonParameters">
+                  </Value>
+                  <Value name="distribution">norm</Value>
+                  <Value name="stageName">
+                  </Value>
+                  <Value name="samplingMode">data</Value>
+                  <Value name="numIterations">10</Value>
+                  <Value name="seed">1</Value>
+                  <Value name="chunkSize">256000</Value>
+                  <Value name="samplingMechanism">MC</Value>
+                  <Value name="activePage">data</Value>
+                  <Value name="intermediate">False</Value>
+                  <Value name="displaySeed">True</Value>
+                  <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
+                  <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+                  <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+                  <Value name="_distribution">normal</Value>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+            </Node>
+            <Node ToolID="25">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+                <Position x="271" y="398" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Passwords />
+                  <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\ramnath\Desktop\R_Packages\SampleData\SABRmetrics.yxdb</File>
+                  <FormatSpecificOptions />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>SABRmetrics.yxdb</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="Tm" size="1073741823" source="R-DATA:" type="V_WString" />
+                    <Field name="Games" source="R-DATA:" type="Int32" />
+                    <Field name="Wins" source="R-DATA:" type="Int32" />
+                    <Field name="Win_Pct" source="R-DATA:" type="Double" />
+                    <Field name="X_Bat" source="R-DATA:" type="Int32" />
+                    <Field name="BatAge" source="R-DATA:" type="Double" />
+                    <Field name="R_G" source="R-DATA:" type="Double" />
+                    <Field name="PA" source="R-DATA:" type="Int32" />
+                    <Field name="AB" source="R-DATA:" type="Int32" />
+                    <Field name="R" source="R-DATA:" type="Int32" />
+                    <Field name="H" source="R-DATA:" type="Int32" />
+                    <Field name="X2B" source="R-DATA:" type="Int32" />
+                    <Field name="X3B" source="R-DATA:" type="Int32" />
+                    <Field name="HR" source="R-DATA:" type="Int32" />
+                    <Field name="RBI" source="R-DATA:" type="Int32" />
+                    <Field name="SB" source="R-DATA:" type="Int32" />
+                    <Field name="CS" source="R-DATA:" type="Int32" />
+                    <Field name="BB" source="R-DATA:" type="Int32" />
+                    <Field name="SO" source="R-DATA:" type="Int32" />
+                    <Field name="BA" source="R-DATA:" type="Double" />
+                    <Field name="OBP" source="R-DATA:" type="Double" />
+                    <Field name="SLG" source="R-DATA:" type="Double" />
+                    <Field name="OPS" source="R-DATA:" type="Double" />
+                    <Field name="OPS_Adj" source="R-DATA:" type="Int32" />
+                    <Field name="TB" source="R-DATA:" type="Int32" />
+                    <Field name="GDP" source="R-DATA:" type="Int32" />
+                    <Field name="HBP" source="R-DATA:" type="Int32" />
+                    <Field name="SH" source="R-DATA:" type="Int32" />
+                    <Field name="SF" source="R-DATA:" type="Int32" />
+                    <Field name="IBB" source="R-DATA:" type="Int32" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Data" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Data" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Data" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="17" Connection="SampleData" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Data" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="20" Connection="SampleData" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Data" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="24" Connection="SampleData" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="True" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>TestDataSampling</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
