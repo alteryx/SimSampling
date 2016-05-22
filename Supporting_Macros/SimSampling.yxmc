@@ -1596,7 +1596,7 @@ Transform
             </Node>
             <Node ToolID="62">
               <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
-                <Position x="654" y="631" width="59" height="59" />
+                <Position x="666" y="630" width="59" height="59" />
               </GuiSettings>
               <Properties>
                 <Configuration />
@@ -1630,7 +1630,7 @@ Transform
             </Node>
             <Node ToolID="92">
               <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
-                <Position x="402" y="627" width="59" height="59" />
+                <Position x="402" y="630" width="59" height="59" />
               </GuiSettings>
               <Properties>
                 <Configuration />
@@ -2241,7 +2241,7 @@ Transform
               <Type>UpdateValueFormula</Type>
               <Description />
               <ToolId value="124" />
-              <Expression>[sDataKind] == "raw" OR [sDataKind] == "binned"</Expression>
+              <Expression>[sDataKind] == "raw"</Expression>
               <Destination>122/DetourRight/@value</Destination>
               <Mode>Expression</Mode>
             </Action>
