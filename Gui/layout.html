@@ -1,4 +1,4 @@
-<fieldset>
+<fieldset id='landingPage' class='page'>
   <legend>Simulation Configuration</legend>
   <div>
     {{ samplingMechanism }}
@@ -11,12 +11,15 @@
     {{ numIterations }}
   </div>
   {{ samplingMode }}
-  <!-- <alteryx-pluginwidget type="Button" id="next" buttontext="Next" 
-    onclick="buttonClicked(event)" isprimary="true">
-  </alteryx-pluginwidget> -->
+  <alteryx-pluginwidget type="Button" id="next" buttontext="Next" 
+    onclick="nextPage(event)" isprimary="true">
+  </alteryx-pluginwidget>
 </fieldset>
-<fieldset id='parametricSampling'>
+<fieldset id='parametricSampling' style='display:none;' class='page'>
   <legend>Parametric Sampling</legend>
+  <alteryx-pluginwidget type="Button" id="prev" buttontext="Previous" 
+    onclick="landingPage(event)" isprimary="true">
+  </alteryx-pluginwidget>
   {{ stageName }}
   {{ distribution }}
   <div>
@@ -26,8 +29,11 @@
   {{ jsonBounds }}
   </div>
 </fieldset>
-<fieldset id='dataSampling'>
+<fieldset id='dataSampling' style='display:none;' class='page'>
   <legend>Data Sampling</legend>
+  <alteryx-pluginwidget type="Button" id="prev2" buttontext="Previous" 
+    onclick="landingPage(event)" isprimary="true">
+  </alteryx-pluginwidget>
   {{ replace }}
   {{ dataKind }}
   <div id='div-dataKind-raw'>
@@ -38,11 +44,12 @@
     {{ binnedDataName }}
     {{ binnedIdField }}
     {{ binnedValueField }}
+    {{ samplingStrategy }}
   </div>
   <div id='div-dataKind-manual'>
-    <b>Placeholder for Roulette</b>
-     <div id="rouletteChart"></div>
+    <div id="rouletteChart"></div>
     {{ jsonRouletteData }}
+    {{ samplingStrategy }}
   </div>
   <div id='div-distToFit'>
     {{ distToFit }}

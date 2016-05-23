@@ -15,7 +15,7 @@ SimSampling
 </head>
 <body>
     
-<fieldset>
+<fieldset id='landingPage' class='page'>
   <legend>Simulation Configuration</legend>
   <div>
     
@@ -54,12 +54,15 @@ SimSampling
   <alteryx-option uiobject="Sample from data">data</alteryx-option>
 </alteryx-pluginwidget>
 
-  <!-- <alteryx-pluginwidget type="Button" id="next" buttontext="Next" 
-    onclick="buttonClicked(event)" isprimary="true">
-  </alteryx-pluginwidget> -->
+  <alteryx-pluginwidget type="Button" id="next" buttontext="Next" 
+    onclick="nextPage(event)" isprimary="true">
+  </alteryx-pluginwidget>
 </fieldset>
-<fieldset id='parametricSampling'>
+<fieldset id='parametricSampling' style='display:none;' class='page'>
   <legend>Parametric Sampling</legend>
+  <alteryx-pluginwidget type="Button" id="prev" buttontext="Previous" 
+    onclick="landingPage(event)" isprimary="true">
+  </alteryx-pluginwidget>
   
 <!--  stageName  -->
 <label for="stageName">Enter stage name</label>
@@ -95,8 +98,11 @@ SimSampling
 
   </div>
 </fieldset>
-<fieldset id='dataSampling'>
+<fieldset id='dataSampling' style='display:none;' class='page'>
   <legend>Data Sampling</legend>
+  <alteryx-pluginwidget type="Button" id="prev2" buttontext="Previous" 
+    onclick="landingPage(event)" isprimary="true">
+  </alteryx-pluginwidget>
   
 <!--  replace  -->
 <label for="replace"></label>
@@ -143,14 +149,31 @@ SimSampling
 <label for="binnedValueField">Select Value Field</label>
 <alteryx-pluginwidget type="DropDown" dataType="FieldSelector" inputNumber="0" connectionNumber="0" fieldType="All" id="binnedValueField" dataName="binnedValueField"></alteryx-pluginwidget>
 
+    
+<!--  samplingStrategy  -->
+<label for="samplingStrategy">Select sampling strategy</label>
+<alteryx-pluginwidget type="DropDown" id="samplingStrategy" dataName="samplingStrategy">
+  <alteryx-option uiobject="Sample entire rows" default="true">entire</alteryx-option>
+  <alteryx-option uiobject="Sample each column independently">each</alteryx-option>
+  <alteryx-option uiobject="Sample from best fitting distribution">best</alteryx-option>
+</alteryx-pluginwidget>
+
   </div>
   <div id='div-dataKind-manual'>
-    <b>Placeholder for Roulette</b>
-     <div id="rouletteChart"></div>
+    <div id="rouletteChart"></div>
     
 <!--  jsonRouletteData  -->
 <label for="jsonRouletteData">Roulette Data</label>
 <alteryx-pluginwidget type="TextBox" password="false" placeholder="{&quot;100&quot;: 1, &quot;110&quot;: 2, &quot;120&quot;: 4}" id="jsonRouletteData" dataName="jsonRouletteData"></alteryx-pluginwidget>
+
+    
+<!--  samplingStrategy  -->
+<label for="samplingStrategy">Select sampling strategy</label>
+<alteryx-pluginwidget type="DropDown" id="samplingStrategy" dataName="samplingStrategy">
+  <alteryx-option uiobject="Sample entire rows" default="true">entire</alteryx-option>
+  <alteryx-option uiobject="Sample each column independently">each</alteryx-option>
+  <alteryx-option uiobject="Sample from best fitting distribution">best</alteryx-option>
+</alteryx-pluginwidget>
 
   </div>
   <div id='div-distToFit'>

@@ -47,12 +47,11 @@ config$totalSize <- ifelse(readRecordCount==0, config$numIterations, readRecordC
 
 config$name <- ifelse(config$samplingMode=="parametric", config$stageName, config$binnedDataName)
   
-
 tool_process(
   method = toupper(config$samplingMechanism),
   chunkSize = config$chunkSize,
   seed = config$seed,
-  count = config$numIterations,
+  count = config$totalSize,
   distribution = config$distribution,
   params = config$parameters,
   bounds = config$bounds,

@@ -56,7 +56,7 @@ function syncDataItems(x, y) {
   yData.forEach((d) => d.BindUserDataChanged(setVal));
 }
 
-function displayTarget(targetId, di, cond){
+function displayTarget(targetId, di, cond, resize = false){
   let condition;
   if (typeof cond == 'undefined'){
     condition = function(v){return v}
@@ -69,6 +69,8 @@ function displayTarget(targetId, di, cond){
   const targetDiv = document.getElementById(targetId)
   function display(v){
     targetDiv.style.display = condition(v) ? 'block' : 'none'
+    console.log("Resizing ", v)
+    window.dispatchEvent(new Event('resize'));
   }
   dataItem.BindUserDataChanged(display)
   display(dataItem.value)
