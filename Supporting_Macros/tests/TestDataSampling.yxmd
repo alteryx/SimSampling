@@ -206,7 +206,7 @@
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="234" y="210" width="300" height="438" />
+        <Position x="233" y="210" width="299" height="438" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -366,7 +366,7 @@
         </Node>
         <Node ToolID="22">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="259" y="510" width="247" height="113" />
+            <Position x="258" y="510" width="247" height="113" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -384,7 +384,7 @@
           <ChildNodes>
             <Node ToolID="19">
               <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                <Position x="437" y="551.0001" />
+                <Position x="436" y="551.0001" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -407,7 +407,7 @@
             </Node>
             <Node ToolID="20">
               <GuiSettings Plugin="SimSampling">
-                <Position x="353" y="551.0001" />
+                <Position x="352" y="551.0001" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -450,7 +450,7 @@
             </Node>
             <Node ToolID="21">
               <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                <Position x="269" y="539" />
+                <Position x="268" y="539" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -504,7 +504,7 @@
         </Node>
         <Node ToolID="26">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="262" y="381" width="247" height="113" />
+            <Position x="258" y="378" width="247" height="113" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -522,7 +522,7 @@
           <ChildNodes>
             <Node ToolID="23">
               <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                <Position x="440" y="422" />
+                <Position x="436" y="419" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -545,7 +545,7 @@
             </Node>
             <Node ToolID="24">
               <GuiSettings Plugin="SimSampling">
-                <Position x="356" y="422" />
+                <Position x="352" y="419" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -589,7 +589,7 @@
             </Node>
             <Node ToolID="25">
               <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                <Position x="272" y="410" />
+                <Position x="268" y="407" />
               </GuiSettings>
               <Properties>
                 <Configuration>
