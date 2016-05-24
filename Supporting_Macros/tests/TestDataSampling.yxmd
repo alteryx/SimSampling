@@ -47,7 +47,7 @@
           <Properties>
             <Configuration>
               <Caption>Sample entire rows</Caption>
-              <Style TextColor="#314c4a" FillColor="#ff8080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Style TextColor="#314c4a" FillColor="#80ff80" BorderColor="#314c4a" Transparency="25" Margin="10" />
               <Disabled value="False" />
               <Folded value="False" />
             </Configuration>
@@ -109,7 +109,14 @@
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_8084_a83f0e5a3cff42a6874bf2d0d7a0828d_\Engine_5076_450b643ea4424a5db2ffd3e801b7c2a3_.yxdb</TempFile>
+                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_7900_df9a441418034ed3ae383f4dd831aeb2_\Engine_10156_4be176d77e6e4ff9975f12503b89240d_.yxdb</TempFile>
+                  <Layout>
+                    <View1>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                  </Layout>
                 </Configuration>
                 <Annotation DisplayMode="0">
                   <Name />
@@ -128,7 +135,7 @@
           <Properties>
             <Configuration>
               <Caption>Sample columns independently</Caption>
-              <Style TextColor="#314c4a" FillColor="#ff8080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Style TextColor="#314c4a" FillColor="#80ff80" BorderColor="#314c4a" Transparency="25" Margin="10" />
               <Disabled value="False" />
               <Folded value="False" />
             </Configuration>
@@ -190,7 +197,14 @@
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_8084_a83f0e5a3cff42a6874bf2d0d7a0828d_\Engine_5076_fc9066e3b15a4811a5e92228f514c3a8_.yxdb</TempFile>
+                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_7900_df9a441418034ed3ae383f4dd831aeb2_\Engine_10156_193fea50933e430bac89520ed0ed3c75_.yxdb</TempFile>
+                  <Layout>
+                    <View1>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                  </Layout>
                 </Configuration>
                 <Annotation DisplayMode="0">
                   <Name />
@@ -246,7 +260,7 @@
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_8084_a83f0e5a3cff42a6874bf2d0d7a0828d_\Engine_5076_725cd5124bec4cab9a89aaed0b2fa0c6_.yxdb</TempFile>
+                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_7900_df9a441418034ed3ae383f4dd831aeb2_\Engine_10156_c60322f026c7439ab9e938fb5ba06569_.yxdb</TempFile>
                   <Layout>
                     <View1>
                       <Hints>
@@ -322,9 +336,6 @@
                   <DefaultAnnotationText>SABRmetrics.yxdb</DefaultAnnotationText>
                   <Left value="False" />
                 </Annotation>
-                <Dependencies>
-                  <Implicit />
-                </Dependencies>
                 <MetaInfo connection="Output">
                   <RecordInfo>
                     <Field name="Tm" size="1073741823" source="R-DATA:" type="V_WString" />
@@ -388,7 +399,7 @@
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_8084_a83f0e5a3cff42a6874bf2d0d7a0828d_\Engine_5076_d84a95558dcb49f880996cec55793359_.yxdb</TempFile>
+                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_7900_df9a441418034ed3ae383f4dd831aeb2_\Engine_10156_bd2e1f1911184cd5b60dd46d353ab568_.yxdb</TempFile>
                   <Layout>
                     <View1>
                       <Hints>
@@ -463,9 +474,6 @@
                   <DefaultAnnotationText>SABRmetrics.yxdb</DefaultAnnotationText>
                   <Left value="False" />
                 </Annotation>
-                <Dependencies>
-                  <Implicit />
-                </Dependencies>
                 <MetaInfo connection="Output">
                   <RecordInfo>
                     <Field name="Tm" size="1073741823" source="R-DATA:" type="V_WString" />
@@ -529,7 +537,7 @@
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_8084_a83f0e5a3cff42a6874bf2d0d7a0828d_\Engine_5076_a3797d82777e4889a4af8fffd8e015aa_.yxdb</TempFile>
+                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_7900_df9a441418034ed3ae383f4dd831aeb2_\Engine_10156_0c75309c76724b71b89b0b3ac8ff7983_.yxdb</TempFile>
                   <Layout>
                     <View1>
                       <Hints>
@@ -605,9 +613,6 @@
                   <DefaultAnnotationText>SABRmetrics.yxdb</DefaultAnnotationText>
                   <Left value="False" />
                 </Annotation>
-                <Dependencies>
-                  <Implicit />
-                </Dependencies>
                 <MetaInfo connection="Output">
                   <RecordInfo>
                     <Field name="Tm" size="1073741823" source="R-DATA:" type="V_WString" />
@@ -735,7 +740,7 @@
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_8084_a83f0e5a3cff42a6874bf2d0d7a0828d_\Engine_5076_2a16c98fe80547638a6be70aefbade93_.yxdb</TempFile>
+                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_7900_df9a441418034ed3ae383f4dd831aeb2_\Engine_10156_12d7eda0e87b4fa2b3d36cb167a8f9b5_.yxdb</TempFile>
                   <Layout>
                     <View1>
                       <Hints>
