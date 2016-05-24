@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="234" y="186" width="792" height="24" />
+        <Position x="55" y="54" width="792" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -24,7 +24,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="810" y="210" width="219.0988" height="260" />
+        <Position x="631" y="90" width="208.3116" height="248" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -42,12 +42,12 @@
       <ChildNodes>
         <Node ToolID="3">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="822" y="239" width="175" height="108" />
+            <Position x="643" y="118" width="175" height="97" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Caption>Sample entire rows</Caption>
-              <Style TextColor="#314c4a" FillColor="#ff8080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Style TextColor="#314c4a" FillColor="#80ff80" BorderColor="#314c4a" Transparency="25" Margin="10" />
               <Disabled value="False" />
               <Folded value="False" />
             </Configuration>
@@ -60,7 +60,7 @@
           <ChildNodes>
             <Node ToolID="1">
               <GuiSettings Plugin="SimSampling">
-                <Position x="832" y="278" />
+                <Position x="653" y="146" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -105,11 +105,18 @@
             </Node>
             <Node ToolID="2">
               <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                <Position x="928" y="278" />
+                <Position x="749" y="146" />
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3628_0a2f4794e9df41439d6768bc4ef163e5_\Engine_2276_17f3f4a1aa9945ffb240e0b9c5fc2313_.yxdb</TempFile>
+                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_7900_df9a441418034ed3ae383f4dd831aeb2_\Engine_10156_4be176d77e6e4ff9975f12503b89240d_.yxdb</TempFile>
+                  <Layout>
+                    <View1>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                  </Layout>
                 </Configuration>
                 <Annotation DisplayMode="0">
                   <Name />
@@ -123,12 +130,12 @@
         </Node>
         <Node ToolID="7">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="820" y="362" width="199.0988" height="98" />
+            <Position x="641" y="231" width="188.3116" height="97" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Caption>Sample columns independently</Caption>
-              <Style TextColor="#314c4a" FillColor="#ff8080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Style TextColor="#314c4a" FillColor="#80ff80" BorderColor="#314c4a" Transparency="25" Margin="10" />
               <Disabled value="False" />
               <Folded value="False" />
             </Configuration>
@@ -141,7 +148,7 @@
           <ChildNodes>
             <Node ToolID="5">
               <GuiSettings Plugin="SimSampling">
-                <Position x="830" y="391" />
+                <Position x="651" y="259" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -186,11 +193,18 @@
             </Node>
             <Node ToolID="6">
               <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                <Position x="926" y="391" />
+                <Position x="747" y="259" />
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3628_0a2f4794e9df41439d6768bc4ef163e5_\Engine_2276_dc43e54e65044d4b93fa21997d1e2aca_.yxdb</TempFile>
+                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_7900_df9a441418034ed3ae383f4dd831aeb2_\Engine_10156_193fea50933e430bac89520ed0ed3c75_.yxdb</TempFile>
+                  <Layout>
+                    <View1>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                  </Layout>
                 </Configuration>
                 <Annotation DisplayMode="0">
                   <Name />
@@ -206,7 +220,7 @@
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="233" y="210" width="299" height="438" />
+        <Position x="54" y="80" width="299" height="453" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -224,7 +238,7 @@
       <ChildNodes>
         <Node ToolID="10">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="260" y="254" width="247" height="113" />
+            <Position x="81" y="123" width="247" height="129" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -242,11 +256,11 @@
           <ChildNodes>
             <Node ToolID="9">
               <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                <Position x="438" y="295" />
+                <Position x="259" y="163" />
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3628_0a2f4794e9df41439d6768bc4ef163e5_\Engine_2276_2c29cd1792584d6ca8c7676a3bb16520_.yxdb</TempFile>
+                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_7900_df9a441418034ed3ae383f4dd831aeb2_\Engine_10156_c60322f026c7439ab9e938fb5ba06569_.yxdb</TempFile>
                   <Layout>
                     <View1>
                       <Hints>
@@ -265,7 +279,7 @@
             </Node>
             <Node ToolID="17">
               <GuiSettings Plugin="SimSampling">
-                <Position x="354" y="295" />
+                <Position x="175" y="163" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -309,12 +323,12 @@
             </Node>
             <Node ToolID="18">
               <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                <Position x="270" y="283" />
+                <Position x="91" y="151" />
               </GuiSettings>
               <Properties>
                 <Configuration>
                   <Passwords />
-                  <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\ramnath\Desktop\R_Packages\SampleData\SABRmetrics.yxdb</File>
+                  <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\R-3.2.3\plugin\Samples\SampleData\SABRmetrics.yxdb</File>
                   <FormatSpecificOptions />
                 </Configuration>
                 <Annotation DisplayMode="0">
@@ -322,9 +336,6 @@
                   <DefaultAnnotationText>SABRmetrics.yxdb</DefaultAnnotationText>
                   <Left value="False" />
                 </Annotation>
-                <Dependencies>
-                  <Implicit />
-                </Dependencies>
                 <MetaInfo connection="Output">
                   <RecordInfo>
                     <Field name="Tm" size="1073741823" source="R-DATA:" type="V_WString" />
@@ -366,7 +377,7 @@
         </Node>
         <Node ToolID="22">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="258" y="510" width="247" height="113" />
+            <Position x="79" y="379" width="247" height="129" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -384,11 +395,11 @@
           <ChildNodes>
             <Node ToolID="19">
               <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                <Position x="436" y="551.0001" />
+                <Position x="257" y="419.0001" />
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3628_0a2f4794e9df41439d6768bc4ef163e5_\Engine_2276_bcd91b9a3f7b41ee8ec4d269c0b0c1eb_.yxdb</TempFile>
+                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_7900_df9a441418034ed3ae383f4dd831aeb2_\Engine_10156_bd2e1f1911184cd5b60dd46d353ab568_.yxdb</TempFile>
                   <Layout>
                     <View1>
                       <Hints>
@@ -407,7 +418,7 @@
             </Node>
             <Node ToolID="20">
               <GuiSettings Plugin="SimSampling">
-                <Position x="352" y="551.0001" />
+                <Position x="173" y="419.0001" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -450,12 +461,12 @@
             </Node>
             <Node ToolID="21">
               <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                <Position x="268" y="539" />
+                <Position x="89" y="407" />
               </GuiSettings>
               <Properties>
                 <Configuration>
                   <Passwords />
-                  <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\ramnath\Desktop\R_Packages\SampleData\SABRmetrics.yxdb</File>
+                  <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\R-3.2.3\plugin\Samples\SampleData\SABRmetrics.yxdb</File>
                   <FormatSpecificOptions />
                 </Configuration>
                 <Annotation DisplayMode="0">
@@ -504,7 +515,7 @@
         </Node>
         <Node ToolID="26">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="258" y="378" width="247" height="113" />
+            <Position x="79" y="247" width="247" height="129" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -522,11 +533,11 @@
           <ChildNodes>
             <Node ToolID="23">
               <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                <Position x="436" y="419" />
+                <Position x="257" y="287" />
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3628_0a2f4794e9df41439d6768bc4ef163e5_\Engine_2276_f07fd97a058a4308879835e3c3744496_.yxdb</TempFile>
+                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_7900_df9a441418034ed3ae383f4dd831aeb2_\Engine_10156_0c75309c76724b71b89b0b3ac8ff7983_.yxdb</TempFile>
                   <Layout>
                     <View1>
                       <Hints>
@@ -545,7 +556,7 @@
             </Node>
             <Node ToolID="24">
               <GuiSettings Plugin="SimSampling">
-                <Position x="352" y="419" />
+                <Position x="173" y="287" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -589,12 +600,12 @@
             </Node>
             <Node ToolID="25">
               <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                <Position x="268" y="407" />
+                <Position x="89" y="275" />
               </GuiSettings>
               <Properties>
                 <Configuration>
                   <Passwords />
-                  <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\ramnath\Desktop\R_Packages\SampleData\SABRmetrics.yxdb</File>
+                  <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\R-3.2.3\plugin\Samples\SampleData\SABRmetrics.yxdb</File>
                   <FormatSpecificOptions />
                 </Configuration>
                 <Annotation DisplayMode="0">
@@ -645,7 +656,7 @@
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="538" y="212" width="267" height="149" />
+        <Position x="359" y="82" width="267" height="147" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -663,12 +674,12 @@
       <ChildNodes>
         <Node ToolID="30">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="548" y="241" width="247" height="110" />
+            <Position x="369" y="110" width="247" height="109" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Caption>Sample entire rows</Caption>
-              <Style TextColor="#314c4a" FillColor="#ff8080" BorderColor="#314c4a" Transparency="25" Margin="10" />
+              <Style TextColor="#314c4a" FillColor="#80ff80" BorderColor="#314c4a" Transparency="25" Margin="10" />
               <Disabled value="False" />
               <Folded value="False" />
             </Configuration>
@@ -681,7 +692,7 @@
           <ChildNodes>
             <Node ToolID="28">
               <GuiSettings Plugin="SimSampling">
-                <Position x="642" y="282" />
+                <Position x="463" y="150" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -725,11 +736,11 @@
             </Node>
             <Node ToolID="29">
               <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                <Position x="726" y="282" />
+                <Position x="547" y="150" />
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3628_0a2f4794e9df41439d6768bc4ef163e5_\Engine_2276_8080843170134e7294f8bb56af99efb4_.yxdb</TempFile>
+                  <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_7900_df9a441418034ed3ae383f4dd831aeb2_\Engine_10156_12d7eda0e87b4fa2b3d36cb167a8f9b5_.yxdb</TempFile>
                   <Layout>
                     <View1>
                       <Hints>
@@ -748,7 +759,7 @@
             </Node>
             <Node ToolID="35">
               <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-                <Position x="558" y="270" />
+                <Position x="379" y="138" />
               </GuiSettings>
               <Properties>
                 <Configuration>

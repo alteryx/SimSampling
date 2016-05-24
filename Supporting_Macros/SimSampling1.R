@@ -1,8 +1,7 @@
 ## DO NOT MODIFY: Auto Inserted by AlteryxRhelper ----
-library(AlteryxRhelper)
 library(AlteryxSim)
 config <- list(
-  binnedDataName = textInput('%Question.binnedDataName%'),
+  binnedDataName = textInput('%Question.binnedDataName%', "BinData"),
   binnedIdField = dropdownInput('%Question.binnedIdField%'),
   binnedValueField = dropdownInput('%Question.binnedValueField%'),
   chunkSize = numericInput('%Question.chunkSize%' , 256000),
@@ -32,21 +31,20 @@ config$bounds = jsonlite::fromJSON(config$jsonBounds)
 config$parameters = jsonlite::fromJSON(config$jsonParameters)
 config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
 
-dists <- jsonlite::fromJSON('%Question._distributions%')
-dist <- '%Question._distribution%'
-print(dists[dist])
-
+# if(config$samplingMode == "parametric") {
+# dists <- jsonlite::fromJSON('%Question._distributions%')
+# dist <- '%Question._distribution%'
+# print(dists[dist])
+# }
 readRecordCount <- read.Alteryx("totalSize")
 readRecordCount <- as.numeric(readRecordCount$Count[[1]])
-
 config$seed <- ifelse(config$displaySeed, config$seed, read.Alteryx("seed")$seed[[1]])
 dfSeed <- data.frame(seed = 1+config$seed)
 write.Alteryx(dfSeed, 2)
-
 config$totalSize <- ifelse(readRecordCount==0, config$numIterations, readRecordCount)
 
 config$name <- ifelse(config$samplingMode=="parametric", config$stageName, config$binnedDataName)
-  
+
 tool_process(
   method = toupper(config$samplingMechanism),
   chunkSize = config$chunkSize,
@@ -60,7 +58,7 @@ tool_process(
   type = config$dataKind,
   id = config$binnedIdField,
   value = config$binnedValueField,
-  name = config$stageName,
+  name = config$name,
   roulette = config$rouletteData,
   dataName = "#1",
   sampleSource = config$samplingMode,

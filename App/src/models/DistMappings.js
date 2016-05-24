@@ -5,10 +5,13 @@
 */
 const distMappings = {
   norm: "normal",
+  gamma: "gamma",
   lnorm: "lognormal",
   pareto: "pareto",
   unif: "uniform",
-  gamma: "gamma",
+  triangle: "triangular",
+  geom: "geometric",
+  pois: "poisson",
   binom: "binomial"
 }
 
