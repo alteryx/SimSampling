@@ -50,7 +50,7 @@ Simulation Sampling</Text>
     </Node>
     <Node ToolID="118">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="811" width="1608" height="491"/>
+        <Position x="54" y="810" width="1608" height="492"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -87,7 +87,10 @@ config &lt;- list(
   intermediate = checkboxInput('%Question.intermediate%' , FALSE),
   jsonBounds = textInput('%Question.jsonBounds%' , '[-4, 4]'),
   jsonParameters = textInput('%Question.jsonParameters%' , '{"mean": 0, "sd": 1}'),
-  jsonRouletteData = textInput('%Question.jsonRouletteData%' , '{"100": 1, "110": 2, "120": 4}'),
+  jsonRouletteData = textInput(
+    '%Question.jsonRouletteData%' , 
+    '{"100": 1, "110": 2, "120": 4}'
+  ),
   numIterations = numericInput('%Question.numIterations%' , 10),
   replace = checkboxInput('%Question.replace%' , FALSE),
   samplingMechanism = dropdownInput('%Question.samplingMechanism%' , 'MC'),
@@ -100,16 +103,41 @@ options(alteryx.wd = '%Engine.WorkflowDirectory%')
 options(alteryx.debug = config$debug)
 ##----
 
+config$Distributions &lt;- jsonlite::fromJSON(textInput(
+  "%Question._distributions%",
+  '{"normal":[{"label":"Mean", "paramName": "mean", "value":0,"min":-5,"max":5,"step":1},{"label":"Stdev", "paramName": "sd", "value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a", "paramName": "min", "value":0,"min":-5,"max":5,"step":1},{"label":"b", "paramName": "max", "value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale", "paramName": "scale", "value":2,"min":0,"max":5,"step":0.1},{"label":"shape", "paramName": "shape", "value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}'
+))
+
+distMappings = c(
+  norm = "normal",
+  gamma = "gamma",
+  lnorm = "lognormal",
+  pareto = "pareto",
+  unif = "uniform",
+  triangle = "triangular",
+  geom = "geometric",
+  pois = "poisson",
+  binom = "binomial"
+)
+
+
+getParameters &lt;- function(config){
+  dist &lt;- distMappings[[config$distribution]]
+  distParams &lt;- config$Distributions[[dist]] 
+  setNames(as.list(distParams$value), distParams$paramName)
+}
+
 # Deserialize JSON values into R objects
 config$bounds = jsonlite::fromJSON(config$jsonBounds)
-config$parameters = jsonlite::fromJSON(config$jsonParameters)
+#config$parameters = jsonlite::fromJSON(config$jsonParameters)
+config$parameters = getParameters(config)
 config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
 
-# if(config$samplingMode == "parametric") {
-# dists &lt;- jsonlite::fromJSON('%Question._distributions%')
-# dist &lt;- '%Question._distribution%'
-# print(dists[dist])
-# }
+if(config$samplingMode == "parametric") {
+  dists &lt;- jsonlite::fromJSON('%Question._distributions%')
+  dist &lt;- '%Question._distribution%'
+  print(dists[dist])
+}
 readRecordCount &lt;- read.Alteryx("totalSize")
 readRecordCount &lt;- as.numeric(readRecordCount$Count[[1]])
 config$seed &lt;- ifelse(config$displaySeed, config$seed, read.Alteryx("seed")$seed[[1]])
@@ -838,7 +866,7 @@ tool_process(
     </Node>
     <Node ToolID="101">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="848" y="62" width="125.7694" height="18"/>
+        <Position x="848" y="62" width="132.9484" height="19"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -878,7 +906,7 @@ tool_process(
     </Node>
     <Node ToolID="103">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="848" y="97" width="93.57408" height="18"/>
+        <Position x="848" y="97" width="98.89567" height="19"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -945,7 +973,7 @@ Transform
     </Node>
     <Node ToolID="112">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54.00002" y="174" width="1122" height="619"/>
+        <Position x="54.00002" y="172" width="1122" height="621"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -963,7 +991,7 @@ Transform
       <ChildNodes>
         <Node ToolID="113">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="64.00002" y="202" width="682" height="281"/>
+            <Position x="64.00002" y="201" width="682" height="282"/>
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1284,7 +1312,7 @@ Transform
         </Node>
         <Node ToolID="114">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="66.00002" y="491" width="274" height="196"/>
+            <Position x="66.00002" y="490" width="274" height="269"/>
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1434,11 +1462,24 @@ Transform
                 </Annotation>
               </Properties>
             </Node>
+            <Node ToolID="125">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+                <Position x="102" y="690" width="59" height="59"/>
+              </GuiSettings>
+              <Properties>
+                <Configuration/>
+                <Annotation DisplayMode="0">
+                  <Name>_distributions</Name>
+                  <DefaultAnnotationText/>
+                  <Left value="False"/>
+                </Annotation>
+              </Properties>
+            </Node>
           </ChildNodes>
         </Node>
         <Node ToolID="115">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="354" y="487" width="416" height="296"/>
+            <Position x="354" y="486" width="416" height="297"/>
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1654,7 +1695,7 @@ Transform
         </Node>
         <Node ToolID="116">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="762" y="210" width="404" height="128"/>
+            <Position x="762" y="209" width="404" height="129"/>
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1776,7 +1817,7 @@ Transform
         </Node>
         <Node ToolID="117">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="786" y="487" width="140" height="128"/>
+            <Position x="786" y="486" width="273" height="129"/>
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1821,6 +1862,32 @@ Transform
                 </Configuration>
                 <Annotation DisplayMode="0">
                   <Name/>
+                  <DefaultAnnotationText/>
+                  <Left value="False"/>
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="127">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+                <Position x="930" y="546" width="59" height="59"/>
+              </GuiSettings>
+              <Properties>
+                <Configuration/>
+                <Annotation DisplayMode="0">
+                  <Name>rouletteData</Name>
+                  <DefaultAnnotationText/>
+                  <Left value="False"/>
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="129">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+                <Position x="990" y="546" width="59" height="59"/>
+              </GuiSettings>
+              <Properties>
+                <Configuration/>
+                <Annotation DisplayMode="0">
+                  <Name>activePage</Name>
                   <DefaultAnnotationText/>
                   <Left value="False"/>
                 </Annotation>
@@ -2146,6 +2213,24 @@ Transform
         <Value/>
         <IsNumeric value="False"/>
       </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>_distributions</Name>
+        <Value/>
+        <IsNumeric value="False"/>
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>rouletteData</Name>
+        <Value/>
+        <IsNumeric value="False"/>
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>activePage</Name>
+        <Value/>
+        <IsNumeric value="False"/>
+      </Constant>
     </Constants>
     <MetaInfo>
       <NameIsFileName value="False"/>
@@ -2304,7 +2389,7 @@ Latin HyperCube/ Stratified Sampling:LH
             </Question>
             <Question>
               <Type>TextBox</Type>
-              <Description>Enter stage name</Description>
+              <Description>Enter name for outgoing data</Description>
               <Name>stageName</Name>
               <ToolId value="19"/>
               <Default/>
@@ -2504,6 +2589,36 @@ Manual Entry:manual
               <Questions/>
               <Default value="False"/>
               <Collapsable value="False"/>
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Distributions</Description>
+              <Name>_distributions</Name>
+              <ToolId value="125"/>
+              <Default/>
+              <Password value="False"/>
+              <Multiline value="False"/>
+              <Hidden value="False"/>
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>rouletteData</Description>
+              <Name>rouletteData</Name>
+              <ToolId value="127"/>
+              <Default/>
+              <Password value="False"/>
+              <Multiline value="False"/>
+              <Hidden value="False"/>
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>activePage</Description>
+              <Name>activePage</Name>
+              <ToolId value="129"/>
+              <Default/>
+              <Password value="False"/>
+              <Multiline value="False"/>
+              <Hidden value="False"/>
             </Question>
           </Questions>
         </Question>
