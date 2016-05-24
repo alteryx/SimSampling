@@ -839,7 +839,7 @@ tool_process(
     </Node>
     <Node ToolID="101">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="848" y="61" width="125.7694" height="18" />
+        <Position x="848" y="62" width="125.7694" height="18" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -861,7 +861,7 @@ tool_process(
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Text>Simulation Sampling allows for sampling. The sampling can be done parametrically from a distribution, from input data, or as a combination - best fitting to a distribution and sampling from that.</Text>
+              <Text>Simulation Sampling allows for sampling. The sampling can be done parametrically from a distribution, from input data, or as a combination - best fitting to a distribution and sampling from that. The data can also be "drawn", if one is unsure of the parameters of a distribution but is also lacking data.</Text>
               <Font name="Microsoft Sans Serif" size="9.75" style="0" />
               <TextColor name="Black" />
               <FillColor name="White" />
@@ -2151,7 +2151,7 @@ Transform
     <MetaInfo>
       <NameIsFileName value="False" />
       <Name>Simulation Sampling</Name>
-      <Description>Simulation Sampling</Description>
+      <Description>Simulation Sampling allows for sampling. The sampling can be done parametrically from a distribution, from input data, or as a combination - best fitting to a distribution and sampling from that. The data can also be "drawn", if one is unsure of the parameters of a distribution but is also lacking data.</Description>
       <RootToolName />
       <ToolVersion />
       <ToolInDb value="False" />
