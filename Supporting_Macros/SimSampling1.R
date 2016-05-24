@@ -1,8 +1,7 @@
 ## DO NOT MODIFY: Auto Inserted by AlteryxRhelper ----
-library(AlteryxRhelper)
 library(AlteryxSim)
 config <- list(
-  binnedDataName = textInput('%Question.binnedDataName%'),
+  binnedDataName = textInput('%Question.binnedDataName%', "BinData"),
   binnedIdField = dropdownInput('%Question.binnedIdField%'),
   binnedValueField = dropdownInput('%Question.binnedValueField%'),
   chunkSize = numericInput('%Question.chunkSize%' , 256000),
