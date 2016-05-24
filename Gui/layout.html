@@ -24,8 +24,7 @@
   {{ distribution }}
   <div>
   <div id="combonumericslider"></div>
-  <p>For now use JSON strings to define parameters and bounds</p>
-  {{ jsonParameters }}
+  <p>For now use JSON strings to define bounds</p>
   {{ jsonBounds }}
   </div>
 </fieldset>
@@ -42,14 +41,15 @@
   </div>
   <div id='div-dataKind-binned'>
     {{ binnedDataName }}
+    {{ samplingStrategy }}
     {{ binnedIdField }}
     {{ binnedValueField }}
-    {{ samplingStrategy }}
   </div>
   <div id='div-dataKind-manual'>
+    {{ binnedDataName }}
+    {{ samplingStrategy }}
     <div id="rouletteChart"></div>
     {{ jsonRouletteData }}
-    {{ samplingStrategy }}
   </div>
   <div id='div-distToFit'>
     {{ distToFit }}
