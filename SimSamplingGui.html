@@ -65,7 +65,7 @@ SimSampling
   </alteryx-pluginwidget>
   
 <!--  stageName  -->
-<label for="stageName">Enter stage name</label>
+<label for="stageName">Enter name for outgoing data</label>
 <alteryx-pluginwidget type="TextBox" password="false" id="stageName" dataName="stageName"></alteryx-pluginwidget>
 
   
@@ -85,12 +85,7 @@ SimSampling
 
   <div>
   <div id="combonumericslider"></div>
-  <p>For now use JSON strings to define parameters and bounds</p>
-  
-<!--  jsonParameters  -->
-<label for="jsonParameters">Parameters*</label>
-<alteryx-pluginwidget type="TextBox" password="false" placeholder="{&quot;mean&quot;: 0, &quot;sd&quot;: 1}" id="jsonParameters" dataName="jsonParameters"></alteryx-pluginwidget>
-
+  <p>For now use JSON strings to define bounds</p>
   
 <!--  jsonBounds  -->
 <label for="jsonBounds">Bounds*</label>
@@ -140,6 +135,15 @@ SimSampling
 <alteryx-pluginwidget type="TextBox" password="false" id="binnedDataName" dataName="binnedDataName"></alteryx-pluginwidget>
 
     
+<!--  samplingStrategy  -->
+<label for="samplingStrategy">Select sampling strategy</label>
+<alteryx-pluginwidget type="DropDown" id="samplingStrategy" dataName="samplingStrategy">
+  <alteryx-option uiobject="Sample entire rows" default="true">entire</alteryx-option>
+  <alteryx-option uiobject="Sample each column independently">each</alteryx-option>
+  <alteryx-option uiobject="Sample from best fitting distribution">best</alteryx-option>
+</alteryx-pluginwidget>
+
+    
 <!--  binnedIdField  -->
 <label for="binnedIdField">Select ID Field</label>
 <alteryx-pluginwidget type="DropDown" dataType="FieldSelector" inputNumber="0" connectionNumber="0" fieldType="All" id="binnedIdField" dataName="binnedIdField"></alteryx-pluginwidget>
@@ -149,6 +153,13 @@ SimSampling
 <label for="binnedValueField">Select Value Field</label>
 <alteryx-pluginwidget type="DropDown" dataType="FieldSelector" inputNumber="0" connectionNumber="0" fieldType="All" id="binnedValueField" dataName="binnedValueField"></alteryx-pluginwidget>
 
+  </div>
+  <div id='div-dataKind-manual'>
+    
+<!--  binnedDataName  -->
+<label for="binnedDataName">Enter name for outgoing data</label>
+<alteryx-pluginwidget type="TextBox" password="false" id="binnedDataName" dataName="binnedDataName"></alteryx-pluginwidget>
+
     
 <!--  samplingStrategy  -->
 <label for="samplingStrategy">Select sampling strategy</label>
@@ -158,22 +169,11 @@ SimSampling
   <alteryx-option uiobject="Sample from best fitting distribution">best</alteryx-option>
 </alteryx-pluginwidget>
 
-  </div>
-  <div id='div-dataKind-manual'>
     <div id="rouletteChart"></div>
     
 <!--  jsonRouletteData  -->
 <label for="jsonRouletteData">Roulette Data</label>
 <alteryx-pluginwidget type="TextBox" password="false" placeholder="{&quot;100&quot;: 1, &quot;110&quot;: 2, &quot;120&quot;: 4}" id="jsonRouletteData" dataName="jsonRouletteData"></alteryx-pluginwidget>
-
-    
-<!--  samplingStrategy  -->
-<label for="samplingStrategy">Select sampling strategy</label>
-<alteryx-pluginwidget type="DropDown" id="samplingStrategy" dataName="samplingStrategy">
-  <alteryx-option uiobject="Sample entire rows" default="true">entire</alteryx-option>
-  <alteryx-option uiobject="Sample each column independently">each</alteryx-option>
-  <alteryx-option uiobject="Sample from best fitting distribution">best</alteryx-option>
-</alteryx-pluginwidget>
 
   </div>
   <div id='div-distToFit'>
