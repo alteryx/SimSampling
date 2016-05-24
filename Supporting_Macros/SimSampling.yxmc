@@ -2425,7 +2425,7 @@ Manual Entry:manual
             </Question>
             <Question>
               <Type>TextBox</Type>
-              <Description>Enter name for binned data</Description>
+              <Description>Enter name for outgoing data</Description>
               <Name>binnedDataName</Name>
               <ToolId value="33" />
               <Default />
