@@ -44,7 +44,7 @@ Alteryx.Gui.BeforeLoad = function BeforeLoad(manager, AlteryxDataItems) {
   dataItem('_distribution', { value: DistData.distribution });
   dataItem('_distributions', { value: JSON.stringify(DistData.distributions) });
   dataItem('rouletteData', { value: JSON.stringify(RouletteData) });
-  dataItem('jsonRouletteData', { value: '{"20": 8, "30": 6}' });
+  dataItem('jsonRouletteData', { value: '{}' });
   if (!window.Alteryx.browser){
     dataItem('displaySeed', {value: true}, 'SimpleBool')
     dataItem('intermediate', {value: false}, 'SimpleBool')
@@ -63,7 +63,6 @@ Alteryx.Gui.AfterLoad = function AfterLoad(manager) {
     { key: 'rouletteData', type: 'json' },
     { key: 'jsonRouletteData', type: 'json' },
   ];
-  //renderComboNumericSliders(manager, collection, 'combonumericslider');
   if (window.Alteryx.browser) {
     renderRoulette(manager, collection2, 'rouletteChart');
     renderComboNumericSliders(manager, collection, 'combonumericslider');
