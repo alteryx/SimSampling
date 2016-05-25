@@ -22,6 +22,7 @@ function ComboNumericSlider({ state }) {
           type="number"
           className="pull-right"
           value={state.value}
+          step={state.step}
           onChange={handleChange}
         />
       </div>
@@ -31,6 +32,7 @@ function ComboNumericSlider({ state }) {
           min={state.min}
           max={state.max}
           value={state.value}
+          step={state.step}
           onChange={handleChange}
         />
         <span className="param-min pull-left">
