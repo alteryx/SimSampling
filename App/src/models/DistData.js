@@ -31,8 +31,8 @@ const DistData = {
       {label: "mean", paramName: "lambda", value: 5, min: 0.1, max: 5, step: 1e-2}
     ],
     binomial: [
-      {label: "trials", paramName: "size", value: 10, min: 1, max: 20, step: 1e-2},
-      {label: "probability", paramName: "prob", value: 0.5, min: 0, max: 1, step: 1e-2}
+      {label: "trials", paramName: "size", value: 10, min: 1, max: 20, step: 1},
+      {label: "probability", paramName: "prob", value: 0.5, min: 0, max: 1, step: 1e-5}
     ]
   },
   distribution: 'normal',
