@@ -9,18 +9,37 @@ import DistStore from '../stores/DistStore';
 
 import ComboNumericSlider from '../components/ComboNumericSlider';
 import AreaChart from '../components/AreaChart';
-import D3Component from '../components/D3Component'
+import D3Component from '../components/D3Component';
+import D3Component2 from '../components/D3Component2'
+import Histogram from '../components/Histogram';
 
 
+const dummyData = {
+  data: d3.range(10).map((d, i) => ({x: i, y: Math.random()*100})),
+  dist: 'hello'
+}
+
+@observer
+class Chart extends Component {
+  render(){
+    let { store } = this.props;
+    if (store._distribution == "binomial"){
+      return <D3Component2 store={store} chart={Histogram} chartType='histogram' />
+    } else {
+      return <D3Component store={store} chart={AreaChart} chartType='areachart' />
+    }
+  }
+}
 
 @observer
 class ComboNumericSliders extends Component {
   render(){
     let { store } = this.props
     console.log(store._distribution)
+    console.log("Rerendering...")
     return (
       <div>
-        <D3Component store={store} chart={AreaChart} />,
+        <Chart store={store} />
         {store._distributions[store._distribution].map(d =>
           <ComboNumericSlider state={d} key={store._distribution + d.label} />
         )}
@@ -42,6 +61,9 @@ export default function RenderComboNumericSliders(manager, collection, id = "app
     <ComboNumericSliders store={distStore} />,
     document.getElementById(id)
   )
+  if (window.Alteryx.browser){
+    setTimeout(() => distStore._distribution = 'binomial', 5000)
+  }
 }
 
 /*
