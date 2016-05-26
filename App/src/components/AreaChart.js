@@ -34,6 +34,7 @@ const chartConstructor = (skeleton) => {
       .attr({ d: area, stroke: "steelblue", fill: "steelblue", 
         "fill-opacity": 0.9      
       })
+
       
     const xAxis = d3.svg.axis()
       .scale(S.x.nice())
@@ -53,7 +54,7 @@ const chartConstructor = (skeleton) => {
       .call(yAxis)
   }, 10)
   skeleton
-    .resizeToFitContainer("width")
+    //.resizeToFitContainer("width")
     .autoResize('width')
     .on('resize', visualize)
     .on('data', visualize)
