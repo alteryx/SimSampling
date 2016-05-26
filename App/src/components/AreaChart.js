@@ -54,7 +54,7 @@ const chartConstructor = (skeleton) => {
       .call(yAxis)
   }, 10)
   skeleton
-    //.resizeToFitContainer("width")
+    .resizeToFitContainer("width")
     .autoResize('width')
     .on('resize', visualize)
     .on('data', visualize)
