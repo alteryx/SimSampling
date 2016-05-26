@@ -21,6 +21,8 @@ function ComboNumericSlider({ state }) {
         <input
           type="number"
           className="pull-right"
+          min={state.minSpinner || -Infinity}
+          max={state.maxSpinner || +Infinity}
           value={state.value}
           step={state.step}
           onChange={handleChange}
