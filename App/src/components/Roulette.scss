@@ -1,4 +1,23 @@
-@import "bootstrap/css/bootstrap.min.scss";
+.col-xs-3 {
+  width: 25%;
+}
+.pull-right2 {
+  float: right !important;
+}
+.pull-left2 {
+  float: left !important;
+}
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row {
+  clear: both;
+}
+
 
 #main{margin-top: 20px;}
 .x-axis-layer path,

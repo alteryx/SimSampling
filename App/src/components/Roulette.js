@@ -193,12 +193,12 @@ class Roulette extends Component {
       <div className="col-xs-12">
         <D3Component chart={rouletteChart(store)} store={store} />
         <div className="row">
-          <NumInput k="lower" label="Lower" cls="" store={store2} />
-          <NumInput k="upper" label="Upper" cls="pull-right" store={store2} />
+          <NumInput k="lower" label="Lower" cls="pull-left2" store={store2} />
+          <NumInput k="upper" label="Upper" cls="pull-right2" store={store2} />
         </div>
         <div className="row">
-          <NumInput k="gridHeight" label="Height" cls="" store={store2} />
-          <NumInput k="binSize" label="Num Bins" cls="pull-right" store={store2} />
+          <NumInput k="gridHeight" label="Height" cls="pull-left2" store={store2} />
+          <NumInput k="binSize" label="Num Bins" cls="pull-right2" store={store2} />
         </div>
       </div>
     );
