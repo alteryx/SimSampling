@@ -8,6 +8,7 @@ config <- list(
   dataKind = dropdownInput('%Question.dataKind%' , 'raw'),
   displaySeed = checkboxInput('%Question.displaySeed%' , FALSE),
   distribution = dropdownInput('%Question.distribution%' , 'norm'),
+  `_distribution` = dropdownInput('%Question._distribution%' , 'normal'),
   distToFit = listInput('%Question.distToFit%'),
   fields = listInput('%Question.fields%'),
   intermediate = checkboxInput('%Question.intermediate%' , FALSE),
@@ -23,7 +24,7 @@ config <- list(
   samplingMode = dropdownInput('%Question.samplingMode%' , 'parametric'),
   samplingStrategy = dropdownInput('%Question.samplingStrategy%' , 'entire'),
   seed = numericInput('%Question.seed%' , 1),
-  stageName = textInput('%Question.stageName%')
+  stageName = textInput('%Question.stageName%', 'Variable')
 )
 options(alteryx.wd = '%Engine.WorkflowDirectory%')
 options(alteryx.debug = config$debug)
@@ -59,11 +60,11 @@ config$bounds = jsonlite::fromJSON(config$jsonBounds)
 config$parameters = getParameters(config)
 config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
 
-if(config$samplingMode == "parametric") {
-  dists <- jsonlite::fromJSON('%Question._distributions%')
-  dist <- '%Question._distribution%'
-  print(dists[dist])
-}
+# if(config$samplingMode == "parametric") {
+#   dists <- jsonlite::fromJSON('%Question._distributions%')
+#   dist <- '%Question.distribution%'
+#   print(dists[dist])
+# }
 readRecordCount <- read.Alteryx("totalSize")
 readRecordCount <- as.numeric(readRecordCount$Count[[1]])
 config$seed <- ifelse(config$displaySeed, config$seed, read.Alteryx("seed")$seed[[1]])
