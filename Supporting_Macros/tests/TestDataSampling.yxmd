@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="55" y="54" width="792" height="24" />
+        <Position x="55" y="54" width="815" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -24,12 +24,12 @@
     </Node>
     <Node ToolID="63">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="738" width="905.3116" height="599" />
+        <Position x="54" y="582" width="815.0988" height="489" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption>Sampling with replacement</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="60" />
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
           <Disabled value="False" />
           <Folded value="False" />
         </Configuration>
@@ -42,7 +42,7 @@
       <ChildNodes>
         <Node ToolID="48">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="114" y="816" width="297" height="461" />
+            <Position x="64" y="615" width="297" height="446" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -60,7 +60,7 @@
           <ChildNodes>
             <Node ToolID="39">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="139" y="859" width="247" height="129" />
+                <Position x="89" y="659" width="247" height="113" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -78,11 +78,11 @@
               <ChildNodes>
                 <Node ToolID="36">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                    <Position x="317" y="899" />
+                    <Position x="267" y="700" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_11796_45b5acd03a7e4469ac3d1b6e96222ab9_\Engine_8332_0eabeaa6e31f4372aa67ee2cc63baee8_.yxdb</TempFile>
+                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_d46a7ebdf72446a3b821e3fdab3bef49_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -101,7 +101,7 @@
                 </Node>
                 <Node ToolID="37">
                   <GuiSettings Plugin="SimSampling">
-                    <Position x="233" y="899" />
+                    <Position x="183" y="700" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -145,7 +145,7 @@
                 </Node>
                 <Node ToolID="38">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                    <Position x="149" y="887" />
+                    <Position x="99" y="688" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -199,7 +199,7 @@
             </Node>
             <Node ToolID="43">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="139" y="1123" width="247" height="129" />
+                <Position x="89" y="923" width="247" height="113" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -217,11 +217,11 @@
               <ChildNodes>
                 <Node ToolID="40">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                    <Position x="317" y="1163" />
+                    <Position x="267" y="964" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_11796_45b5acd03a7e4469ac3d1b6e96222ab9_\Engine_8332_1358edddd5614db28c07dece33f4ca23_.yxdb</TempFile>
+                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_8542ecde409a4fd0b250669f20cac765_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -240,7 +240,7 @@
                 </Node>
                 <Node ToolID="41">
                   <GuiSettings Plugin="SimSampling">
-                    <Position x="233" y="1163" />
+                    <Position x="183" y="964" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -283,7 +283,7 @@
                 </Node>
                 <Node ToolID="42">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                    <Position x="149" y="1151" />
+                    <Position x="99" y="952" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -337,7 +337,7 @@
             </Node>
             <Node ToolID="47">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="139" y="991" width="247" height="129" />
+                <Position x="89" y="791" width="247" height="113" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -355,11 +355,11 @@
               <ChildNodes>
                 <Node ToolID="44">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                    <Position x="317" y="1031" />
+                    <Position x="267" y="832" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_11796_45b5acd03a7e4469ac3d1b6e96222ab9_\Engine_8332_54bdb22c4aff40cc88239dcd77ae667c_.yxdb</TempFile>
+                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_bf4ccd0aa392495a82e933684d6f825a_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -378,7 +378,7 @@
                 </Node>
                 <Node ToolID="45">
                   <GuiSettings Plugin="SimSampling">
-                    <Position x="233" y="1031" />
+                    <Position x="183" y="832" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -422,7 +422,7 @@
                 </Node>
                 <Node ToolID="46">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                    <Position x="149" y="1019" />
+                    <Position x="99" y="820" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -478,7 +478,7 @@
         </Node>
         <Node ToolID="53">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="413" y="827" width="267" height="147" />
+            <Position x="364" y="611" width="267" height="149" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -496,7 +496,7 @@
           <ChildNodes>
             <Node ToolID="52">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="423" y="855" width="247" height="109" />
+                <Position x="374" y="640" width="247" height="110" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -514,7 +514,7 @@
               <ChildNodes>
                 <Node ToolID="49">
                   <GuiSettings Plugin="SimSampling">
-                    <Position x="517" y="895" />
+                    <Position x="468" y="681" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -529,8 +529,6 @@
                       <Value name="dataKind">binned</Value>
                       <Value name="replace">True</Value>
                       <Value name="jsonBounds">
-                      </Value>
-                      <Value name="jsonParameters">
                       </Value>
                       <Value name="distribution">norm</Value>
                       <Value name="stageName">
@@ -558,11 +556,11 @@
                 </Node>
                 <Node ToolID="50">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                    <Position x="601" y="895" />
+                    <Position x="552" y="681" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_11796_45b5acd03a7e4469ac3d1b6e96222ab9_\Engine_8332_85ea4969b23b4464be8a79297e49efe0_.yxdb</TempFile>
+                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_05bd03b6d2f64faa8c900fef8d5e8b3f_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -581,7 +579,7 @@
                 </Node>
                 <Node ToolID="51">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-                    <Position x="433" y="883" />
+                    <Position x="384" y="669" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -635,7 +633,7 @@
         </Node>
         <Node ToolID="60">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="691" y="831" width="208.3116" height="247" />
+            <Position x="640" y="611" width="219.0988" height="249" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -653,7 +651,7 @@
           <ChildNodes>
             <Node ToolID="56">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="703" y="859" width="175" height="97" />
+                <Position x="652" y="640" width="175" height="98" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -671,7 +669,7 @@
               <ChildNodes>
                 <Node ToolID="54">
                   <GuiSettings Plugin="SimSampling">
-                    <Position x="713" y="887" />
+                    <Position x="662" y="669" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -686,10 +684,6 @@
                       </Value>
                       <Value name="dataKind">manual</Value>
                       <Value name="replace">True</Value>
-                      <Value name="jsonBounds">
-                      </Value>
-                      <Value name="jsonParameters">
-                      </Value>
                       <Value name="distribution">norm</Value>
                       <Value name="stageName">
                       </Value>
@@ -716,11 +710,11 @@
                 </Node>
                 <Node ToolID="55">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                    <Position x="809" y="887" />
+                    <Position x="758" y="669" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_11796_45b5acd03a7e4469ac3d1b6e96222ab9_\Engine_8332_88f21e3a5470420fbc274edfce6fa186_.yxdb</TempFile>
+                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_7c1deeb0e8904100ad65e60d6242af50_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -741,7 +735,7 @@
             </Node>
             <Node ToolID="59">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="701" y="971" width="188.3116" height="97" />
+                <Position x="650" y="752" width="199.0988" height="98" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -759,7 +753,7 @@
               <ChildNodes>
                 <Node ToolID="57">
                   <GuiSettings Plugin="SimSampling">
-                    <Position x="711" y="999" />
+                    <Position x="660" y="781" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -804,11 +798,11 @@
                 </Node>
                 <Node ToolID="58">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                    <Position x="807" y="999" />
+                    <Position x="756" y="781" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_11796_45b5acd03a7e4469ac3d1b6e96222ab9_\Engine_8332_d956cd9325f845e99921fe46a983345d_.yxdb</TempFile>
+                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_daa780e98ece415f8879e6f67e0bb1ee_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -833,12 +827,12 @@
     </Node>
     <Node ToolID="62">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="90" width="905.3116" height="616" />
+        <Position x="54" y="89.99989" width="815.0988" height="477.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption>Without Replacement</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="60" />
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
           <Disabled value="False" />
           <Folded value="False" />
         </Configuration>
@@ -851,7 +845,7 @@
       <ChildNodes>
         <Node ToolID="14">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="114" y="168" width="299" height="478" />
+            <Position x="64" y="118.9999" width="299" height="438.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -869,7 +863,7 @@
           <ChildNodes>
             <Node ToolID="10">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="141" y="211" width="247" height="154" />
+                <Position x="91" y="162.9999" width="247" height="113.0001" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -887,11 +881,11 @@
               <ChildNodes>
                 <Node ToolID="9">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                    <Position x="319" y="276" />
+                    <Position x="269" y="203.9999" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_11796_45b5acd03a7e4469ac3d1b6e96222ab9_\Engine_8332_379cca8135cf421faf104b6fdd477d1a_.yxdb</TempFile>
+                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_0b75ff7e7dec4aedb20cbcac32d80b86_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -910,7 +904,7 @@
                 </Node>
                 <Node ToolID="17">
                   <GuiSettings Plugin="SimSampling">
-                    <Position x="235" y="276" />
+                    <Position x="185" y="203.9999" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -954,7 +948,7 @@
                 </Node>
                 <Node ToolID="18">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                    <Position x="151" y="264" />
+                    <Position x="101" y="191.9999" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -1008,7 +1002,7 @@
             </Node>
             <Node ToolID="22">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="139" y="492" width="247" height="129" />
+                <Position x="89" y="418.9999" width="247" height="113.0001" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1026,11 +1020,11 @@
               <ChildNodes>
                 <Node ToolID="19">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                    <Position x="317" y="532.0001" />
+                    <Position x="267" y="460" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_11796_45b5acd03a7e4469ac3d1b6e96222ab9_\Engine_8332_64ff2a27d26148c79ea618777aed7c37_.yxdb</TempFile>
+                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_7207a08d656d422281e3da309294ff67_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -1049,11 +1043,11 @@
                 </Node>
                 <Node ToolID="20">
                   <GuiSettings Plugin="SimSampling">
-                    <Position x="233" y="532.0001" />
+                    <Position x="183" y="460" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <Value name="distToFit">norm,lnorm,unif</Value>
+                      <Value name="distToFit">norm</Value>
                       <Value name="binnedValueField" />
                       <Value name="binnedIdField" />
                       <Value name="binnedDataName">
@@ -1064,17 +1058,15 @@
                       <Value name="replace">False</Value>
                       <Value name="jsonBounds">
                       </Value>
-                      <Value name="jsonParameters">
-                      </Value>
                       <Value name="distribution">norm</Value>
                       <Value name="stageName">
                       </Value>
-                      <Value name="samplingMode">data</Value>
+                      <Value name="samplingMode">parametric</Value>
                       <Value name="numIterations">10</Value>
                       <Value name="seed">1</Value>
                       <Value name="chunkSize">256000</Value>
                       <Value name="samplingMechanism">MC</Value>
-                      <Value name="activePage">data</Value>
+                      <Value name="activePage">landing</Value>
                       <Value name="intermediate">False</Value>
                       <Value name="displaySeed">True</Value>
                       <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
@@ -1092,7 +1084,7 @@
                 </Node>
                 <Node ToolID="21">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                    <Position x="149" y="520" />
+                    <Position x="99" y="447.9999" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -1146,7 +1138,7 @@
             </Node>
             <Node ToolID="26">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="139" y="360" width="247" height="129" />
+                <Position x="89" y="286.9999" width="247" height="113.0001" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1164,11 +1156,11 @@
               <ChildNodes>
                 <Node ToolID="23">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                    <Position x="317" y="400" />
+                    <Position x="267" y="327.9999" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_11796_45b5acd03a7e4469ac3d1b6e96222ab9_\Engine_8332_85ca546d7a664cf1b5b0b42422359f7b_.yxdb</TempFile>
+                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_6359f457fb4244e3b515fd55b57130c5_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -1187,7 +1179,7 @@
                 </Node>
                 <Node ToolID="24">
                   <GuiSettings Plugin="SimSampling">
-                    <Position x="233" y="400" />
+                    <Position x="183" y="327.9999" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -1231,7 +1223,7 @@
                 </Node>
                 <Node ToolID="25">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                    <Position x="149" y="388" />
+                    <Position x="99" y="315.9999" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -1287,7 +1279,7 @@
         </Node>
         <Node ToolID="34">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="419" y="183" width="267" height="159" />
+            <Position x="369" y="121" width="267" height="149" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1305,7 +1297,7 @@
           <ChildNodes>
             <Node ToolID="30">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="429" y="211" width="247" height="121" />
+                <Position x="379" y="150" width="247" height="110" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1323,7 +1315,7 @@
               <ChildNodes>
                 <Node ToolID="28">
                   <GuiSettings Plugin="SimSampling">
-                    <Position x="523" y="263" />
+                    <Position x="473" y="191" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -1339,17 +1331,15 @@
                       <Value name="replace">False</Value>
                       <Value name="jsonBounds">
                       </Value>
-                      <Value name="jsonParameters">
-                      </Value>
                       <Value name="distribution">norm</Value>
                       <Value name="stageName">
                       </Value>
                       <Value name="samplingMode">data</Value>
-                      <Value name="numIterations">10</Value>
+                      <Value name="numIterations">6</Value>
                       <Value name="seed">1</Value>
                       <Value name="chunkSize">256000</Value>
                       <Value name="samplingMechanism">MC</Value>
-                      <Value name="activePage">data</Value>
+                      <Value name="activePage">landing</Value>
                       <Value name="intermediate">False</Value>
                       <Value name="displaySeed">True</Value>
                       <Value name="jsonRouletteData">{"20":8,"30":6,"40":7,"50":4,"60":3,"70":7}</Value>
@@ -1367,11 +1357,11 @@
                 </Node>
                 <Node ToolID="29">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                    <Position x="607" y="263" />
+                    <Position x="557" y="191" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_11796_45b5acd03a7e4469ac3d1b6e96222ab9_\Engine_8332_6bd805b829ac4348af1cfa0e4ac9c2c5_.yxdb</TempFile>
+                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_1a7cc86b91824e3ab48b7073f1019b0a_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -1390,7 +1380,7 @@
                 </Node>
                 <Node ToolID="35">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-                    <Position x="439" y="251" />
+                    <Position x="389" y="179" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -1444,7 +1434,7 @@
         </Node>
         <Node ToolID="4">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="691" y="195" width="208.3116" height="256" />
+            <Position x="640" y="126" width="219.0988" height="250" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1462,7 +1452,7 @@
           <ChildNodes>
             <Node ToolID="3">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="703" y="223" width="175" height="105" />
+                <Position x="652" y="155" width="175" height="98" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1480,7 +1470,7 @@
               <ChildNodes>
                 <Node ToolID="1">
                   <GuiSettings Plugin="SimSampling">
-                    <Position x="713" y="259" />
+                    <Position x="662" y="184" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -1488,16 +1478,13 @@
                       </Value>
                       <Value name="binnedValueField" />
                       <Value name="binnedIdField" />
-                      <Value name="binnedDataName">
-                      </Value>
+                      <Value name="binnedDataName">Out</Value>
                       <Value name="samplingStrategy">entire</Value>
                       <Value name="fields">
                       </Value>
                       <Value name="dataKind">manual</Value>
                       <Value name="replace">False</Value>
                       <Value name="jsonBounds">
-                      </Value>
-                      <Value name="jsonParameters">
                       </Value>
                       <Value name="distribution">norm</Value>
                       <Value name="stageName">
@@ -1525,11 +1512,11 @@
                 </Node>
                 <Node ToolID="2">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                    <Position x="809" y="259" />
+                    <Position x="758" y="184" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_11796_45b5acd03a7e4469ac3d1b6e96222ab9_\Engine_8332_153045b96f894dfe837efa1c5bad83f0_.yxdb</TempFile>
+                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_da8f98d6e2c74c40b63caa732fad1e87_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -1550,7 +1537,7 @@
             </Node>
             <Node ToolID="7">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="701" y="344" width="188.3116" height="97" />
+                <Position x="650" y="268" width="199.0988" height="98" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1568,7 +1555,7 @@
               <ChildNodes>
                 <Node ToolID="5">
                   <GuiSettings Plugin="SimSampling">
-                    <Position x="711" y="372" />
+                    <Position x="660" y="297" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
@@ -1576,16 +1563,13 @@
                       </Value>
                       <Value name="binnedValueField" />
                       <Value name="binnedIdField" />
-                      <Value name="binnedDataName">
-                      </Value>
+                      <Value name="binnedDataName">Out</Value>
                       <Value name="samplingStrategy">each</Value>
                       <Value name="fields">
                       </Value>
                       <Value name="dataKind">manual</Value>
                       <Value name="replace">False</Value>
                       <Value name="jsonBounds">
-                      </Value>
-                      <Value name="jsonParameters">
                       </Value>
                       <Value name="distribution">norm</Value>
                       <Value name="stageName">
@@ -1613,11 +1597,11 @@
                 </Node>
                 <Node ToolID="6">
                   <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                    <Position x="807" y="372" />
+                    <Position x="756" y="297" />
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_11796_45b5acd03a7e4469ac3d1b6e96222ab9_\Engine_8332_44aed8ea4c9a43efa3fc41c1ea81bbe3_.yxdb</TempFile>
+                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_9d6136f99d2f4240a01c09a3b6140f47_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
