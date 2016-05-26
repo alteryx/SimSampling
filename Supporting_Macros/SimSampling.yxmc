@@ -82,6 +82,7 @@ config &lt;- list(
   dataKind = dropdownInput('%Question.dataKind%' , 'raw'),
   displaySeed = checkboxInput('%Question.displaySeed%' , FALSE),
   distribution = dropdownInput('%Question.distribution%' , 'norm'),
+  `_distribution` = dropdownInput('%Question._distribution%' , 'normal'),
   distToFit = listInput('%Question.distToFit%'),
   fields = listInput('%Question.fields%'),
   intermediate = checkboxInput('%Question.intermediate%' , FALSE),
@@ -97,7 +98,7 @@ config &lt;- list(
   samplingMode = dropdownInput('%Question.samplingMode%' , 'parametric'),
   samplingStrategy = dropdownInput('%Question.samplingStrategy%' , 'entire'),
   seed = numericInput('%Question.seed%' , 1),
-  stageName = textInput('%Question.stageName%')
+  stageName = textInput('%Question.stageName%', 'Variable')
 )
 options(alteryx.wd = '%Engine.WorkflowDirectory%')
 options(alteryx.debug = config$debug)
@@ -133,11 +134,11 @@ config$bounds = jsonlite::fromJSON(config$jsonBounds)
 config$parameters = getParameters(config)
 config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
 
-if(config$samplingMode == "parametric") {
-  dists &lt;- jsonlite::fromJSON('%Question._distributions%')
-  dist &lt;- '%Question._distribution%'
-  print(dists[dist])
-}
+# if(config$samplingMode == "parametric") {
+#   dists &lt;- jsonlite::fromJSON('%Question._distributions%')
+#   dist &lt;- '%Question.distribution%'
+#   print(dists[dist])
+# }
 readRecordCount &lt;- read.Alteryx("totalSize")
 readRecordCount &lt;- as.numeric(readRecordCount$Count[[1]])
 config$seed &lt;- ifelse(config$displaySeed, config$seed, read.Alteryx("seed")$seed[[1]])
@@ -175,14 +176,14 @@ tool_process(
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
+            <MetaInfo connection="Output1">
+              <RecordInfo>
+                <Field name="Variable" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
             <MetaInfo connection="Output2">
               <RecordInfo>
                 <Field name="seed" source="R-DATA:" type="Double" />
-              </RecordInfo>
-            </MetaInfo>
-            <MetaInfo connection="Output1">
-              <RecordInfo>
-                <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -557,7 +558,7 @@ tool_process(
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
+                <Field name="Variable" source="R-DATA:" type="Double" />
                 <Field name="seed" source="R-DATA:" type="Double" />
               </RecordInfo>
             </MetaInfo>
@@ -579,13 +580,13 @@ tool_process(
             </Annotation>
             <MetaInfo connection="Left">
               <RecordInfo>
-                <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
+                <Field name="Variable" source="R-DATA:" type="Double" />
                 <Field name="seed" source="R-DATA:" type="Double" />
               </RecordInfo>
             </MetaInfo>
             <MetaInfo connection="Right">
               <RecordInfo>
-                <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
+                <Field name="Variable" source="R-DATA:" type="Double" />
                 <Field name="seed" source="R-DATA:" type="Double" />
               </RecordInfo>
             </MetaInfo>
@@ -628,7 +629,7 @@ tool_process(
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="[&quot;&quot;]" source="R-DATA:" type="Double" />
+                <Field name="Variable" source="R-DATA:" type="Double" />
                 <Field name="seed" source="R-DATA:" type="Double" />
               </RecordInfo>
             </MetaInfo>
@@ -647,7 +648,7 @@ tool_process(
               </SelectFields>
             </Configuration>
             <Annotation DisplayMode="0">
-              <Name />
+              <Name>Select fields to sample</Name>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
@@ -2367,7 +2368,7 @@ Latin HyperCube/ Stratified Sampling:LH
             </Question>
             <Question>
               <Type>NumericUpDown</Type>
-              <Description>seed</Description>
+              <Description>Seed</Description>
               <Name>seed</Name>
               <ToolId value="15" />
               <Minimum value="1" />
