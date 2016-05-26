@@ -173,13 +173,13 @@ const NumInput = observer(({ store, k, cls, label }) => {
   };
   return (
     <div className={`col-xs-3 ${cls}`} style={style}>
+      <label>{label}</label>
       <input style={{width: "100%"}}
         type="number"
         value={store[k]}
         onChange={handleChange}
         step={10}
       />
-      <label>{label}</label>
     </div>
   );
 });
