@@ -38,12 +38,12 @@ class Chart extends Component {
 const NumInput = function({value, cls, label }){
   return (
     <div className={`col-xs-3 ${cls}`}>
+       <label>{label}</label>
       <input style={{width: "100%"}}
         type="number"
         value={value}
         step={10}
       />
-      <label>{label}</label>
     </div>
   );
 };
@@ -58,11 +58,10 @@ class ComboNumericSliders extends Component {
     return (
       <div>
         <Chart store={store} />
-        <p><b>Enter Parameters</b></p>
+        <p className='ayx-section-header'>Enter Parameters and Bounds</p>
         {store._distributions[store._distribution].map(d =>
           <ComboNumericSlider state={d} key={store._distribution + d.label} />
         )}
-        <p><b>Enter Bounds</b></p>
         <div className="row">
           <NumInput value={-10e5} cls='pull-left2' label='Lower Bound' />
           <NumInput value={10e5} cls='pull-right2' label='Upper Bound' />
