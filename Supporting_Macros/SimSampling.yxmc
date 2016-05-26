@@ -167,8 +167,7 @@ tool_process(
   sampleSource = config$samplingMode,
   replace = config$replace,
   totalSize = config$totalSize
-) 
-</RScript>
+)</RScript>
               <UseFullUpdate value="False" />
             </Configuration>
             <Annotation DisplayMode="0">
