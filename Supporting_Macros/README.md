@@ -28,7 +28,7 @@ There are 2 inputs.
 9. __Select distributions to fit:__ Choose the distributions you want to fit the data to. This option is available for sampling from data and from a best-fitting distribution.
 10. __Select sampling mode:__ Sampling can be done parametrically from a distribution or to sample from a dataset. In the case of sampling from data, a data stream should be connected to the D input or sampling is done via manually specifying data. For parametric sampling, there should be no connected data stream to the D input.
 11. __Specify kind of data:__ This option is available when choosing to sample from data. You can supply data in three ways. (1) Raw Data, (2) Binned Data (with an ID field and a value field with equally spaced bins) or (3) Manually entered data via the Roulette widget.
-12. __Enter name for binned data:__ The output field name for the binned data. This option is available 
+12. __Enter name for outgoing data:__ The output field name for the binned data. This option is available 
 13. __Select ID Field:__ The ID field for the binned data
 14. __Select Value Field:__ The value field for the binned data
 15. __Roulette Data:__ This is roulette data.
