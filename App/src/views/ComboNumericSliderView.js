@@ -19,17 +19,35 @@ const dummyData = {
   dist: 'hello'
 }
 
+function isDiscrete(dist){
+  return ['binomial', 'poisson', 'geometric'].indexOf(dist) >= 0
+}
+
 @observer
 class Chart extends Component {
   render(){
     let { store } = this.props;
-    if (store._distribution == "binomial"){
+    if (isDiscrete(store._distribution)){
       return <D3Component2 store={store} chart={Histogram} chartType='histogram' />
     } else {
       return <D3Component store={store} chart={AreaChart} chartType='areachart' />
     }
   }
 }
+
+const NumInput = function({value, cls, label }){
+  return (
+    <div className={`col-xs-3 ${cls}`}>
+      <input style={{width: "100%"}}
+        type="number"
+        value={value}
+        step={10}
+      />
+      <label>{label}</label>
+    </div>
+  );
+};
+
 
 @observer
 class ComboNumericSliders extends Component {
@@ -40,9 +58,15 @@ class ComboNumericSliders extends Component {
     return (
       <div>
         <Chart store={store} />
+        <p><b>Enter Parameters</b></p>
         {store._distributions[store._distribution].map(d =>
           <ComboNumericSlider state={d} key={store._distribution + d.label} />
         )}
+        <p><b>Enter Bounds</b></p>
+        <div className="row">
+          <NumInput value={-10e5} cls='pull-left2' label='Lower Bound' />
+          <NumInput value={10e5} cls='pull-right2' label='Upper Bound' />
+        </div>
       </div>
     )
   }
@@ -62,7 +86,7 @@ export default function RenderComboNumericSliders(manager, collection, id = "app
     document.getElementById(id)
   )
   if (window.Alteryx.browser){
-    setTimeout(() => distStore._distribution = 'binomial', 5000)
+    //setTimeout(() => distStore._distribution = 'binomial', 5000)
   }
 }
 
