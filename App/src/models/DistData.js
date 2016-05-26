@@ -2,6 +2,11 @@
 /* To add more distributions, consult jstat documentation */
 const DistData = {
   distributions: {
+    /* Defaults:
+        minSpinner: -Infinity
+        maxSpinner: Infinity
+        discrete: false
+    */
     normal: [
       {label: "Mean", paramName: "mean", value: 0, min: -5, max: 5, step: 1e-2},
       {label: "Stdev", paramName: "sd", value: 1, min: 0, max: 2, step: 1e-2}
