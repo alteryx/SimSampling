@@ -41,7 +41,7 @@ const DistData = {
       {label: "Probability", paramName: "prob", value: 0.5, min: 0, max: 1, step: 1e-5, minSpinner: 0, maxSpinner: 1}
     ],
     geometric: [
-      {label: "Probability", paramName: "prob", value: 0.5, min: 0, max: 1, step: zeroNum}
+      {label: "Probability", paramName: "prob", value: 0.5, min: 0, max: 1, step: zeroNum, minSpinner: 0, maxSpinner: 1}
     ]
   },
   distribution: 'normal',
