@@ -53,3 +53,10 @@
 .alteryx-numeric-slider label{
   width: 20%;
 }
+
+.ayx-section-header {
+  font-family: "Segoe UI Regular";
+  font-size: 14px;
+  color: #1691c6;
+  text-align: left;
+}
