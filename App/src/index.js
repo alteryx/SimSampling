@@ -23,6 +23,16 @@ These need to be global in order for the buttons to pick them up as global funct
 It would be nice if they can be namespaced. Something to consider while refactoring.
 */
 
+function titleCase(string) { 
+  return string.charAt(0).toUpperCase() + string.slice(1); 
+}
+
+function switchToDataSampling(manager){
+  if (manager.incomingMetaInfo &&  manager.incomingMetaInfo[0]){
+    manager.GetDataItemByDataName('samplingMode').setValue("data")
+  }
+}
+
 window.nextPage = function(){
   var v = Alteryx.Gui.manager
     .GetDataItemByDataName("samplingMode")
@@ -67,6 +77,7 @@ Alteryx.Gui.AfterLoad = function AfterLoad(manager) {
     renderRoulette(manager, collection2, 'rouletteChart');
     renderComboNumericSliders(manager, collection, 'combonumericslider');
   } else {
+    switchToDataSampling(manager)
     controlDisplayIntermediate(manager)
     controlDisplaySeed(manager)
     displayControls.forEach(function(d){displayTarget.apply(null, d)})
@@ -74,6 +85,21 @@ Alteryx.Gui.AfterLoad = function AfterLoad(manager) {
     renderComboNumericSliders(manager, collection, 'combonumericslider');
   }
 };
+
+Alteryx.Gui.Annotation = function Annotation(manager){
+  const activePage = manager.GetDataItemByDataName('activePage').getValue()
+  const samplingMode = manager.GetDataItemByDataName('samplingMode').getValue()
+  if (activePage === 'landing'){
+    return
+  }
+  if (samplingMode === 'parametric'){
+    const dist = manager.GetDataItemByDataName('_distribution').getValue()
+    const dists = JSON.parse(manager.GetDataItemByDataName("_distributions").getValue())
+    return titleCase(dist) + "("  + dists[dist].map(d => d.value).join(" , ") + ")"
+  } else {
+    return 'Data Sampling'
+  }
+}
 
 if (window.Alteryx.browser) {
   Alteryx.Gui.BeforeLoad(Alteryx.Gui.manager, '');
