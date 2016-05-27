@@ -30,7 +30,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_1276_2c892f8479584dbfbccf66307895d4df_\Engine_3624_4d7aa841258141d3935bd3564d381495_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2736_4053b6697ed84c43abe1c89cf89b67e4_\Engine_2796_927631b79e2144f1ae1b075167224c2f_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -53,7 +53,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_1276_2c892f8479584dbfbccf66307895d4df_\Engine_3624_7237b353aa524ac4b1476f49ae21012e_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2736_4053b6697ed84c43abe1c89cf89b67e4_\Engine_2796_e8f4cc8f360c45a5849339481a6843ca_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -86,10 +86,6 @@
           <Value name="fields">asdf</Value>
           <Value name="dataKind">raw</Value>
           <Value name="replace">True</Value>
-          <Value name="jsonBounds">
-          </Value>
-          <Value name="jsonParameters">
-          </Value>
           <Value name="distribution">norm</Value>
           <Value name="stageName">
           </Value>
@@ -108,7 +104,7 @@
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText />
+          <DefaultAnnotationText>Data Sampling</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -130,10 +126,6 @@
           <Value name="fields">asdf</Value>
           <Value name="dataKind">raw</Value>
           <Value name="replace">False</Value>
-          <Value name="jsonBounds">
-          </Value>
-          <Value name="jsonParameters">
-          </Value>
           <Value name="distribution">norm</Value>
           <Value name="stageName">
           </Value>
@@ -152,7 +144,7 @@
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText />
+          <DefaultAnnotationText>Data Sampling</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
