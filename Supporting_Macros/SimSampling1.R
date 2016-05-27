@@ -12,7 +12,7 @@ config <- list(
   distToFit = listInput('%Question.distToFit%'),
   fields = listInput('%Question.fields%'),
   intermediate = checkboxInput('%Question.intermediate%' , FALSE),
-  jsonBounds = textInput('%Question.jsonBounds%' , '[-4, 4]'),
+  jsonBounds = textInput('%Question._bounds%' , '[-10e5, 10e5]'),
   jsonParameters = textInput('%Question.jsonParameters%' , '{"mean": 0, "sd": 1}'),
   jsonRouletteData = textInput(
     '%Question.jsonRouletteData%' , 
@@ -55,7 +55,7 @@ getParameters <- function(config){
 }
 
 # Deserialize JSON values into R objects
-config$bounds = jsonlite::fromJSON(config$jsonBounds)
+config$bounds = as.numeric(jsonlite::fromJSON(config$jsonBounds))
 #config$parameters = jsonlite::fromJSON(config$jsonParameters)
 config$parameters = getParameters(config)
 config$rouletteData = jsonlite::fromJSON(config$jsonRouletteData)
@@ -73,7 +73,7 @@ write.Alteryx(dfSeed, 2)
 config$totalSize <- ifelse(readRecordCount==0, config$numIterations, readRecordCount)
 
 config$name <- ifelse(config$samplingMode=="parametric", config$stageName, config$binnedDataName)
-
+print(config)
 tool_process(
   method = toupper(config$samplingMechanism),
   chunkSize = config$chunkSize,
