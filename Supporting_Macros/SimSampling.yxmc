@@ -1817,7 +1817,7 @@ Transform
         </Node>
         <Node ToolID="117">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="786" y="486" width="273" height="129" />
+            <Position x="786" y="486" width="357" height="129" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1882,12 +1882,25 @@ Transform
             </Node>
             <Node ToolID="129">
               <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
-                <Position x="990" y="546" width="59" height="59" />
+                <Position x="1002" y="546" width="59" height="59" />
               </GuiSettings>
               <Properties>
                 <Configuration />
                 <Annotation DisplayMode="0">
                   <Name>activePage</Name>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="130">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+                <Position x="1074" y="546" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>_distribution</Name>
                   <DefaultAnnotationText />
                   <Left value="False" />
                 </Annotation>
@@ -2228,6 +2241,12 @@ Transform
       <Constant>
         <Namespace>Question</Namespace>
         <Name>activePage</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>_distribution</Name>
         <Value />
         <IsNumeric value="False" />
       </Constant>
@@ -2615,6 +2634,16 @@ Manual Entry:manual
               <Description>activePage</Description>
               <Name>activePage</Name>
               <ToolId value="129" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>_distribution</Description>
+              <Name>_distribution</Name>
+              <ToolId value="130" />
               <Default />
               <Password value="False" />
               <Multiline value="False" />
