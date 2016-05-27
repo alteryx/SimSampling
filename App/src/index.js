@@ -55,6 +55,7 @@ Alteryx.Gui.BeforeLoad = function BeforeLoad(manager, AlteryxDataItems) {
   dataItem('_distributions', { value: JSON.stringify(DistData.distributions) });
   dataItem('rouletteData', { value: JSON.stringify(RouletteData) });
   dataItem('jsonRouletteData', { value: '{}' });
+  dataItem('_bounds', { value: '[-10e3, 10e3]'})
   if (!window.Alteryx.browser){
     dataItem('displaySeed', {value: true}, 'SimpleBool')
     dataItem('intermediate', {value: false}, 'SimpleBool')
@@ -68,6 +69,7 @@ Alteryx.Gui.AfterLoad = function AfterLoad(manager) {
   const collection = [
     { key: '_distributions', type: 'json' },
     { key: '_distribution', type: 'value' },
+    { key: '_bounds', type: 'json'}
   ];
   const collection2 = [
     { key: 'rouletteData', type: 'json' },

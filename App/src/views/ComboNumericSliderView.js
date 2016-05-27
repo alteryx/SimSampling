@@ -35,13 +35,14 @@ class Chart extends Component {
   }
 }
 
-const NumInput = function({value, cls, label }){
+const NumInput = function({value, cls, label, handleChange }){
   return (
     <div className={`col-xs-3 ${cls}`}>
        <label>{label}</label>
       <input style={{width: "100%"}}
         type="number"
         value={value}
+        onChange={handleChange}
         step={10}
       />
     </div>
@@ -63,8 +64,12 @@ class ComboNumericSliders extends Component {
           <ComboNumericSlider state={d} key={store._distribution + d.label} />
         )}
         <div className="row">
-          <NumInput value={-10e5} cls='pull-left2' label='Lower Bound' />
-          <NumInput value={10e5} cls='pull-right2' label='Upper Bound' />
+          <NumInput value={store._bounds[0]} cls='pull-left2' label='Lower Bound' 
+            handleChange={e => store._bounds[0] = e.target.value}        
+          />
+          <NumInput value={store._bounds[1]} cls='pull-right2' label='Upper Bound' 
+            handleChange={e => store._bounds[1] = e.target.value}  
+          />
         </div>
       </div>
     )
