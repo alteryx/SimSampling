@@ -1,0 +1,2604 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.5">
+  <Nodes>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="174" width="804" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>We can sample from several parametric distributions.</Text>
+          <Font name="Segoe UI" size="9.75" style="0" />
+          <TextColor name="White" />
+          <FillColor r="22" g="145" b="198" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="804" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Simulation Sampling</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="White" />
+          <FillColor r="22" g="145" b="198" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="342" y="54" width="516" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Simulation Sampling allows for sampling. The sampling can be done parametrically from a distribution, from input data, or as a combination - best fitting to a distribution and sampling from that. The data can also be "drawn", if one is unsure of the parameters of a distribution but is also lacking data.</Text>
+          <Font name="Segoe UI" size="9" style="0" />
+          <TextColor name="White" />
+          <FillColor r="111" g="111" b="111" />
+          <Shape shape="3" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="119">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="138" width="180" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>1) Run the workflow (Ctrl+R).</Text>
+          <Font name="Segoe UI" size="8.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="124">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="246" y="138" width="312" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>2) Select a tool to view its output in the Results window.</Text>
+          <Font name="Segoe UI" size="8.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="125">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="78" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">N1</Value>
+          <Value name="samplingMode">parametric</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">parametric</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <DefaultAnnotationText>Normal(0 , 1)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="126">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="246" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_cc29abc92aff4350b1cb46193b4573ce_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="127">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="330" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">lnorm</Value>
+          <Value name="stageName">N1</Value>
+          <Value name="samplingMode">parametric</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">parametric</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
+          <Value name="_distribution">lognormal</Value>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <DefaultAnnotationText>Lognormal(0 , 1)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="128">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_2cbbedc0d58f4988abccfbfd770daaa9_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="129">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="606" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">pareto</Value>
+          <Value name="stageName">N1</Value>
+          <Value name="samplingMode">parametric</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">parametric</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
+          <Value name="_distribution">pareto</Value>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <DefaultAnnotationText>Pareto(2 , 2)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="130">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="774" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_2d453f3da57e4ef9875a86ffbdf74419_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="131">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="78" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">unif</Value>
+          <Value name="stageName">N1</Value>
+          <Value name="samplingMode">parametric</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">parametric</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
+          <Value name="_distribution">uniform</Value>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <DefaultAnnotationText>Uniform(-1 , 1)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="132">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="246" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_ae7b5bfb94894c94a2f91c26dd211c85_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="133">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="330" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">triangle</Value>
+          <Value name="stageName">N1</Value>
+          <Value name="samplingMode">parametric</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">parametric</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
+          <Value name="_distribution">triangular</Value>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <DefaultAnnotationText>Triangular(-1 , 1 , 0)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="134">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_fbe5c91abe73421f9e74b25dce18c12b_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="135">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="606" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">gamma</Value>
+          <Value name="stageName">N1</Value>
+          <Value name="samplingMode">parametric</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">parametric</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
+          <Value name="_distribution">gamma</Value>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <DefaultAnnotationText>Gamma(1 , 1)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="136">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="774" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_f980079bf8164e81abbe6ce7d1843c36_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="137">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="78" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">binom</Value>
+          <Value name="stageName">N1</Value>
+          <Value name="samplingMode">parametric</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">parametric</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
+          <Value name="_distribution">binomial</Value>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <DefaultAnnotationText>Binomial(10 , 0.5)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="138">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="246" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_9cb94fec148947a8b86ee654eef1a2b8_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="139">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="330" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">geom</Value>
+          <Value name="stageName">N1</Value>
+          <Value name="samplingMode">parametric</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">parametric</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
+          <Value name="_distribution">geometric</Value>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <DefaultAnnotationText>Geometric(0.5)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="140">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_33593094a0e445b8ae3c0a54f879f99c_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="141">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="606" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">pois</Value>
+          <Value name="stageName">N1</Value>
+          <Value name="samplingMode">parametric</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">parametric</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
+          <Value name="_distribution">poisson</Value>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <DefaultAnnotationText>Poisson(5)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="142">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="774" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_19ac558bff614af6a15533a0a50ab4bd_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="143">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="498" width="804" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>We can sample from raw data, with our without replacement, by row, column or best fitting distribution.</Text>
+          <Font name="Segoe UI" size="9.75" style="0" />
+          <TextColor name="White" />
+          <FillColor r="22" g="145" b="198" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="145">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="186" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">HR,X3B</Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">
+          </Value>
+          <Value name="samplingMode">data</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">data</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Data Sampling</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="149">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="414" y="570" width="456" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>We can sample rows from a dataset, with our without replacement.</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="150">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="186" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">each</Value>
+          <Value name="fields">HR,X3B</Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">
+          </Value>
+          <Value name="samplingMode">data</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">data</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Data Sampling</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="152">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="186" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">HR,X3B</Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">True</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">
+          </Value>
+          <Value name="samplingMode">data</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">data</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Data Sampling</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="153">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="186" y="798" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">each</Value>
+          <Value name="fields">HR,X3B</Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">True</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">
+          </Value>
+          <Value name="samplingMode">data</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">data</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Data Sampling</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="156">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="414" y="726" width="384" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[We can sample columns independently, with our without replacement
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="157">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="414" y="882" width="384" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[We can fit the best possible distribution to the data and sample from it, with or without replacement
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="158">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="306" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_8cfab23f22a647efb8c7bf94a1fffc04_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="159">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="306" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_911dc8591fc94cfa99b3c214a9d7742c_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="160">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="186" y="870" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">norm</Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">best</Value>
+          <Value name="fields">HR,X3B</Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">
+          </Value>
+          <Value name="samplingMode">data</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">data</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Data Sampling</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="161">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="186" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">norm</Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">best</Value>
+          <Value name="fields">HR,X3B</Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">
+          </Value>
+          <Value name="samplingMode">data</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">data</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Data Sampling</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="162">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="306" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_ab0f96526e6e4793971bf3e1c22740b4_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="163">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="306" y="798" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_2e85eefd0257405f968cffd326956d9c_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="164">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="306" y="870" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_3a0691d2afaf48e2ae6c6da4c3c2a470_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="165">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="306" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_8724cb16bdaf49d5a22382df60f36298_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="166">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="1002" width="804" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>We can sample from binned data, by row, with or without replacement.</Text>
+          <Font name="Segoe UI" size="9.75" style="0" />
+          <TextColor name="White" />
+          <FillColor r="22" g="145" b="198" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="167">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="186" y="1050" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField">frequency</Value>
+          <Value name="binnedIdField">bin</Value>
+          <Value name="binnedDataName">BinData</Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">binned</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">
+          </Value>
+          <Value name="samplingMode">data</Value>
+          <Value name="numIterations">6</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">data</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{"20":8,"30":6,"40":7,"50":4,"60":3,"70":7}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Data Sampling</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="168">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="306" y="1050" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_1a7cc86b91824e3ab48b7073f1019b0a_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="169">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="78" y="1038" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="7" />
+          <Fields>
+            <Field name="bin" />
+            <Field name="frequency" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>10</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>20</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>10</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>10</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>30</c>
+            </r>
+            <r>
+              <c>6</c>
+              <c>20</c>
+            </r>
+            <r>
+              <c>7</c>
+              <c>40</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <AnnotationText>Data (Binned)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="170">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="1194" width="804" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[We can sample from data input manually using a data grid, by row, with or without replacement.
+]]></Text>
+          <Font name="Segoe UI" size="9.75" style="0" />
+          <TextColor name="White" />
+          <FillColor r="22" g="145" b="198" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="171">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="186" y="1110" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField">frequency</Value>
+          <Value name="binnedIdField">bin</Value>
+          <Value name="binnedDataName">BinData</Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">binned</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">
+          </Value>
+          <Value name="samplingMode">data</Value>
+          <Value name="numIterations">6</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">data</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{"20":8,"30":6,"40":7,"50":4,"60":3,"70":7}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Data Sampling</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="172">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="306" y="1110" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="173">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="78" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="30" />
+          <Fields>
+            <Field name="Tm" />
+            <Field name="Games" />
+            <Field name="Wins" />
+            <Field name="Win_Pct" />
+            <Field name="X_Bat" />
+            <Field name="BatAge" />
+            <Field name="R_G" />
+            <Field name="PA" />
+            <Field name="AB" />
+            <Field name="R" />
+            <Field name="H" />
+            <Field name="X2B" />
+            <Field name="X3B" />
+            <Field name="HR" />
+            <Field name="RBI" />
+            <Field name="SB" />
+            <Field name="CS" />
+            <Field name="BB" />
+            <Field name="SO" />
+            <Field name="BA" />
+            <Field name="OBP" />
+            <Field name="SLG" />
+            <Field name="OPS" />
+            <Field name="OPS_Adj" />
+            <Field name="TB" />
+            <Field name="GDP" />
+            <Field name="HBP" />
+            <Field name="SH" />
+            <Field name="SF" />
+            <Field name="IBB" />
+          </Fields>
+          <Data>
+            <r>
+              <c>ARI</c>
+              <c>162</c>
+              <c>70</c>
+              <c>0.432</c>
+              <c>45</c>
+              <c>26.5</c>
+              <c>4.44</c>
+              <c>6268</c>
+              <c>5565</c>
+              <c>720</c>
+              <c>1408</c>
+              <c>307</c>
+              <c>45</c>
+              <c>173</c>
+              <c>686</c>
+              <c>102</c>
+              <c>40</c>
+              <c>571</c>
+              <c>1298</c>
+              <c>0.253</c>
+              <c>0.324</c>
+              <c>0.418</c>
+              <c>0.742</c>
+              <c>88</c>
+              <c>2324</c>
+              <c>93</c>
+              <c>37</c>
+              <c>54</c>
+              <c>41</c>
+              <c>47</c>
+            </r>
+            <r>
+              <c>ATL</c>
+              <c>162</c>
+              <c>86</c>
+              <c>0.531</c>
+              <c>45</c>
+              <c>28.8</c>
+              <c>4.54</c>
+              <c>6335</c>
+              <c>5539</c>
+              <c>735</c>
+              <c>1459</c>
+              <c>300</c>
+              <c>20</c>
+              <c>149</c>
+              <c>700</c>
+              <c>58</c>
+              <c>26</c>
+              <c>602</c>
+              <c>1064</c>
+              <c>0.263</c>
+              <c>0.339</c>
+              <c>0.405</c>
+              <c>0.744</c>
+              <c>98</c>
+              <c>2246</c>
+              <c>142</c>
+              <c>52</c>
+              <c>95</c>
+              <c>47</c>
+              <c>54</c>
+            </r>
+            <r>
+              <c>BAL</c>
+              <c>162</c>
+              <c>64</c>
+              <c>0.395</c>
+              <c>35</c>
+              <c>28.7</c>
+              <c>4.57</c>
+              <c>6233</c>
+              <c>5618</c>
+              <c>741</c>
+              <c>1508</c>
+              <c>307</c>
+              <c>19</c>
+              <c>160</c>
+              <c>708</c>
+              <c>76</c>
+              <c>37</c>
+              <c>517</c>
+              <c>1013</c>
+              <c>0.268</c>
+              <c>0.332</c>
+              <c>0.415</c>
+              <c>0.747</c>
+              <c>95</c>
+              <c>2333</c>
+              <c>131</c>
+              <c>39</c>
+              <c>13</c>
+              <c>46</c>
+              <c>25</c>
+            </r>
+            <r>
+              <c>BOS</c>
+              <c>162</c>
+              <c>95</c>
+              <c>0.586</c>
+              <c>43</c>
+              <c>30</c>
+              <c>5.38</c>
+              <c>6342</c>
+              <c>5543</c>
+              <c>872</c>
+              <c>1495</c>
+              <c>335</c>
+              <c>25</c>
+              <c>212</c>
+              <c>822</c>
+              <c>126</c>
+              <c>39</c>
+              <c>659</c>
+              <c>1120</c>
+              <c>0.27</c>
+              <c>0.352</c>
+              <c>0.454</c>
+              <c>0.806</c>
+              <c>105</c>
+              <c>2516</c>
+              <c>137</c>
+              <c>70</c>
+              <c>19</c>
+              <c>51</c>
+              <c>39</c>
+            </r>
+            <r>
+              <c>CHC</c>
+              <c>161</c>
+              <c>83</c>
+              <c>0.516</c>
+              <c>45</c>
+              <c>29.9</c>
+              <c>4.39</c>
+              <c>6244</c>
+              <c>5486</c>
+              <c>707</c>
+              <c>1398</c>
+              <c>293</c>
+              <c>29</c>
+              <c>161</c>
+              <c>678</c>
+              <c>56</c>
+              <c>34</c>
+              <c>592</c>
+              <c>1185</c>
+              <c>0.255</c>
+              <c>0.332</c>
+              <c>0.407</c>
+              <c>0.738</c>
+              <c>88</c>
+              <c>2232</c>
+              <c>134</c>
+              <c>59</c>
+              <c>65</c>
+              <c>42</c>
+              <c>44</c>
+            </r>
+            <r>
+              <c>CHW</c>
+              <c>162</c>
+              <c>79</c>
+              <c>0.488</c>
+              <c>34</c>
+              <c>29.8</c>
+              <c>4.47</c>
+              <c>6132</c>
+              <c>5463</c>
+              <c>724</c>
+              <c>1410</c>
+              <c>246</c>
+              <c>20</c>
+              <c>184</c>
+              <c>695</c>
+              <c>113</c>
+              <c>49</c>
+              <c>534</c>
+              <c>1022</c>
+              <c>0.258</c>
+              <c>0.329</c>
+              <c>0.411</c>
+              <c>0.74</c>
+              <c>91</c>
+              <c>2248</c>
+              <c>139</c>
+              <c>62</c>
+              <c>34</c>
+              <c>39</c>
+              <c>25</c>
+            </r>
+            <r>
+              <c>CIN</c>
+              <c>162</c>
+              <c>78</c>
+              <c>0.481</c>
+              <c>46</c>
+              <c>27.9</c>
+              <c>4.15</c>
+              <c>6187</c>
+              <c>5462</c>
+              <c>673</c>
+              <c>1349</c>
+              <c>280</c>
+              <c>25</c>
+              <c>158</c>
+              <c>637</c>
+              <c>96</c>
+              <c>40</c>
+              <c>531</c>
+              <c>1129</c>
+              <c>0.247</c>
+              <c>0.318</c>
+              <c>0.394</c>
+              <c>0.712</c>
+              <c>86</c>
+              <c>2153</c>
+              <c>103</c>
+              <c>53</c>
+              <c>100</c>
+              <c>41</c>
+              <c>37</c>
+            </r>
+            <r>
+              <c>CLE</c>
+              <c>162</c>
+              <c>65</c>
+              <c>0.401</c>
+              <c>40</c>
+              <c>27.4</c>
+              <c>4.77</c>
+              <c>6320</c>
+              <c>5568</c>
+              <c>773</c>
+              <c>1468</c>
+              <c>314</c>
+              <c>28</c>
+              <c>161</c>
+              <c>730</c>
+              <c>84</c>
+              <c>31</c>
+              <c>582</c>
+              <c>1211</c>
+              <c>0.264</c>
+              <c>0.339</c>
+              <c>0.417</c>
+              <c>0.756</c>
+              <c>103</c>
+              <c>2321</c>
+              <c>140</c>
+              <c>81</c>
+              <c>39</c>
+              <c>50</c>
+              <c>20</c>
+            </r>
+            <r>
+              <c>COL</c>
+              <c>162</c>
+              <c>92</c>
+              <c>0.568</c>
+              <c>45</c>
+              <c>27.8</c>
+              <c>4.96</c>
+              <c>6241</c>
+              <c>5398</c>
+              <c>804</c>
+              <c>1408</c>
+              <c>300</c>
+              <c>50</c>
+              <c>190</c>
+              <c>760</c>
+              <c>106</c>
+              <c>55</c>
+              <c>660</c>
+              <c>1277</c>
+              <c>0.261</c>
+              <c>0.343</c>
+              <c>0.441</c>
+              <c>0.784</c>
+              <c>98</c>
+              <c>2378</c>
+              <c>111</c>
+              <c>47</c>
+              <c>76</c>
+              <c>60</c>
+              <c>40</c>
+            </r>
+            <r>
+              <c>DET</c>
+              <c>163</c>
+              <c>86</c>
+              <c>0.528</c>
+              <c>36</c>
+              <c>29.8</c>
+              <c>4.56</c>
+              <c>6233</c>
+              <c>5540</c>
+              <c>743</c>
+              <c>1443</c>
+              <c>245</c>
+              <c>35</c>
+              <c>183</c>
+              <c>718</c>
+              <c>72</c>
+              <c>33</c>
+              <c>540</c>
+              <c>1114</c>
+              <c>0.26</c>
+              <c>0.331</c>
+              <c>0.416</c>
+              <c>0.747</c>
+              <c>93</c>
+              <c>2307</c>
+              <c>131</c>
+              <c>61</c>
+              <c>53</c>
+              <c>39</c>
+              <c>30</c>
+            </r>
+            <r>
+              <c>FLA</c>
+              <c>162</c>
+              <c>87</c>
+              <c>0.537</c>
+              <c>44</c>
+              <c>26.9</c>
+              <c>4.77</c>
+              <c>6312</c>
+              <c>5572</c>
+              <c>772</c>
+              <c>1493</c>
+              <c>296</c>
+              <c>25</c>
+              <c>159</c>
+              <c>727</c>
+              <c>75</c>
+              <c>35</c>
+              <c>568</c>
+              <c>1226</c>
+              <c>0.268</c>
+              <c>0.34</c>
+              <c>0.416</c>
+              <c>0.756</c>
+              <c>97</c>
+              <c>2316</c>
+              <c>110</c>
+              <c>63</c>
+              <c>70</c>
+              <c>39</c>
+              <c>46</c>
+            </r>
+            <r>
+              <c>HOU</c>
+              <c>162</c>
+              <c>74</c>
+              <c>0.457</c>
+              <c>42</c>
+              <c>31.6</c>
+              <c>3.97</c>
+              <c>6038</c>
+              <c>5436</c>
+              <c>643</c>
+              <c>1415</c>
+              <c>270</c>
+              <c>32</c>
+              <c>142</c>
+              <c>616</c>
+              <c>113</c>
+              <c>44</c>
+              <c>448</c>
+              <c>990</c>
+              <c>0.26</c>
+              <c>0.319</c>
+              <c>0.4</c>
+              <c>0.719</c>
+              <c>90</c>
+              <c>2175</c>
+              <c>153</c>
+              <c>43</c>
+              <c>66</c>
+              <c>45</c>
+              <c>37</c>
+            </r>
+            <r>
+              <c>KCR</c>
+              <c>162</c>
+              <c>65</c>
+              <c>0.401</c>
+              <c>34</c>
+              <c>27.6</c>
+              <c>4.23</c>
+              <c>6101</c>
+              <c>5532</c>
+              <c>686</c>
+              <c>1432</c>
+              <c>276</c>
+              <c>51</c>
+              <c>144</c>
+              <c>657</c>
+              <c>88</c>
+              <c>29</c>
+              <c>457</c>
+              <c>1091</c>
+              <c>0.259</c>
+              <c>0.318</c>
+              <c>0.405</c>
+              <c>0.724</c>
+              <c>91</c>
+              <c>2242</c>
+              <c>135</c>
+              <c>42</c>
+              <c>38</c>
+              <c>32</c>
+              <c>20</c>
+            </r>
+            <r>
+              <c>LAA</c>
+              <c>162</c>
+              <c>97</c>
+              <c>0.599</c>
+              <c>32</c>
+              <c>29.5</c>
+              <c>5.45</c>
+              <c>6305</c>
+              <c>5622</c>
+              <c>883</c>
+              <c>1604</c>
+              <c>293</c>
+              <c>33</c>
+              <c>173</c>
+              <c>841</c>
+              <c>148</c>
+              <c>63</c>
+              <c>547</c>
+              <c>1054</c>
+              <c>0.285</c>
+              <c>0.35</c>
+              <c>0.441</c>
+              <c>0.792</c>
+              <c>106</c>
+              <c>2482</c>
+              <c>128</c>
+              <c>41</c>
+              <c>43</c>
+              <c>52</c>
+              <c>32</c>
+            </r>
+            <r>
+              <c>LAD</c>
+              <c>162</c>
+              <c>95</c>
+              <c>0.586</c>
+              <c>47</c>
+              <c>29.7</c>
+              <c>4.81</c>
+              <c>6384</c>
+              <c>5592</c>
+              <c>780</c>
+              <c>1511</c>
+              <c>278</c>
+              <c>39</c>
+              <c>145</c>
+              <c>739</c>
+              <c>116</c>
+              <c>48</c>
+              <c>607</c>
+              <c>1068</c>
+              <c>0.27</c>
+              <c>0.346</c>
+              <c>0.412</c>
+              <c>0.758</c>
+              <c>104</c>
+              <c>2302</c>
+              <c>141</c>
+              <c>63</c>
+              <c>78</c>
+              <c>44</c>
+              <c>76</c>
+            </r>
+            <r>
+              <c>MIL</c>
+              <c>162</c>
+              <c>80</c>
+              <c>0.494</c>
+              <c>45</c>
+              <c>29.3</c>
+              <c>4.85</c>
+              <c>6296</c>
+              <c>5510</c>
+              <c>785</c>
+              <c>1447</c>
+              <c>281</c>
+              <c>37</c>
+              <c>182</c>
+              <c>757</c>
+              <c>68</c>
+              <c>37</c>
+              <c>610</c>
+              <c>1231</c>
+              <c>0.263</c>
+              <c>0.341</c>
+              <c>0.426</c>
+              <c>0.767</c>
+              <c>104</c>
+              <c>2348</c>
+              <c>128</c>
+              <c>71</c>
+              <c>58</c>
+              <c>47</c>
+              <c>44</c>
+            </r>
+            <r>
+              <c>MIN</c>
+              <c>163</c>
+              <c>87</c>
+              <c>0.534</c>
+              <c>32</c>
+              <c>27.6</c>
+              <c>5.01</c>
+              <c>6346</c>
+              <c>5608</c>
+              <c>817</c>
+              <c>1539</c>
+              <c>271</c>
+              <c>40</c>
+              <c>172</c>
+              <c>770</c>
+              <c>85</c>
+              <c>32</c>
+              <c>585</c>
+              <c>1021</c>
+              <c>0.274</c>
+              <c>0.345</c>
+              <c>0.429</c>
+              <c>0.774</c>
+              <c>103</c>
+              <c>2406</c>
+              <c>147</c>
+              <c>45</c>
+              <c>51</c>
+              <c>57</c>
+              <c>46</c>
+            </r>
+            <r>
+              <c>NYM</c>
+              <c>162</c>
+              <c>70</c>
+              <c>0.432</c>
+              <c>53</c>
+              <c>29.5</c>
+              <c>4.14</c>
+              <c>6158</c>
+              <c>5453</c>
+              <c>671</c>
+              <c>1472</c>
+              <c>295</c>
+              <c>49</c>
+              <c>95</c>
+              <c>631</c>
+              <c>122</c>
+              <c>44</c>
+              <c>526</c>
+              <c>928</c>
+              <c>0.27</c>
+              <c>0.335</c>
+              <c>0.394</c>
+              <c>0.729</c>
+              <c>94</c>
+              <c>2150</c>
+              <c>144</c>
+              <c>36</c>
+              <c>88</c>
+              <c>55</c>
+              <c>49</c>
+            </r>
+            <r>
+              <c>NYY</c>
+              <c>162</c>
+              <c>103</c>
+              <c>0.636</c>
+              <c>37</c>
+              <c>30.5</c>
+              <c>5.65</c>
+              <c>6447</c>
+              <c>5660</c>
+              <c>915</c>
+              <c>1604</c>
+              <c>325</c>
+              <c>21</c>
+              <c>244</c>
+              <c>881</c>
+              <c>111</c>
+              <c>28</c>
+              <c>663</c>
+              <c>1014</c>
+              <c>0.283</c>
+              <c>0.362</c>
+              <c>0.478</c>
+              <c>0.839</c>
+              <c>122</c>
+              <c>2703</c>
+              <c>144</c>
+              <c>54</c>
+              <c>31</c>
+              <c>39</c>
+              <c>35</c>
+            </r>
+            <r>
+              <c>OAK</c>
+              <c>162</c>
+              <c>75</c>
+              <c>0.463</c>
+              <c>37</c>
+              <c>29.1</c>
+              <c>4.69</c>
+              <c>6246</c>
+              <c>5584</c>
+              <c>759</c>
+              <c>1464</c>
+              <c>307</c>
+              <c>21</c>
+              <c>135</c>
+              <c>723</c>
+              <c>133</c>
+              <c>48</c>
+              <c>527</c>
+              <c>1046</c>
+              <c>0.262</c>
+              <c>0.328</c>
+              <c>0.397</c>
+              <c>0.726</c>
+              <c>92</c>
+              <c>2218</c>
+              <c>130</c>
+              <c>50</c>
+              <c>31</c>
+              <c>54</c>
+              <c>16</c>
+            </r>
+            <r>
+              <c>PHI</c>
+              <c>162</c>
+              <c>93</c>
+              <c>0.574</c>
+              <c>41</c>
+              <c>31.3</c>
+              <c>5.06</c>
+              <c>6338</c>
+              <c>5578</c>
+              <c>820</c>
+              <c>1439</c>
+              <c>312</c>
+              <c>35</c>
+              <c>224</c>
+              <c>788</c>
+              <c>119</c>
+              <c>28</c>
+              <c>589</c>
+              <c>1155</c>
+              <c>0.258</c>
+              <c>0.334</c>
+              <c>0.447</c>
+              <c>0.781</c>
+              <c>103</c>
+              <c>2493</c>
+              <c>90</c>
+              <c>71</c>
+              <c>55</c>
+              <c>45</c>
+              <c>47</c>
+            </r>
+            <r>
+              <c>PIT</c>
+              <c>161</c>
+              <c>62</c>
+              <c>0.385</c>
+              <c>49</c>
+              <c>27</c>
+              <c>3.95</c>
+              <c>6058</c>
+              <c>5417</c>
+              <c>636</c>
+              <c>1364</c>
+              <c>289</c>
+              <c>34</c>
+              <c>125</c>
+              <c>612</c>
+              <c>90</c>
+              <c>32</c>
+              <c>499</c>
+              <c>1142</c>
+              <c>0.252</c>
+              <c>0.318</c>
+              <c>0.387</c>
+              <c>0.705</c>
+              <c>88</c>
+              <c>2096</c>
+              <c>124</c>
+              <c>46</c>
+              <c>60</c>
+              <c>36</c>
+              <c>44</c>
+            </r>
+            <r>
+              <c>SDP</c>
+              <c>162</c>
+              <c>75</c>
+              <c>0.463</c>
+              <c>56</c>
+              <c>28</c>
+              <c>3.94</c>
+              <c>6178</c>
+              <c>5425</c>
+              <c>638</c>
+              <c>1315</c>
+              <c>265</c>
+              <c>31</c>
+              <c>141</c>
+              <c>605</c>
+              <c>82</c>
+              <c>29</c>
+              <c>586</c>
+              <c>1182</c>
+              <c>0.242</c>
+              <c>0.321</c>
+              <c>0.381</c>
+              <c>0.701</c>
+              <c>96</c>
+              <c>2065</c>
+              <c>131</c>
+              <c>57</c>
+              <c>74</c>
+              <c>36</c>
+              <c>52</c>
+            </r>
+            <r>
+              <c>SEA</c>
+              <c>162</c>
+              <c>85</c>
+              <c>0.525</c>
+              <c>37</c>
+              <c>29.8</c>
+              <c>3.95</c>
+              <c>6113</c>
+              <c>5543</c>
+              <c>640</c>
+              <c>1430</c>
+              <c>280</c>
+              <c>19</c>
+              <c>160</c>
+              <c>613</c>
+              <c>89</c>
+              <c>33</c>
+              <c>421</c>
+              <c>1093</c>
+              <c>0.258</c>
+              <c>0.314</c>
+              <c>0.402</c>
+              <c>0.716</c>
+              <c>90</c>
+              <c>2228</c>
+              <c>124</c>
+              <c>49</c>
+              <c>56</c>
+              <c>44</c>
+              <c>39</c>
+            </r>
+            <r>
+              <c>SFG</c>
+              <c>162</c>
+              <c>88</c>
+              <c>0.543</c>
+              <c>44</c>
+              <c>29.1</c>
+              <c>4.06</c>
+              <c>6057</c>
+              <c>5493</c>
+              <c>657</c>
+              <c>1411</c>
+              <c>275</c>
+              <c>43</c>
+              <c>122</c>
+              <c>612</c>
+              <c>78</c>
+              <c>28</c>
+              <c>392</c>
+              <c>1158</c>
+              <c>0.257</c>
+              <c>0.309</c>
+              <c>0.389</c>
+              <c>0.699</c>
+              <c>81</c>
+              <c>2138</c>
+              <c>115</c>
+              <c>50</c>
+              <c>67</c>
+              <c>55</c>
+              <c>41</c>
+            </r>
+            <r>
+              <c>STL</c>
+              <c>162</c>
+              <c>91</c>
+              <c>0.562</c>
+              <c>42</c>
+              <c>28.5</c>
+              <c>4.51</c>
+              <c>6165</c>
+              <c>5465</c>
+              <c>730</c>
+              <c>1436</c>
+              <c>294</c>
+              <c>29</c>
+              <c>160</c>
+              <c>694</c>
+              <c>75</c>
+              <c>31</c>
+              <c>528</c>
+              <c>1041</c>
+              <c>0.263</c>
+              <c>0.332</c>
+              <c>0.415</c>
+              <c>0.747</c>
+              <c>97</c>
+              <c>2268</c>
+              <c>127</c>
+              <c>61</c>
+              <c>68</c>
+              <c>43</c>
+              <c>73</c>
+            </r>
+            <r>
+              <c>TBR</c>
+              <c>162</c>
+              <c>84</c>
+              <c>0.519</c>
+              <c>38</c>
+              <c>27.8</c>
+              <c>4.96</c>
+              <c>6223</c>
+              <c>5462</c>
+              <c>803</c>
+              <c>1434</c>
+              <c>297</c>
+              <c>36</c>
+              <c>199</c>
+              <c>765</c>
+              <c>194</c>
+              <c>61</c>
+              <c>642</c>
+              <c>1229</c>
+              <c>0.263</c>
+              <c>0.343</c>
+              <c>0.439</c>
+              <c>0.782</c>
+              <c>104</c>
+              <c>2400</c>
+              <c>104</c>
+              <c>49</c>
+              <c>25</c>
+              <c>45</c>
+              <c>36</c>
+            </r>
+            <r>
+              <c>TEX</c>
+              <c>162</c>
+              <c>87</c>
+              <c>0.537</c>
+              <c>34</c>
+              <c>27.8</c>
+              <c>4.84</c>
+              <c>6126</c>
+              <c>5526</c>
+              <c>784</c>
+              <c>1436</c>
+              <c>296</c>
+              <c>27</c>
+              <c>224</c>
+              <c>748</c>
+              <c>149</c>
+              <c>36</c>
+              <c>472</c>
+              <c>1253</c>
+              <c>0.26</c>
+              <c>0.32</c>
+              <c>0.445</c>
+              <c>0.764</c>
+              <c>95</c>
+              <c>2458</c>
+              <c>97</c>
+              <c>37</c>
+              <c>40</c>
+              <c>51</c>
+              <c>23</c>
+            </r>
+            <r>
+              <c>TOR</c>
+              <c>162</c>
+              <c>75</c>
+              <c>0.463</c>
+              <c>36</c>
+              <c>29.9</c>
+              <c>4.93</c>
+              <c>6362</c>
+              <c>5696</c>
+              <c>798</c>
+              <c>1516</c>
+              <c>339</c>
+              <c>13</c>
+              <c>209</c>
+              <c>766</c>
+              <c>73</c>
+              <c>23</c>
+              <c>548</c>
+              <c>1028</c>
+              <c>0.266</c>
+              <c>0.333</c>
+              <c>0.44</c>
+              <c>0.773</c>
+              <c>104</c>
+              <c>2508</c>
+              <c>130</c>
+              <c>45</c>
+              <c>24</c>
+              <c>49</c>
+              <c>23</c>
+            </r>
+            <r>
+              <c>WSN</c>
+              <c>162</c>
+              <c>59</c>
+              <c>0.364</c>
+              <c>55</c>
+              <c>28.4</c>
+              <c>4.38</c>
+              <c>6272</c>
+              <c>5493</c>
+              <c>710</c>
+              <c>1416</c>
+              <c>271</c>
+              <c>38</c>
+              <c>156</c>
+              <c>685</c>
+              <c>73</c>
+              <c>40</c>
+              <c>617</c>
+              <c>1208</c>
+              <c>0.258</c>
+              <c>0.337</c>
+              <c>0.406</c>
+              <c>0.743</c>
+              <c>96</c>
+              <c>2231</c>
+              <c>133</c>
+              <c>56</c>
+              <c>64</c>
+              <c>42</c>
+              <c>39</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <AnnotationText>Data (Raw)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="174">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="186" y="1242" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">D1</Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">manual</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">
+          </Value>
+          <Value name="samplingMode">data</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">data</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{"20":8,"30":6,"40":7,"50":4,"60":3,"70":7}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Data Sampling</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="175">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="306" y="1242" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="176">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="186" y="1314" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">D1</Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">manual</Value>
+          <Value name="replace">True</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">
+          </Value>
+          <Value name="samplingMode">data</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">data</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="jsonRouletteData">{"20":8,"30":6,"40":7,"50":4,"60":3,"70":7}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Data Sampling</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="177">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="306" y="1314" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="125" Connection="Data" />
+      <Destination ToolID="126" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="127" Connection="Data" />
+      <Destination ToolID="128" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="129" Connection="Data" />
+      <Destination ToolID="130" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="131" Connection="Data" />
+      <Destination ToolID="132" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="133" Connection="Data" />
+      <Destination ToolID="134" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="135" Connection="Data" />
+      <Destination ToolID="136" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="137" Connection="Data" />
+      <Destination ToolID="138" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="139" Connection="Data" />
+      <Destination ToolID="140" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="141" Connection="Data" />
+      <Destination ToolID="142" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="145" Connection="Data" />
+      <Destination ToolID="158" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="150" Connection="Data" />
+      <Destination ToolID="162" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="152" Connection="Data" />
+      <Destination ToolID="159" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="153" Connection="Data" />
+      <Destination ToolID="163" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="160" Connection="Data" />
+      <Destination ToolID="164" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="161" Connection="Data" />
+      <Destination ToolID="165" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="167" Connection="Data" />
+      <Destination ToolID="168" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="169" Connection="Output" />
+      <Destination ToolID="167" Connection="SampleData" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="169" Connection="Output" />
+      <Destination ToolID="171" Connection="SampleData" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="171" Connection="Data" />
+      <Destination ToolID="172" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="173" Connection="Output" />
+      <Destination ToolID="145" Connection="SampleData" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="173" Connection="Output" />
+      <Destination ToolID="152" Connection="SampleData" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="173" Connection="Output" />
+      <Destination ToolID="150" Connection="SampleData" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="173" Connection="Output" />
+      <Destination ToolID="153" Connection="SampleData" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="173" Connection="Output" />
+      <Destination ToolID="160" Connection="SampleData" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="173" Connection="Output" />
+      <Destination ToolID="161" Connection="SampleData" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="174" Connection="Data" />
+      <Destination ToolID="175" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="176" Connection="Data" />
+      <Destination ToolID="177" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="True" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>SimSamplingOneTool</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
