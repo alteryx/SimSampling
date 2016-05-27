@@ -128,6 +128,7 @@
           <Value name="activePage">parametric</Value>
           <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
+          <Value name="_bounds">["-10050",10000]</Value>
           <Value name="jsonRouletteData">{}</Value>
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
@@ -147,7 +148,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_cc29abc92aff4350b1cb46193b4573ce_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_e1ab1db702e9402d9a8d60b4d5cebce2_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -191,6 +192,7 @@
           <Value name="activePage">parametric</Value>
           <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
           <Value name="jsonRouletteData">{}</Value>
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
@@ -210,7 +212,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_2cbbedc0d58f4988abccfbfd770daaa9_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_0a2d29f94ba04038a238ce1125dbfe27_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -258,6 +260,7 @@
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
           <Value name="_distribution">pareto</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
         </Configuration>
         <Annotation DisplayMode="1">
           <Name />
@@ -273,7 +276,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_2d453f3da57e4ef9875a86ffbdf74419_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_24b95b84f06948fcbd68af2c4e447bf5_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -321,6 +324,7 @@
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
           <Value name="_distribution">uniform</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
         </Configuration>
         <Annotation DisplayMode="1">
           <Name />
@@ -336,7 +340,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_ae7b5bfb94894c94a2f91c26dd211c85_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_7bb8a3e129df46b097c4e77970fa00a1_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -384,6 +388,7 @@
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
           <Value name="_distribution">triangular</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
         </Configuration>
         <Annotation DisplayMode="1">
           <Name />
@@ -399,7 +404,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_fbe5c91abe73421f9e74b25dce18c12b_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_d7cd046ec09a4eb8b02bc8f6ce31ca1e_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -443,6 +448,7 @@
           <Value name="activePage">parametric</Value>
           <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
           <Value name="jsonRouletteData">{}</Value>
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
@@ -462,7 +468,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_f980079bf8164e81abbe6ce7d1843c36_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_05f9899261804e8a9bf69c812518f55e_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -506,6 +512,7 @@
           <Value name="activePage">parametric</Value>
           <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
           <Value name="jsonRouletteData">{}</Value>
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
@@ -525,7 +532,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_9cb94fec148947a8b86ee654eef1a2b8_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_735054eedb1a48adb05f00b320a2a0a9_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -569,6 +576,7 @@
           <Value name="activePage">parametric</Value>
           <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
           <Value name="jsonRouletteData">{}</Value>
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
@@ -588,7 +596,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_33593094a0e445b8ae3c0a54f879f99c_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_ca677b5ce65c4318b0216970798faf62_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -632,6 +640,7 @@
           <Value name="activePage">parametric</Value>
           <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
           <Value name="jsonRouletteData">{}</Value>
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.001,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.001,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.001},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.001}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.001,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.01}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.01},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.01},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.01}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.01,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.00001,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.001,"minSpinner":0,"maxSpinner":1}]}</Value>
@@ -651,7 +660,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_19ac558bff614af6a15533a0a50ab4bd_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_b39387ed4b8240de8dc293e96bbc339e_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -715,6 +724,7 @@
           <Value name="activePage">data</Value>
           <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
           <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
@@ -779,6 +789,7 @@
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
           <Value name="_distribution">normal</Value>
+          <Value name="_bounds">[-10e3, 10e3]</Value>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -819,6 +830,7 @@
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
           <Value name="_distribution">normal</Value>
+          <Value name="_bounds">[-10e3, 10e3]</Value>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -859,6 +871,7 @@
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
           <Value name="_distribution">normal</Value>
+          <Value name="_bounds">[-10e3, 10e3]</Value>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -917,7 +930,14 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_8cfab23f22a647efb8c7bf94a1fffc04_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_febf9071df0c4881987bad4cce5de966_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -933,7 +953,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_911dc8591fc94cfa99b3c214a9d7742c_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_6086c8935ecc41c2bc0f1c85bd0808b4_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -980,6 +1000,7 @@
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
           <Value name="_distribution">normal</Value>
+          <Value name="_bounds">[-10e3, 10e3]</Value>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -1019,6 +1040,7 @@
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
           <Value name="_distribution">normal</Value>
+          <Value name="_bounds">[-10e3, 10e3]</Value>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -1034,7 +1056,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_ab0f96526e6e4793971bf3e1c22740b4_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_a59f7208a255483791c3d6c6de706e4e_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -1057,7 +1079,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_2e85eefd0257405f968cffd326956d9c_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_525817c94269491f8c53fd722accac1c_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -1080,7 +1102,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_3a0691d2afaf48e2ae6c6da4c3c2a470_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_a1a37b2084594742b2bc0f6694715685_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -1103,7 +1125,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4508_121823beab1542979c8b60645cabdca2_\Engine_2796_8724cb16bdaf49d5a22382df60f36298_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_92a39eaafcfc4c528c2051760512bad8_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -1171,6 +1193,7 @@
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
           <Value name="_distribution">normal</Value>
+          <Value name="_bounds">[-10e3, 10e3]</Value>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -1186,7 +1209,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_1a7cc86b91824e3ab48b7073f1019b0a_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_aafc302e947d402991d2da78dcbdc7dc_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -1306,6 +1329,7 @@
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
           <Value name="_distribution">normal</Value>
+          <Value name="_bounds">[-10e3, 10e3]</Value>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -1321,6 +1345,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_51356f5112264456a5b91d8d40fb1a5f_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -2375,6 +2400,7 @@
           <Value name="activePage">data</Value>
           <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
           <Value name="jsonRouletteData">{"20":8,"30":6,"40":7,"50":4,"60":3,"70":7}</Value>
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
@@ -2393,7 +2419,9 @@
         <Position x="306" y="1242" />
       </GuiSettings>
       <Properties>
-        <Configuration />
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_c91b90d7dfce43cca59c13937d61c9cd_.yxdb</TempFile>
+        </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
@@ -2429,6 +2457,7 @@
           <Value name="activePage">data</Value>
           <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
           <Value name="jsonRouletteData">{"20":8,"30":6,"40":7,"50":4,"60":3,"70":7}</Value>
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
@@ -2447,7 +2476,9 @@
         <Position x="306" y="1314" />
       </GuiSettings>
       <Properties>
-        <Configuration />
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_e530d0c29b5c4a2e92f56e75104e70fd_.yxdb</TempFile>
+        </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
