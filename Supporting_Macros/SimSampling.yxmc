@@ -1817,7 +1817,7 @@ Transform
         </Node>
         <Node ToolID="117">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="786" y="486" width="357" height="129" />
+            <Position x="786" y="486" width="357" height="201" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1901,6 +1901,19 @@ Transform
                 <Configuration />
                 <Annotation DisplayMode="0">
                   <Name>_distribution</Name>
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="131">
+              <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+                <Position x="822" y="618" width="59" height="59" />
+              </GuiSettings>
+              <Properties>
+                <Configuration />
+                <Annotation DisplayMode="0">
+                  <Name>_bounds</Name>
                   <DefaultAnnotationText />
                   <Left value="False" />
                 </Annotation>
@@ -2247,6 +2260,12 @@ Transform
       <Constant>
         <Namespace>Question</Namespace>
         <Name>_distribution</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>_bounds</Name>
         <Value />
         <IsNumeric value="False" />
       </Constant>
@@ -2644,6 +2663,16 @@ Manual Entry:manual
               <Description>_distribution</Description>
               <Name>_distribution</Name>
               <ToolId value="130" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>_bounds</Description>
+              <Name>_bounds</Name>
+              <ToolId value="131" />
               <Default />
               <Password value="False" />
               <Multiline value="False" />
