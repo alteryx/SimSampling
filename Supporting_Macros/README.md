@@ -4,7 +4,7 @@
 
 
 
-__Insert summary of the Simulation Sampling tool__
+Simulation Sampling allows for sampling. The sampling can be done parametrically from a distribution, from input data, or as a combination - best fitting to a distribution and sampling from that. The data can also be "drawn", if one is unsure of the parameters of a distribution but is also lacking data.
 
 _Note: This tool uses the R tool. Install R and the necessary packages by going to Options > Download Predictive Tools._
 
@@ -19,9 +19,9 @@ There are 2 inputs.
 
 1. __Select sampling mechanism:__ We support two mechanisms. (1) Monte Carlo Sampling / Simple Random Sampling and (2) Latin HyperCube Sampling/ Stratified Random Sampling. See [Wikipedia](https://en.wikipedia.org/wiki/Latin_hypercube_sampling). For stratified sampling from data, the maximum strata size is given by the choice of chunk size.
 2. __Chunk size:__ Maximal size of chunk to evaluate at a time. This can be used to avoid R's in-memory processing limitation. For stratified sampling from data, this is also the maximal size of the strata.
-3. __seed:__ This will be the random seed used for sampling. If a dataset containing a "seed" field is connected to the S input of this macro, this option will not be available; that seed will be incremented and used here.
+3. __Seed:__ This will be the random seed used for sampling. If a dataset containing a "seed" field is connected to the S input of this macro, this option will not be available; that seed will be incremented and used here.
 4. __Number of iterations:__ Number of samples to select. This option is not available when there is a dataset connected to the S input, as the size of that dataset determines the number of iterations in that case.
-5. __Enter stage name:__ Choose a field name for the output.
+5. __Enter name for outgoing data:__ Choose a field name for the output.
 6. __Select distribution:__ Select from the list of supported distributions.
 7. __Select fields to sample:__ Choose the fields to sample from.
 8. __Select sampling strategy:__ This option is available when sampling from data. Choose how you would like to sample your data. You can sample entire records, sample independently with respect to columns, or fit data to a distribution and sample from the best-fitting distribution.
