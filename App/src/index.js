@@ -33,6 +33,27 @@ function switchToDataSampling(manager){
   }
 }
 
+/*
+const Inf = 10e6
+const distBounds = {
+  binom: [0, +Inf],
+  norm: [-Inf, +Inf],
+  gamma: [0, +Inf],
+  lnorm: [0, +Inf],
+  pareto: [0, +Inf],
+  unif: [-Inf, +Inf],
+  triangular: [-Inf, +Inf],
+  poisson: [0, +Inf],
+  geometric: [0, +Inf]
+}
+
+function setDistBounds(manager){
+  const dist = manager.GetDataItemByDataName("distribution").getValue()
+  const bounds =  manager.GetDataItemByDataName("_bounds")
+  bounds.setValue(JSON.stringify(distBounds[dist]))
+}
+*/
+
 window.nextPage = function(){
   var v = Alteryx.Gui.manager
     .GetDataItemByDataName("samplingMode")
@@ -55,7 +76,7 @@ Alteryx.Gui.BeforeLoad = function BeforeLoad(manager, AlteryxDataItems) {
   dataItem('_distributions', { value: JSON.stringify(DistData.distributions) });
   dataItem('rouletteData', { value: JSON.stringify(RouletteData) });
   dataItem('jsonRouletteData', { value: '{}' });
-  dataItem('_bounds', { value: '[-10e3, 10e3]'})
+  dataItem('_bounds', { value: '[-10e6, 10e6]'})
   if (!window.Alteryx.browser){
     dataItem('displaySeed', {value: true}, 'SimpleBool')
     dataItem('intermediate', {value: false}, 'SimpleBool')
@@ -80,6 +101,12 @@ Alteryx.Gui.AfterLoad = function AfterLoad(manager) {
     renderComboNumericSliders(manager, collection, 'combonumericslider');
   } else {
     switchToDataSampling(manager)
+    /*
+    manager.GetDataItemByDataName("distribution")
+      .BindUserDataChanged(function(v){
+        setDistBounds(manager)
+      })
+    */
     controlDisplayIntermediate(manager)
     controlDisplaySeed(manager)
     displayControls.forEach(function(d){displayTarget.apply(null, d)})
