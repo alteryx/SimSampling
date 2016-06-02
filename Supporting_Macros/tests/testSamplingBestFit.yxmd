@@ -30,7 +30,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="distToFit">norm,lnorm,pareto</Value>
+          <Value name="distToFit">norm,lnorm,unif,triangle</Value>
           <Value name="binnedValueField" />
           <Value name="binnedIdField" />
           <Value name="binnedDataName">
@@ -70,7 +70,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2012_ed618a6d8c884d79b84eb6165a877e50_\Engine_2828_f2586ad7e76e4ca2a0dbb08edc6aed99_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_1048_e51643510dbc414d93d1bda124b22658_\Engine_340_d0810e9466dc49fa897a5080ab7c62a3_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
