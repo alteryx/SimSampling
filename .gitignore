@@ -26,3 +26,6 @@ Supporting_Macros/*.html
 *.bak
 .DS_Store
 
+# Experiments
+old
+
