@@ -50,7 +50,7 @@ Simulation Sampling</Text>
     </Node>
     <Node ToolID="118">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="810" width="1608" height="492"/>
+        <Position x="54" y="810" width="1704" height="492"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -68,14 +68,14 @@ Simulation Sampling</Text>
       <ChildNodes>
         <Node ToolID="4">
           <GuiSettings Plugin="AlteryxRPluginGui.R">
-            <Position x="883" y="970"/>
+            <Position x="882" y="966"/>
           </GuiSettings>
           <Properties>
             <Configuration>
               <RScript>## DO NOT MODIFY: Auto Inserted by AlteryxRhelper ----
 library(AlteryxSim)
 config &lt;- list(
-  binnedDataName = textInput('%Question.binnedDataName%', "BinData"),
+  binnedDataName = textInput('%Question.binnedDataName%', "Variable"),
   binnedIdField = dropdownInput('%Question.binnedIdField%'),
   binnedValueField = dropdownInput('%Question.binnedValueField%'),
   chunkSize = numericInput('%Question.chunkSize%' , 256000),
@@ -176,14 +176,19 @@ tool_process(
               <DefaultAnnotationText/>
               <Left value="False"/>
             </Annotation>
-            <MetaInfo connection="Output1">
-              <RecordInfo>
-                <Field name="Variable" source="R-DATA:" type="Double"/>
-              </RecordInfo>
-            </MetaInfo>
             <MetaInfo connection="Output2">
               <RecordInfo>
                 <Field name="seed" source="R-DATA:" type="Double"/>
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Output1">
+              <RecordInfo>
+                <Field name="temp" source="R-DATA:" type="Double"/>
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Output3">
+              <RecordInfo>
+                <Field name="Variable" source="R-DATA:" type="Double"/>
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -191,7 +196,7 @@ tool_process(
         </Node>
         <Node ToolID="5">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-            <Position x="1578" y="986"/>
+            <Position x="1674" y="990"/>
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -537,7 +542,7 @@ tool_process(
         </Node>
         <Node ToolID="83">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-            <Position x="1134" y="950"/>
+            <Position x="1314" y="978"/>
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -558,7 +563,7 @@ tool_process(
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="Variable" source="R-DATA:" type="Double"/>
+                <Field name="Field_2" source="R-DATA:" type="Double"/>
                 <Field name="seed" source="R-DATA:" type="Double"/>
               </RecordInfo>
             </MetaInfo>
@@ -567,7 +572,7 @@ tool_process(
         </Node>
         <Node ToolID="85">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
-            <Position x="1243" y="982"/>
+            <Position x="1386" y="978"/>
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -580,13 +585,13 @@ tool_process(
             </Annotation>
             <MetaInfo connection="Left">
               <RecordInfo>
-                <Field name="Variable" source="R-DATA:" type="Double"/>
+                <Field name="Field_2" source="R-DATA:" type="Double"/>
                 <Field name="seed" source="R-DATA:" type="Double"/>
               </RecordInfo>
             </MetaInfo>
             <MetaInfo connection="Right">
               <RecordInfo>
-                <Field name="Variable" source="R-DATA:" type="Double"/>
+                <Field name="Field_2" source="R-DATA:" type="Double"/>
                 <Field name="seed" source="R-DATA:" type="Double"/>
               </RecordInfo>
             </MetaInfo>
@@ -595,7 +600,7 @@ tool_process(
         </Node>
         <Node ToolID="86">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="1351" y="1042"/>
+            <Position x="1482" y="1038"/>
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="True">
@@ -618,7 +623,7 @@ tool_process(
         </Node>
         <Node ToolID="87">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DetourEnd.DetourEnd">
-            <Position x="1470" y="986"/>
+            <Position x="1578" y="990"/>
           </GuiSettings>
           <Properties>
             <Configuration/>
@@ -629,7 +634,7 @@ tool_process(
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="Variable" source="R-DATA:" type="Double"/>
+                <Field name="Field_2" source="R-DATA:" type="Double"/>
                 <Field name="seed" source="R-DATA:" type="Double"/>
               </RecordInfo>
             </MetaInfo>
@@ -744,7 +749,7 @@ tool_process(
         </Node>
         <Node ToolID="97">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="1063" y="917" width="168" height="24"/>
+            <Position x="954" y="870" width="168" height="36"/>
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -863,11 +868,251 @@ tool_process(
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetourEnd"/>
         </Node>
+        <Node ToolID="132">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="1014" y="918"/>
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Formula</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="Variable"/>
+                <Field name="*Unknown" selected="False"/>
+              </Fields>
+              <Expression>IF "%Question.samplingMode%" = "parametric" 
+THEN "%Question.stageName%"
+ELSEIF "%Question.dataKind%" != "raw" 
+THEN "%Question.binnedDataName%"
+ELSE ""
+ENDIF</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name/>
+              <DefaultAnnotationText/>
+              <Left value="False"/>
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_2" source="R-DATA:" type="Double"/>
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename"/>
+        </Node>
+        <Node ToolID="133">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1158" y="978"/>
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False"/>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name/>
+              <DefaultAnnotationText/>
+              <Left value="False"/>
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_2" source="R-DATA:" type="Double"/>
+                <Field name="data" source="(Multiple Sources)" type="Double"/>
+                <Field name="id" source="TextInput:" type="Byte"/>
+                <Field name="value" source="TextInput:" type="Byte"/>
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion"/>
+        </Node>
+        <Node ToolID="134">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="618" y="918"/>
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields orderChanged="False"/>
+              <Mode>First</Mode>
+              <N>1</N>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name/>
+              <DefaultAnnotationText>First 1</DefaultAnnotationText>
+              <Left value="False"/>
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="data" source="TextInput:" type="Byte"/>
+                <Field name="id" source="TextInput:" type="Byte"/>
+                <Field name="value" source="TextInput:" type="Byte"/>
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample"/>
+        </Node>
+        <Node ToolID="135">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="846" y="1038"/>
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByPos</Mode>
+              <SetOutputOrder value="True"/>
+              <OutputOrder>
+                <Connection>#1</Connection>
+                <Connection>#2</Connection>
+              </OutputOrder>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name/>
+              <DefaultAnnotationText/>
+              <Left value="False"/>
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="data" source="(Multiple Sources)" type="Double"/>
+                <Field name="id" source="TextInput:" type="Byte"/>
+                <Field name="value" source="TextInput:" type="Byte"/>
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion"/>
+        </Node>
+        <Node ToolID="136">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="930" y="1038"/>
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <StartValue>1</StartValue>
+              <FieldName>RecordID</FieldName>
+              <FieldType>Int64</FieldType>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name/>
+              <DefaultAnnotationText/>
+              <Left value="False"/>
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int64"/>
+                <Field name="data" source="(Multiple Sources)" type="Double"/>
+                <Field name="id" source="TextInput:" type="Byte"/>
+                <Field name="value" source="TextInput:" type="Byte"/>
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc"/>
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID"/>
+        </Node>
+        <Node ToolID="137">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1002" y="1038"/>
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>RecordID</Field>
+                <Operator>=</Operator>
+                <Operands>
+                  <Operand>1</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name/>
+              <DefaultAnnotationText>[RecordID] = 1</DefaultAnnotationText>
+              <Left value="False"/>
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int64"/>
+                <Field name="data" source="(Multiple Sources)" type="Double"/>
+                <Field name="id" source="TextInput:" type="Byte"/>
+                <Field name="value" source="TextInput:" type="Byte"/>
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc"/>
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int64"/>
+                <Field name="data" source="(Multiple Sources)" type="Double"/>
+                <Field name="id" source="TextInput:" type="Byte"/>
+                <Field name="value" source="TextInput:" type="Byte"/>
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc"/>
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter"/>
+        </Node>
+        <Node ToolID="138">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1086" y="1050"/>
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False"/>
+              <SelectFields>
+                <SelectField field="RecordID" selected="False"/>
+                <SelectField field="*Unknown" selected="True"/>
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name/>
+              <DefaultAnnotationText/>
+              <Left value="False"/>
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="data" source="(Multiple Sources)" type="Double"/>
+                <Field name="id" source="TextInput:" type="Byte"/>
+                <Field name="value" source="TextInput:" type="Byte"/>
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect"/>
+        </Node>
+        <Node ToolID="139">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
+            <Position x="1230" y="978"/>
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Formula</Mode>
+              <Expression>IF '%Question.samplingMode%' == "data" AND '%Question.dataKind%' == 'raw'
+THEN [FieldNumber] != 1
+ELSE [FieldNumber] == 1
+ENDIF</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name/>
+              <DefaultAnnotationText/>
+              <Left value="False"/>
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_2" source="R-DATA:" type="Double"/>
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect"/>
+        </Node>
       </ChildNodes>
     </Node>
     <Node ToolID="101">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="848" y="62" width="132.9484" height="19"/>
+        <Position x="848" y="61" width="132.9484" height="19"/>
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1927,12 +2172,24 @@ Transform
   </Nodes>
   <Connections>
     <Connection>
-      <Origin ToolID="4" Connection="Output1"/>
+      <Origin ToolID="4" Connection="Output2"/>
+      <Destination ToolID="83" Connection="Source"/>
+    </Connection>
+    <Connection>
+      <Origin ToolID="139" Connection="Output"/>
       <Destination ToolID="83" Connection="Targets"/>
     </Connection>
     <Connection>
-      <Origin ToolID="4" Connection="Output2"/>
-      <Destination ToolID="83" Connection="Source"/>
+      <Origin ToolID="4" Connection="Output3"/>
+      <Destination ToolID="132" Connection="Targets"/>
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="4" Connection="Output1"/>
+      <Destination ToolID="135" Connection="Input"/>
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="134" Connection="Output"/>
+      <Destination ToolID="135" Connection="Input"/>
     </Connection>
     <Connection name="totalSize">
       <Origin ToolID="61" Connection="Output9"/>
@@ -2067,12 +2324,40 @@ Transform
       <Destination ToolID="122" Connection="Action"/>
     </Connection>
     <Connection>
+      <Origin ToolID="120" Connection="Output"/>
+      <Destination ToolID="134" Connection="Input"/>
+    </Connection>
+    <Connection>
       <Origin ToolID="122" Connection="Right"/>
       <Destination ToolID="91" Connection="Input"/>
     </Connection>
     <Connection name="#2" Wireless="True">
       <Origin ToolID="92" Connection="Action"/>
       <Destination ToolID="91" Connection="Action"/>
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="132" Connection="Output"/>
+      <Destination ToolID="133" Connection="Input"/>
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="138" Connection="Output"/>
+      <Destination ToolID="133" Connection="Input"/>
+    </Connection>
+    <Connection>
+      <Origin ToolID="133" Connection="Output"/>
+      <Destination ToolID="139" Connection="Input"/>
+    </Connection>
+    <Connection>
+      <Origin ToolID="135" Connection="Output"/>
+      <Destination ToolID="136" Connection="Input"/>
+    </Connection>
+    <Connection>
+      <Origin ToolID="136" Connection="Output"/>
+      <Destination ToolID="137" Connection="Input"/>
+    </Connection>
+    <Connection>
+      <Origin ToolID="137" Connection="False"/>
+      <Destination ToolID="138" Connection="Input"/>
     </Connection>
     <Connection name="#1">
       <Origin ToolID="15" Connection="Question"/>
