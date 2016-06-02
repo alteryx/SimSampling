@@ -42,7 +42,7 @@ const DIST_DATA_FN = dist => p => {
       console.log(p)
     }
     const xmin = 0;
-    const xmax = dist == 'binomial' ? p[0] : dist == 'negbin' ? 1/p[1] + 6*Math.sqrt((1 - p[1])/p[1]) : p[0] + 3*Math.sqrt(p[0]);
+    const xmax = dist == 'binomial' ? (p[0] + 1) : dist == 'negbin' ? 1/p[1] + 6*Math.sqrt((1 - p[1])/p[1]) : p[0] + 6*Math.sqrt(p[0]);
     const nCount = xmax
     return d3.range(xmin, xmax, (xmax - xmin)/nCount).map(d => (
       { x: d, y: jStat[dist].pdf.apply(null, [d].concat(p)) }
