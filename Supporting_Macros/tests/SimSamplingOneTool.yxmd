@@ -148,7 +148,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_e1ab1db702e9402d9a8d60b4d5cebce2_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_8ede1fb7c9d04519a0ec7223a3d3e025_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -212,7 +212,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_0a2d29f94ba04038a238ce1125dbfe27_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_52a423bda85c43d3beca47d8188cdbe2_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -276,7 +276,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_24b95b84f06948fcbd68af2c4e447bf5_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_fb837581bc874f639b662f000b4a8b03_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -340,7 +340,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_7bb8a3e129df46b097c4e77970fa00a1_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_37f064edc4624988843a8c266cb94348_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -404,7 +404,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_d7cd046ec09a4eb8b02bc8f6ce31ca1e_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_7ec8d30e39dd4757b90c63c9f999b2d7_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -468,7 +468,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_05f9899261804e8a9bf69c812518f55e_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_08928cc924a44cf98e0390bac75183ba_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -532,7 +532,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_735054eedb1a48adb05f00b320a2a0a9_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_a175b553206547fdb8b7eeac700a52e0_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -596,7 +596,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_ca677b5ce65c4318b0216970798faf62_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_66b08b3600e9440181e51e12a5481c27_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -660,7 +660,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_b39387ed4b8240de8dc293e96bbc339e_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_f7fc9cf3d52b4d65942bb7cf9e041daa_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -867,11 +867,11 @@
           <Value name="activePage">data</Value>
           <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
           <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
           <Value name="_distribution">normal</Value>
-          <Value name="_bounds">[-10e3, 10e3]</Value>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -930,7 +930,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_febf9071df0c4881987bad4cce5de966_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_8a4e93a77b1e4ef79cb41135d76605ab_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -953,7 +953,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_6086c8935ecc41c2bc0f1c85bd0808b4_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_254bdcff19e043f39a2a4f0ec861aed2_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -996,11 +996,11 @@
           <Value name="activePage">data</Value>
           <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
           <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
           <Value name="_distribution">normal</Value>
-          <Value name="_bounds">[-10e3, 10e3]</Value>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -1036,11 +1036,11 @@
           <Value name="activePage">data</Value>
           <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
           <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
           <Value name="_distribution">normal</Value>
-          <Value name="_bounds">[-10e3, 10e3]</Value>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -1056,7 +1056,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_a59f7208a255483791c3d6c6de706e4e_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_696adb83b3724becb0975b36b519a728_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -1079,7 +1079,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_525817c94269491f8c53fd722accac1c_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_f281808ae35e4b2a98746a269dedbc2c_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -1102,7 +1102,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_a1a37b2084594742b2bc0f6694715685_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_5247c905055345938dbaf6631d91c61e_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -1125,7 +1125,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_92a39eaafcfc4c528c2051760512bad8_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_1364daeab57845afa3d67dada2226d2c_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -1162,54 +1162,13 @@
         </Annotation>
       </Properties>
     </Node>
-    <Node ToolID="167">
-      <GuiSettings Plugin="SimSampling">
-        <Position x="186" y="1050" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="distToFit">
-          </Value>
-          <Value name="binnedValueField">frequency</Value>
-          <Value name="binnedIdField">bin</Value>
-          <Value name="binnedDataName">BinData</Value>
-          <Value name="samplingStrategy">entire</Value>
-          <Value name="fields">
-          </Value>
-          <Value name="dataKind">binned</Value>
-          <Value name="replace">False</Value>
-          <Value name="distribution">norm</Value>
-          <Value name="stageName">
-          </Value>
-          <Value name="samplingMode">data</Value>
-          <Value name="numIterations">6</Value>
-          <Value name="seed">1</Value>
-          <Value name="chunkSize">256000</Value>
-          <Value name="samplingMechanism">MC</Value>
-          <Value name="activePage">data</Value>
-          <Value name="intermediate">False</Value>
-          <Value name="displaySeed">True</Value>
-          <Value name="jsonRouletteData">{"20":8,"30":6,"40":7,"50":4,"60":3,"70":7}</Value>
-          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
-          <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
-          <Value name="_distribution">normal</Value>
-          <Value name="_bounds">[-10e3, 10e3]</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>Data Sampling</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
-    </Node>
     <Node ToolID="168">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
         <Position x="306" y="1050" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_aafc302e947d402991d2da78dcbdc7dc_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_32c34b22de974b8bb6f562115ace0db7_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -1325,11 +1284,11 @@
           <Value name="activePage">data</Value>
           <Value name="intermediate">False</Value>
           <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
           <Value name="jsonRouletteData">{"20":8,"30":6,"40":7,"50":4,"60":3,"70":7}</Value>
           <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
           <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
           <Value name="_distribution">normal</Value>
-          <Value name="_bounds">[-10e3, 10e3]</Value>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -1345,7 +1304,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_51356f5112264456a5b91d8d40fb1a5f_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_e2f4972793a447cebf47be03776041da_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -2420,7 +2379,14 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_c91b90d7dfce43cca59c13937d61c9cd_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_bc6368e7705544159d3e0ac18c2d58b1_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -2477,7 +2443,14 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4832_4d104f6096d243f5bb761d5af58225f9_\Engine_2796_e530d0c29b5c4a2e92f56e75104e70fd_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3640_0774aa384a434f8a9a4c2fde33a773e6_\Engine_3880_44ec203d4a0f4d189fe47e060f95e157_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -2486,6 +2459,46 @@
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="178">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="186" y="1050" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField">frequency</Value>
+          <Value name="binnedIdField">bin</Value>
+          <Value name="binnedDataName">D1</Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">bin</Value>
+          <Value name="dataKind">binned</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">
+          </Value>
+          <Value name="samplingMode">data</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">data</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000,10000]</Value>
+          <Value name="jsonRouletteData">{}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.1},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.1,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.1,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.1,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.1},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.1}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.1,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.1,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.1},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.1}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.1},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.1},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.1}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.1,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.1,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.1,"minSpinner":0,"maxSpinner":1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Data Sampling</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
     </Node>
   </Nodes>
   <Connections>
@@ -2550,16 +2563,12 @@
       <Destination ToolID="165" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="167" Connection="Data" />
-      <Destination ToolID="168" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="169" Connection="Output" />
-      <Destination ToolID="167" Connection="SampleData" />
-    </Connection>
-    <Connection>
       <Origin ToolID="169" Connection="Output" />
       <Destination ToolID="171" Connection="SampleData" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="169" Connection="Output" />
+      <Destination ToolID="178" Connection="SampleData" />
     </Connection>
     <Connection>
       <Origin ToolID="171" Connection="Data" />
@@ -2596,6 +2605,10 @@
     <Connection>
       <Origin ToolID="176" Connection="Data" />
       <Destination ToolID="177" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="178" Connection="Data" />
+      <Destination ToolID="168" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
