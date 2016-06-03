@@ -50,7 +50,7 @@ Simulation Sampling</Text>
     </Node>
     <Node ToolID="118">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="834.0001" width="2916" height="491.0001" />
+        <Position x="54" y="834.0001" width="2916" height="490.9999" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3032,7 +3032,7 @@ Transform
     <MetaInfo>
       <NameIsFileName value="False" />
       <Name>Simulation Sampling</Name>
-      <Description>Simulation Sampling allows for sampling. The sampling can be done parametrically from a distribution, from input data, or as a combination - best fitting to a distribution and sampling from that. The data can also be "drawn", if one is unsure of the parameters of a distribution but is also lacking data.</Description>
+      <Description>Sample data parametrically from a distribution, from input data, or as a combination best fitting to a distribution.</Description>
       <RootToolName />
       <ToolVersion />
       <ToolInDb value="False" />
