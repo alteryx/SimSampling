@@ -73,7 +73,6 @@ write.Alteryx(dfSeed, 2)
 config$totalSize <- ifelse(readRecordCount==0, config$numIterations, readRecordCount)
 
 config$name <- ifelse(config$samplingMode=="parametric", config$stageName, config$binnedDataName)
-print(config)
 tool_process(
   method = toupper(config$samplingMechanism),
   chunkSize = config$chunkSize,
