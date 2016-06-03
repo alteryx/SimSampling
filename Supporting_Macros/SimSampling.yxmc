@@ -50,7 +50,7 @@ Simulation Sampling</Text>
     </Node>
     <Node ToolID="118">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="834.0001" width="2916" height="490.9999" />
+        <Position x="54" y="834.0001" width="2952" height="490.9999" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -195,7 +195,7 @@ tool_process(
         </Node>
         <Node ToolID="5">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-            <Position x="2886" y="1014" />
+            <Position x="2922" y="1014" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -545,7 +545,7 @@ tool_process(
           </GuiSettings>
           <Properties>
             <Configuration>
-              <CartesianMode>Error</CartesianMode>
+              <CartesianMode>Allow</CartesianMode>
               <SelectConfiguration>
                 <Configuration outputConnection="Output">
                   <OrderChanged value="False" />
@@ -904,7 +904,7 @@ ENDIF</Expression>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_ErrorMode>Ignore</ByName_ErrorMode>
               <ByName_OutputMode>All</ByName_OutputMode>
               <Mode>ByName</Mode>
               <SetOutputOrder value="False" />
@@ -956,7 +956,7 @@ ENDIF</Expression>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_ErrorMode>Ignore</ByName_ErrorMode>
               <ByName_OutputMode>All</ByName_OutputMode>
               <Mode>ByPos</Mode>
               <SetOutputOrder value="True" />
@@ -1137,7 +1137,7 @@ ENDIF</Expression>
         </Node>
         <Node ToolID="141">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DetourEnd.DetourEnd">
-            <Position x="1962" y="1014" />
+            <Position x="2058" y="1014" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -1162,9 +1162,9 @@ ENDIF</Expression>
           <Properties>
             <Configuration>
               <StartValue>1</StartValue>
-              <FieldName>RecordID</FieldName>
+              <FieldName>__recID1234__</FieldName>
               <FieldType>Int64</FieldType>
-              <Position>0</Position>
+              <Position>1</Position>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -1173,12 +1173,12 @@ ENDIF</Expression>
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int64" />
                 <Field name="Field_2" source="R-DATA:" type="Double" />
                 <Field name="seed" source="R-DATA:" type="Double" />
+                <Field name="__recID1234__" source="RecordID: Starting Value=1" type="Int64" />
               </RecordInfo>
               <SortInfo>
-                <Field field="RecordID" order="Asc" />
+                <Field field="__recID1234__" order="Asc" />
               </SortInfo>
             </MetaInfo>
           </Properties>
@@ -1192,7 +1192,7 @@ ENDIF</Expression>
             <Configuration>
               <Mode>Simple</Mode>
               <Simple>
-                <Field>RecordID</Field>
+                <Field>__recID1234__</Field>
                 <Operator>=</Operator>
                 <Operands>
                   <Operand>1</Operand>
@@ -1201,27 +1201,27 @@ ENDIF</Expression>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
-              <DefaultAnnotationText>[RecordID] = 1</DefaultAnnotationText>
+              <DefaultAnnotationText>[__recID1234__] = 1</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
             <MetaInfo connection="True">
               <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int64" />
                 <Field name="Field_2" source="R-DATA:" type="Double" />
                 <Field name="seed" source="R-DATA:" type="Double" />
+                <Field name="__recID1234__" source="RecordID: Starting Value=1" type="Int64" />
               </RecordInfo>
               <SortInfo>
-                <Field field="RecordID" order="Asc" />
+                <Field field="__recID1234__" order="Asc" />
               </SortInfo>
             </MetaInfo>
             <MetaInfo connection="False">
               <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int64" />
                 <Field name="Field_2" source="R-DATA:" type="Double" />
                 <Field name="seed" source="R-DATA:" type="Double" />
+                <Field name="__recID1234__" source="RecordID: Starting Value=1" type="Int64" />
               </RecordInfo>
               <SortInfo>
-                <Field field="RecordID" order="Asc" />
+                <Field field="__recID1234__" order="Asc" />
               </SortInfo>
             </MetaInfo>
           </Properties>
@@ -1229,7 +1229,7 @@ ENDIF</Expression>
         </Node>
         <Node ToolID="146">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
-            <Position x="2082" y="1014" />
+            <Position x="2154" y="1014" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1257,7 +1257,7 @@ ENDIF</Expression>
         </Node>
         <Node ToolID="147">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DetourEnd.DetourEnd">
-            <Position x="2790" y="1014" />
+            <Position x="2826" y="1014" />
           </GuiSettings>
           <Properties>
             <Configuration />
@@ -1277,12 +1277,12 @@ ENDIF</Expression>
         </Node>
         <Node ToolID="149">
           <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-            <Position x="2166" y="1062" />
+            <Position x="2250" y="1062" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <StartValue>1</StartValue>
-              <FieldName>RecordID</FieldName>
+              <FieldName>__recID54321__</FieldName>
               <FieldType>Int64</FieldType>
               <Position>0</Position>
             </Configuration>
@@ -1293,12 +1293,12 @@ ENDIF</Expression>
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="__recID54321__" source="RecordID: Starting Value=1" type="Int64" />
                 <Field name="Field_2" source="R-DATA:" type="Double" />
                 <Field name="seed" source="R-DATA:" type="Double" />
               </RecordInfo>
               <SortInfo>
-                <Field field="RecordID" order="Asc" />
+                <Field field="__recID54321__" order="Asc" />
               </SortInfo>
             </MetaInfo>
           </Properties>
@@ -1306,7 +1306,7 @@ ENDIF</Expression>
         </Node>
         <Node ToolID="150">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-            <Position x="2262" y="1062" />
+            <Position x="2346" y="1062" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1321,12 +1321,12 @@ ENDIF</Expression>
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="__recID54321__" source="RecordID: Starting Value=1" type="Int64" />
                 <Field name="Field_2" source="R-DATA:" type="Double" />
                 <Field name="seed" source="R-DATA:" type="Double" />
               </RecordInfo>
               <SortInfo>
-                <Field field="RecordID" order="Asc" />
+                <Field field="__recID54321__" order="Asc" />
               </SortInfo>
             </MetaInfo>
           </Properties>
@@ -1334,13 +1334,13 @@ ENDIF</Expression>
         </Node>
         <Node ToolID="151">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2358" y="1062" />
+            <Position x="2442" y="1062" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <OrderChanged value="False" />
               <SelectFields>
-                <SelectField field="RecordID" selected="True" />
+                <SelectField field="__recID54321__" selected="True" />
                 <SelectField field="*Unknown" selected="False" />
               </SelectFields>
             </Configuration>
@@ -1351,10 +1351,10 @@ ENDIF</Expression>
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="__recID54321__" source="RecordID: Starting Value=1" type="Int64" />
               </RecordInfo>
               <SortInfo>
-                <Field field="RecordID" order="Asc" />
+                <Field field="__recID54321__" order="Asc" />
               </SortInfo>
             </MetaInfo>
           </Properties>
@@ -1362,7 +1362,7 @@ ENDIF</Expression>
         </Node>
         <Node ToolID="152">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-            <Position x="2454" y="1122" />
+            <Position x="2538" y="1122" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1371,8 +1371,7 @@ ENDIF</Expression>
                 <Configuration outputConnection="Output">
                   <OrderChanged value="False" />
                   <SelectFields>
-                    <SelectField field="Target_RecordID" selected="True" rename="exclude_id" />
-                    <SelectField field="Source_RecordID" selected="True" rename="ID" />
+                    <SelectField field="Source___recID54321__" selected="True" rename="Source___recID54321__" />
                     <SelectField field="*Unknown" selected="True" />
                   </SelectFields>
                 </Configuration>
@@ -1385,10 +1384,10 @@ ENDIF</Expression>
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="exclude_id" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="__recID54321__" source="RecordID: Starting Value=1" type="Int64" />
                 <Field name="Field_2" source="R-DATA:" type="Double" />
                 <Field name="seed" source="R-DATA:" type="Double" />
-                <Field name="ID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Source___recID54321__" source="RecordID: Starting Value=1" type="Int64" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -1396,32 +1395,32 @@ ENDIF</Expression>
         </Node>
         <Node ToolID="153">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="2538" y="1122" />
+            <Position x="2634" y="1122" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Expression><![CDATA[[exclude_id]==id ]]></Expression>
+              <Expression>[__recID54321__]==[Source___recID54321__]</Expression>
               <Mode>Custom</Mode>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
-              <DefaultAnnotationText><![CDATA[[exclude_id]==id ]]></DefaultAnnotationText>
+              <DefaultAnnotationText>[__recID54321__]==[Source___recID54321__]</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
             <MetaInfo connection="True">
               <RecordInfo>
-                <Field name="exclude_id" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="__recID54321__" source="RecordID: Starting Value=1" type="Int64" />
                 <Field name="Field_2" source="R-DATA:" type="Double" />
                 <Field name="seed" source="R-DATA:" type="Double" />
-                <Field name="ID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Source___recID54321__" source="RecordID: Starting Value=1" type="Int64" />
               </RecordInfo>
             </MetaInfo>
             <MetaInfo connection="False">
               <RecordInfo>
-                <Field name="exclude_id" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="__recID54321__" source="RecordID: Starting Value=1" type="Int64" />
                 <Field name="Field_2" source="R-DATA:" type="Double" />
                 <Field name="seed" source="R-DATA:" type="Double" />
-                <Field name="ID" source="RecordID: Starting Value=1" type="Int64" />
+                <Field name="Source___recID54321__" source="RecordID: Starting Value=1" type="Int64" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -1429,14 +1428,14 @@ ENDIF</Expression>
         </Node>
         <Node ToolID="154">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2634" y="1134" />
+            <Position x="2730" y="1134" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <OrderChanged value="False" />
               <SelectFields>
-                <SelectField field="exclude_id" selected="False" />
-                <SelectField field="ID" selected="False" />
+                <SelectField field="__recID54321__" selected="False" />
+                <SelectField field="Source___recID54321__" selected="False" />
                 <SelectField field="*Unknown" selected="True" />
               </SelectFields>
             </Configuration>
@@ -1451,6 +1450,26 @@ ENDIF</Expression>
                 <Field name="seed" source="R-DATA:" type="Double" />
               </RecordInfo>
             </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="155">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1962" y="1074" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="__recID1234__" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
         </Node>
@@ -2753,7 +2772,7 @@ Transform
       <Destination ToolID="141" Connection="Left" />
     </Connection>
     <Connection>
-      <Origin ToolID="145" Connection="False" />
+      <Origin ToolID="155" Connection="Output" />
       <Destination ToolID="141" Connection="Right" />
     </Connection>
     <Connection>
@@ -2771,6 +2790,10 @@ Transform
     <Connection>
       <Origin ToolID="144" Connection="Output" />
       <Destination ToolID="145" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="145" Connection="False" />
+      <Destination ToolID="155" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="146" Connection="Left" />
