@@ -179,6 +179,7 @@ const NumInput = observer(({ store, k, cls, label }) => {
         value={store[k]}
         onChange={handleChange}
         step={10}
+        min={k === 'binSize' || k === 'gridHeight' ? 5 : -Infinity}
       />
     </div>
   );
@@ -198,7 +199,7 @@ class Roulette extends Component {
         </div>
         <div className="row">
           <NumInput k="gridHeight" label="Height" cls="pull-left2" store={store2} />
-          <NumInput k="binSize" label="Num Bins" cls="pull-right2" store={store2} />
+          <NumInput k="binSize" label="Bin Size" cls="pull-right2" store={store2} />
         </div>
       </div>
     );
