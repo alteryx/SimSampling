@@ -49,7 +49,7 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
-    <Node ToolID="8">
+    <Node ToolID="9">
       <GuiSettings Plugin="SimSampling">
         <Position x="162" y="78" />
       </GuiSettings>
@@ -57,11 +57,15 @@
         <Configuration>
           <Value name="distToFit">
           </Value>
-          <Value name="samplingStrategy">rows</Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
           <Value name="fields">
           </Value>
-          <Value name="jsonBounds">[-3, 3]</Value>
-          <Value name="jsonParameters">{"x": 1, "y": "2"}</Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
           <Value name="distribution">norm</Value>
           <Value name="stageName">
           </Value>
@@ -69,7 +73,15 @@
           <Value name="numIterations">10</Value>
           <Value name="seed">1</Value>
           <Value name="chunkSize">256000</Value>
-          <Value name="samplingMechanism">mc</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">landing</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000000,10000000]</Value>
+          <Value name="jsonRouletteData">{}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.1},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.1,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.1,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.1,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.1},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.1}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.1,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.1,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.1},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.1}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.1},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.1},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.1}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.1,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.1,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.1,"minSpinner":0,"maxSpinner":1}]}</Value>
+          <Value name="_distribution">normal</Value>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -77,7 +89,7 @@
           <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings Macro="Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="Supporting_Macros/SimSampling.yxmc" />
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
     </Node>
   </Nodes>
   <Connections />

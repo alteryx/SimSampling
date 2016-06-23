@@ -24,7 +24,7 @@
     </Node>
     <Node ToolID="63">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="582" width="815.0988" height="489" />
+        <Position x="54" y="585" width="804.3116" height="410" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -42,7 +42,7 @@
       <ChildNodes>
         <Node ToolID="48">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="64" y="615" width="297" height="446" />
+            <Position x="64" y="617" width="297" height="368" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -60,7 +60,7 @@
           <ChildNodes>
             <Node ToolID="39">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="89" y="659" width="247" height="113" />
+                <Position x="89" y="660" width="247" height="129" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -82,7 +82,7 @@
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_d46a7ebdf72446a3b821e3fdab3bef49_.yxdb</TempFile>
+                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_10624_34f18c2c89a04d09b9cc570427dc11b9_\Engine_12840_6ebef8d647844b86b6089845d79d0396_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -197,147 +197,9 @@
                 </Node>
               </ChildNodes>
             </Node>
-            <Node ToolID="43">
-              <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="89" y="923" width="247" height="113" />
-              </GuiSettings>
-              <Properties>
-                <Configuration>
-                  <Caption>Sample columns independently</Caption>
-                  <Style TextColor="#314c4a" FillColor="#80ff80" BorderColor="#314c4a" Transparency="25" Margin="10" />
-                  <Disabled value="False" />
-                  <Folded value="False" />
-                </Configuration>
-                <Annotation DisplayMode="0">
-                  <Name />
-                  <DefaultAnnotationText />
-                  <Left value="False" />
-                </Annotation>
-              </Properties>
-              <ChildNodes>
-                <Node ToolID="40">
-                  <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-                    <Position x="267" y="964" />
-                  </GuiSettings>
-                  <Properties>
-                    <Configuration>
-                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_8542ecde409a4fd0b250669f20cac765_.yxdb</TempFile>
-                      <Layout>
-                        <View1>
-                          <Hints>
-                            <Table />
-                          </Hints>
-                        </View1>
-                      </Layout>
-                    </Configuration>
-                    <Annotation DisplayMode="0">
-                      <Name />
-                      <DefaultAnnotationText />
-                      <Left value="False" />
-                    </Annotation>
-                  </Properties>
-                  <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-                </Node>
-                <Node ToolID="41">
-                  <GuiSettings Plugin="SimSampling">
-                    <Position x="183" y="964" />
-                  </GuiSettings>
-                  <Properties>
-                    <Configuration>
-                      <Value name="distToFit">norm,lnorm,unif</Value>
-                      <Value name="binnedValueField" />
-                      <Value name="binnedIdField" />
-                      <Value name="binnedDataName">
-                      </Value>
-                      <Value name="samplingStrategy">best</Value>
-                      <Value name="fields">HR,X3B</Value>
-                      <Value name="dataKind">raw</Value>
-                      <Value name="replace">True</Value>
-                      <Value name="jsonBounds">
-                      </Value>
-                      <Value name="jsonParameters">
-                      </Value>
-                      <Value name="distribution">norm</Value>
-                      <Value name="stageName">
-                      </Value>
-                      <Value name="samplingMode">data</Value>
-                      <Value name="numIterations">10</Value>
-                      <Value name="seed">1</Value>
-                      <Value name="chunkSize">256000</Value>
-                      <Value name="samplingMechanism">MC</Value>
-                      <Value name="activePage">data</Value>
-                      <Value name="intermediate">False</Value>
-                      <Value name="displaySeed">True</Value>
-                      <Value name="jsonRouletteData">{"20":8,"30":6}</Value>
-                      <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
-                      <Value name="_distributions">{"normal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":1,"min":0,"max":1,"step":0.1}],"lognormal":[{"label":"Mean","value":0,"min":-5,"max":5,"step":1},{"label":"Stdev","value":0.25,"min":0,"max":1,"step":0.1}],"exponential":[{"label":"Rate","value":1,"min":0,"max":5,"step":1}],"uniform":[{"label":"a","value":0,"min":-5,"max":5,"step":1},{"label":"b","value":1,"min":-5,"max":5,"step":1}],"gamma":[{"label":"a","value":1,"min":0,"max":5,"step":1},{"label":"b","value":1,"min":0,"max":5,"step":1}],"beta":[{"label":"alpha","value":2,"min":0,"max":5,"step":0.2},{"label":"beta","value":5,"min":0,"max":5,"step":0.2}],"pareto":[{"label":"scale","value":2,"min":0,"max":5,"step":0.1},{"label":"shape","value":2,"min":0,"max":5,"step":0.1}],"binomial":[{"label":"n","value":10,"min":1,"max":20,"step":1},{"label":"p","value":0.5,"min":0,"max":1,"step":0.1}]}</Value>
-                      <Value name="_distribution">normal</Value>
-                    </Configuration>
-                    <Annotation DisplayMode="0">
-                      <Name />
-                      <DefaultAnnotationText />
-                      <Left value="False" />
-                    </Annotation>
-                  </Properties>
-                  <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
-                </Node>
-                <Node ToolID="42">
-                  <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-                    <Position x="99" y="952" />
-                  </GuiSettings>
-                  <Properties>
-                    <Configuration>
-                      <Passwords />
-                      <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Program Files\Alteryx\R-3.2.3\plugin\Samples\SampleData\SABRmetrics.yxdb</File>
-                      <FormatSpecificOptions />
-                    </Configuration>
-                    <Annotation DisplayMode="0">
-                      <Name />
-                      <DefaultAnnotationText>SABRmetrics.yxdb</DefaultAnnotationText>
-                      <Left value="False" />
-                    </Annotation>
-                    <MetaInfo connection="Output">
-                      <RecordInfo>
-                        <Field name="Tm" size="1073741823" source="R-DATA:" type="V_WString" />
-                        <Field name="Games" source="R-DATA:" type="Int32" />
-                        <Field name="Wins" source="R-DATA:" type="Int32" />
-                        <Field name="Win_Pct" source="R-DATA:" type="Double" />
-                        <Field name="X_Bat" source="R-DATA:" type="Int32" />
-                        <Field name="BatAge" source="R-DATA:" type="Double" />
-                        <Field name="R_G" source="R-DATA:" type="Double" />
-                        <Field name="PA" source="R-DATA:" type="Int32" />
-                        <Field name="AB" source="R-DATA:" type="Int32" />
-                        <Field name="R" source="R-DATA:" type="Int32" />
-                        <Field name="H" source="R-DATA:" type="Int32" />
-                        <Field name="X2B" source="R-DATA:" type="Int32" />
-                        <Field name="X3B" source="R-DATA:" type="Int32" />
-                        <Field name="HR" source="R-DATA:" type="Int32" />
-                        <Field name="RBI" source="R-DATA:" type="Int32" />
-                        <Field name="SB" source="R-DATA:" type="Int32" />
-                        <Field name="CS" source="R-DATA:" type="Int32" />
-                        <Field name="BB" source="R-DATA:" type="Int32" />
-                        <Field name="SO" source="R-DATA:" type="Int32" />
-                        <Field name="BA" source="R-DATA:" type="Double" />
-                        <Field name="OBP" source="R-DATA:" type="Double" />
-                        <Field name="SLG" source="R-DATA:" type="Double" />
-                        <Field name="OPS" source="R-DATA:" type="Double" />
-                        <Field name="OPS_Adj" source="R-DATA:" type="Int32" />
-                        <Field name="TB" source="R-DATA:" type="Int32" />
-                        <Field name="GDP" source="R-DATA:" type="Int32" />
-                        <Field name="HBP" source="R-DATA:" type="Int32" />
-                        <Field name="SH" source="R-DATA:" type="Int32" />
-                        <Field name="SF" source="R-DATA:" type="Int32" />
-                        <Field name="IBB" source="R-DATA:" type="Int32" />
-                      </RecordInfo>
-                    </MetaInfo>
-                  </Properties>
-                  <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
-                </Node>
-              </ChildNodes>
-            </Node>
             <Node ToolID="47">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="89" y="791" width="247" height="113" />
+                <Position x="89" y="792" width="247" height="129" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -359,7 +221,7 @@
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_bf4ccd0aa392495a82e933684d6f825a_.yxdb</TempFile>
+                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_10624_34f18c2c89a04d09b9cc570427dc11b9_\Engine_12840_5755e504c131495cb7025171a6e96c5f_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -478,7 +340,7 @@
         </Node>
         <Node ToolID="53">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="364" y="611" width="267" height="149" />
+            <Position x="364" y="613" width="267" height="147" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -496,7 +358,7 @@
           <ChildNodes>
             <Node ToolID="52">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="374" y="640" width="247" height="110" />
+                <Position x="374" y="641" width="247" height="109" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -560,7 +422,7 @@
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_05bd03b6d2f64faa8c900fef8d5e8b3f_.yxdb</TempFile>
+                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_10624_34f18c2c89a04d09b9cc570427dc11b9_\Engine_12840_52ba8bbbe5a34e4aa3d02b2949dce82a_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -633,7 +495,7 @@
         </Node>
         <Node ToolID="60">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="640" y="611" width="219.0988" height="249" />
+            <Position x="640" y="613" width="208.3116" height="247" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -651,7 +513,7 @@
           <ChildNodes>
             <Node ToolID="56">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="652" y="640" width="175" height="98" />
+                <Position x="652" y="641" width="175" height="97" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -714,7 +576,7 @@
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_7c1deeb0e8904100ad65e60d6242af50_.yxdb</TempFile>
+                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_10624_34f18c2c89a04d09b9cc570427dc11b9_\Engine_12840_993a5b0baddf43719f08aeec9cc3fd5e_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -735,7 +597,7 @@
             </Node>
             <Node ToolID="59">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="650" y="752" width="199.0988" height="98" />
+                <Position x="650" y="753" width="188.3116" height="97" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -802,7 +664,7 @@
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_daa780e98ece415f8879e6f67e0bb1ee_.yxdb</TempFile>
+                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_10624_34f18c2c89a04d09b9cc570427dc11b9_\Engine_12840_e431da75ab6d435792e2ca1b693ecb4b_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -827,7 +689,7 @@
     </Node>
     <Node ToolID="62">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="89.99989" width="815.0988" height="477.0001" />
+        <Position x="54" y="92.99989" width="804.3116" height="491.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -845,7 +707,7 @@
       <ChildNodes>
         <Node ToolID="14">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="64" y="118.9999" width="299" height="438.0001" />
+            <Position x="64" y="120.9999" width="299" height="453.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -863,7 +725,7 @@
           <ChildNodes>
             <Node ToolID="10">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="91" y="162.9999" width="247" height="113.0001" />
+                <Position x="91" y="163.9999" width="247" height="129.0001" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -885,7 +747,7 @@
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_0b75ff7e7dec4aedb20cbcac32d80b86_.yxdb</TempFile>
+                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_10624_34f18c2c89a04d09b9cc570427dc11b9_\Engine_12840_24fdf545acd446ed8ef6f0212fee0503_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -1002,7 +864,7 @@
             </Node>
             <Node ToolID="22">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="89" y="418.9999" width="247" height="113.0001" />
+                <Position x="89" y="419.9999" width="247" height="129.0001" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1024,7 +886,7 @@
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_7207a08d656d422281e3da309294ff67_.yxdb</TempFile>
+                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_10624_34f18c2c89a04d09b9cc570427dc11b9_\Engine_12840_2250f71fa02b459597c96685b9f1f0e1_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -1138,7 +1000,7 @@
             </Node>
             <Node ToolID="26">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="89" y="286.9999" width="247" height="113.0001" />
+                <Position x="89" y="287.9999" width="247" height="129.0001" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1160,7 +1022,7 @@
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_6359f457fb4244e3b515fd55b57130c5_.yxdb</TempFile>
+                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_10624_34f18c2c89a04d09b9cc570427dc11b9_\Engine_12840_c8d341655bbc414ba69417988c679158_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -1279,7 +1141,7 @@
         </Node>
         <Node ToolID="34">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="369" y="121" width="267" height="149" />
+            <Position x="369" y="123" width="267" height="147" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1297,7 +1159,7 @@
           <ChildNodes>
             <Node ToolID="30">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="379" y="150" width="247" height="110" />
+                <Position x="379" y="151" width="247" height="109" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1361,7 +1223,7 @@
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_1a7cc86b91824e3ab48b7073f1019b0a_.yxdb</TempFile>
+                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_10624_34f18c2c89a04d09b9cc570427dc11b9_\Engine_12840_6a9798e2894e45d0892e5b6bff23872c_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -1434,7 +1296,7 @@
         </Node>
         <Node ToolID="4">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="640" y="126" width="219.0988" height="250" />
+            <Position x="640" y="128" width="208.3116" height="248" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1452,7 +1314,7 @@
           <ChildNodes>
             <Node ToolID="3">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="652" y="155" width="175" height="98" />
+                <Position x="652" y="156" width="175" height="97" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1516,7 +1378,7 @@
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_da8f98d6e2c74c40b63caa732fad1e87_.yxdb</TempFile>
+                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_10624_34f18c2c89a04d09b9cc570427dc11b9_\Engine_12840_1811096d4dcb42fe9a2c5f234c15a942_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -1537,7 +1399,7 @@
             </Node>
             <Node ToolID="7">
               <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-                <Position x="650" y="268" width="199.0988" height="98" />
+                <Position x="650" y="269" width="188.3116" height="97" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1601,7 +1463,7 @@
                   </GuiSettings>
                   <Properties>
                     <Configuration>
-                      <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2316_70f47d7c357f4f7a82dfe67779e235c3_\Engine_3848_9d6136f99d2f4240a01c09a3b6140f47_.yxdb</TempFile>
+                      <TempFile>C:\Users\DBLANC~1\AppData\Local\Temp\Engine_10624_34f18c2c89a04d09b9cc570427dc11b9_\Engine_12840_140707559b344e4797206b9c8b6dab74_.yxdb</TempFile>
                       <Layout>
                         <View1>
                           <Hints>
@@ -1633,14 +1495,6 @@
     <Connection>
       <Origin ToolID="38" Connection="Output" />
       <Destination ToolID="37" Connection="SampleData" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="41" Connection="Data" />
-      <Destination ToolID="40" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="42" Connection="Output" />
-      <Destination ToolID="41" Connection="SampleData" />
     </Connection>
     <Connection>
       <Origin ToolID="45" Connection="Data" />
