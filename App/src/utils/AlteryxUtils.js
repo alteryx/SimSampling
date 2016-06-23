@@ -90,7 +90,7 @@ function controlDisplayIntermediate(manager){
 function hasField(manager, i, name){
   if (!manager.incomingMetaInfo) return false;
   if (!manager.incomingMetaInfo[i]) return false;
-  const fields = manager.incomingMetaInfo[i].MetaInfo.RecordInfo.Field.map(d => d["@name"])
+  const fields = [].concat(manager.incomingMetaInfo[i].MetaInfo.RecordInfo.Field).map(d => d["@name"])
   return fields.indexOf(name) >= 0;
 }
 
