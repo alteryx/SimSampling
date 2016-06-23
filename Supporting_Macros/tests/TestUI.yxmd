@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="42" y="234" />
+        <Position x="42" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -25,50 +25,9 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
-    <Node ToolID="6">
-      <GuiSettings Plugin="SimSampling">
-        <Position x="138" y="90" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="distToFit">
-          </Value>
-          <Value name="binnedValueField" />
-          <Value name="binnedIdField" />
-          <Value name="binnedDataName">
-          </Value>
-          <Value name="samplingStrategy">entire</Value>
-          <Value name="fields">
-          </Value>
-          <Value name="dataKind">raw</Value>
-          <Value name="jsonBounds">
-          </Value>
-          <Value name="jsonParameters">
-          </Value>
-          <Value name="distribution">norm</Value>
-          <Value name="stageName">
-          </Value>
-          <Value name="samplingMode">parametric</Value>
-          <Value name="numIterations">10</Value>
-          <Value name="seed">1</Value>
-          <Value name="chunkSize">256000</Value>
-          <Value name="samplingMechanism">MC</Value>
-          <Value name="jsonRouletteData">{"20":5,"30":6}</Value>
-          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
-          <Value name="intermediate">False</Value>
-          <Value name="displaySeed">True</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="Supporting_Macros/SimSampling.yxmc" />
-    </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="90" y="30" width="156" height="48" />
+        <Position x="102" y="54" width="156" height="48" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -86,50 +45,9 @@
         </Annotation>
       </Properties>
     </Node>
-    <Node ToolID="8">
-      <GuiSettings Plugin="SimSampling">
-        <Position x="138" y="222" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="distToFit">
-          </Value>
-          <Value name="binnedValueField" />
-          <Value name="binnedIdField" />
-          <Value name="binnedDataName">
-          </Value>
-          <Value name="samplingStrategy">entire</Value>
-          <Value name="fields">
-          </Value>
-          <Value name="dataKind">raw</Value>
-          <Value name="jsonBounds">
-          </Value>
-          <Value name="jsonParameters">
-          </Value>
-          <Value name="distribution">norm</Value>
-          <Value name="stageName">
-          </Value>
-          <Value name="samplingMode">parametric</Value>
-          <Value name="numIterations">10</Value>
-          <Value name="seed">1</Value>
-          <Value name="chunkSize">256000</Value>
-          <Value name="samplingMechanism">MC</Value>
-          <Value name="jsonRouletteData">{"20":5,"30":6}</Value>
-          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
-          <Value name="intermediate">False</Value>
-          <Value name="displaySeed">True</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="Supporting_Macros/SimSampling.yxmc" />
-    </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="90" y="162" width="156" height="48" />
+        <Position x="90" y="234" width="156" height="48" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -149,7 +67,7 @@
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="42" y="390" />
+        <Position x="54" y="498" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -173,50 +91,9 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
-    <Node ToolID="11">
-      <GuiSettings Plugin="SimSampling">
-        <Position x="138" y="378" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="distToFit">
-          </Value>
-          <Value name="binnedValueField" />
-          <Value name="binnedIdField" />
-          <Value name="binnedDataName">
-          </Value>
-          <Value name="samplingStrategy">entire</Value>
-          <Value name="fields">
-          </Value>
-          <Value name="dataKind">raw</Value>
-          <Value name="jsonBounds">
-          </Value>
-          <Value name="jsonParameters">
-          </Value>
-          <Value name="distribution">norm</Value>
-          <Value name="stageName">
-          </Value>
-          <Value name="samplingMode">parametric</Value>
-          <Value name="numIterations">10</Value>
-          <Value name="seed">1</Value>
-          <Value name="chunkSize">256000</Value>
-          <Value name="samplingMechanism">MC</Value>
-          <Value name="jsonRouletteData">{"20":5,"30":6}</Value>
-          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
-          <Value name="intermediate">True</Value>
-          <Value name="displaySeed">False</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="Supporting_Macros/SimSampling.yxmc" />
-    </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="78" y="318" width="180" height="48" />
+        <Position x="90" y="426" width="180" height="48" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -234,15 +111,140 @@
         </Annotation>
       </Properties>
     </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="162" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">N1</Value>
+          <Value name="samplingMode">parametric</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">parametric</Value>
+          <Value name="intermediate">False</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000000,10000000]</Value>
+          <Value name="jsonRouletteData">{}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.1},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.1,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.1,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.1,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.1},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.1}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.1,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.1,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.1},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.1}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.1},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.1},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.1}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.1,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.1,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.1,"minSpinner":0,"maxSpinner":1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Normal(0 , 1)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="162" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">
+          </Value>
+          <Value name="samplingMode">parametric</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">landing</Value>
+          <Value name="intermediate">True</Value>
+          <Value name="displaySeed">True</Value>
+          <Value name="_bounds">[-10000000,10000000]</Value>
+          <Value name="jsonRouletteData">{}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.1},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.1,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.1,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.1,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.1},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.1}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.1,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.1,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.1},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.1}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.1},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.1},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.1}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.1,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.1,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.1,"minSpinner":0,"maxSpinner":1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="SimSampling">
+        <Position x="174" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="distToFit">
+          </Value>
+          <Value name="binnedValueField" />
+          <Value name="binnedIdField" />
+          <Value name="binnedDataName">
+          </Value>
+          <Value name="samplingStrategy">entire</Value>
+          <Value name="fields">
+          </Value>
+          <Value name="dataKind">raw</Value>
+          <Value name="replace">False</Value>
+          <Value name="distribution">norm</Value>
+          <Value name="stageName">
+          </Value>
+          <Value name="samplingMode">parametric</Value>
+          <Value name="numIterations">10</Value>
+          <Value name="seed">1</Value>
+          <Value name="chunkSize">256000</Value>
+          <Value name="samplingMechanism">MC</Value>
+          <Value name="activePage">landing</Value>
+          <Value name="intermediate">True</Value>
+          <Value name="displaySeed">False</Value>
+          <Value name="_bounds">[-10000000,10000000]</Value>
+          <Value name="jsonRouletteData">{}</Value>
+          <Value name="rouletteData">{"lower":20,"upper":80,"binSize":10,"gridHeight":10,"active":{"20":5,"40":6}}</Value>
+          <Value name="_distributions">{"normal":[{"label":"Mean","paramName":"mean","value":0,"min":-5,"max":5,"step":0.1},{"label":"Stdev","paramName":"sd","value":1,"min":0.001,"max":2,"step":0.1,"minSpinner":0.001}],"gamma":[{"label":"Shape","paramName":"shape","value":1,"min":0,"max":5,"step":0.1,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":1,"min":0.1,"max":5,"step":0.1,"minSpinner":0.001}],"lognormal":[{"label":"Mean","paramName":"meanlog","value":0,"min":-5,"max":5,"step":0.1},{"label":"Stdev","paramName":"sdlog","value":1,"min":0,"max":2,"step":0.1}],"pareto":[{"label":"Shape","paramName":"shape","value":2,"min":0.001,"max":5,"step":0.1,"minSpinner":0.001},{"label":"Scale","paramName":"scale","value":2,"min":0.001,"max":5,"step":0.1,"minSpinner":0.001}],"uniform":[{"label":"Minimum","paramName":"min","value":-1,"min":-10,"max":10,"step":0.1},{"label":"Maximum","paramName":"max","value":1,"min":-10,"max":10,"step":0.1}],"triangular":[{"label":"Minimum","paramName":"a","value":-1,"min":-10,"max":10,"step":0.1},{"label":"Maximum","paramName":"b","value":1,"min":-10,"max":10,"step":0.1},{"label":"Most Likely","paramName":"c","value":0,"min":-10,"max":10,"step":0.1}],"poisson":[{"label":"Mean","paramName":"lambda","value":5,"min":0.1,"max":5,"step":0.1,"minSpinner":0.001}],"binomial":[{"label":"Trials","paramName":"size","value":10,"min":1,"max":20,"step":1},{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.1,"minSpinner":0,"maxSpinner":1}],"geometric":[{"label":"Probability","paramName":"prob","value":0.5,"min":0,"max":1,"step":0.1,"minSpinner":0,"maxSpinner":1}]}</Value>
+          <Value name="_distribution">normal</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="SimSampling/Supporting_Macros/SimSampling.yxmc" EngineDll="Macro" EngineDllEntryPoint="SimSampling/Supporting_Macros/SimSampling.yxmc" />
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
       <Origin ToolID="4" Connection="Output" />
-      <Destination ToolID="8" Connection="SimulationData" />
+      <Destination ToolID="16" Connection="SimulationData" />
     </Connection>
     <Connection>
       <Origin ToolID="10" Connection="Output" />
-      <Destination ToolID="11" Connection="SimulationData" />
+      <Destination ToolID="17" Connection="SimulationData" />
     </Connection>
   </Connections>
   <Properties>
