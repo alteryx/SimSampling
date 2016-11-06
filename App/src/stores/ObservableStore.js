@@ -1,4 +1,4 @@
-import { autorun, extendObservable, toJSON } from 'mobx';
+import { autorun, extendObservable, toJS } from 'mobx';
 // import store from '../stores/Storage';
 
 class ObservableStore {
@@ -11,7 +11,7 @@ class ObservableStore {
       autorun(() => {
         console.log('Autorunning...');
         item.setValue(
-          d.type === 'value' ? toJSON(this[d.key]) : JSON.stringify(toJSON(this[d.key]))
+          d.type === 'value' ? toJS(this[d.key]) : JSON.stringify(toJS(this[d.key]))
         );
         // store.set(d.key, item.getValue());
       });

@@ -1,5 +1,5 @@
 import { observer } from 'mobx-react';
-import { isObservable, extendObservable, observable, toJSON } from 'mobx';
+import { isObservable, extendObservable, observable, toJS } from 'mobx';
 import React, { Component } from 'react';
 import d3 from 'd3';
 import d3Kit from 'd3kit';
@@ -85,15 +85,15 @@ const chartConstructor = (store) => (skeleton) => {
     grid.on('click', function filterGrid(d) {
       console.log("Clicked");
        /* HACK-ALERT-START */
-      const activeKeys = Object.keys(toJSON(store.jsonRouletteData));
+      const activeKeys = Object.keys(toJS(store.jsonRouletteData));
       if (d.x.toString().indexOf(activeKeys) >= 0){
         store.jsonRouletteData[d.x] = d.y + 1;
       } else {
         extendObservable(store.jsonRouletteData, { [`${d.x}`] : d.y + 1 })
         Alteryx.Gui.manager.GetDataItemByDataName("jsonRouletteData").setValue(
-          JSON.stringify(toJSON(store.jsonRouletteData))
+          JSON.stringify(toJS(store.jsonRouletteData))
         )
-        //persistentStore.set('active', JSON.stringify(toJSON(store.active)))
+        //persistentStore.set('active', JSON.stringify(toJS(store.active)))
       }
       console.log(store.jsonRouletteData)
        /* HACK-ALERT-END */
@@ -109,9 +109,9 @@ const chartConstructor = (store) => (skeleton) => {
         } else {
           extendObservable(store.jsonRouletteData, { [`${d.x}`] : d.y })
           Alteryx.Gui.manager.GetDataItemByDataName("jsonRouletteData").setValue(
-            JSON.stringify(toJSON(store.jsonRouletteData))
+            JSON.stringify(toJS(store.jsonRouletteData))
           )
-          //persistentStore.set('active', JSON.stringify(toJSON(store.active)))
+          //persistentStore.set('active', JSON.stringify(toJS(store.active)))
         }
       } else {
         console.log('transitioning...')
@@ -165,10 +165,10 @@ const NumInput = observer(({ store, k, cls, label }) => {
   const handleChange = (e) => {
     store[k] = e.target.value;
     /* HACK-ALERT-START 
-    Object.keys(toJSON(store.active)).forEach(k => store.active[k.toString()] = 0)
+    Object.keys(toJS(store.active)).forEach(k => store.active[k.toString()] = 0)
     Alteryx.Gui.manager.GetDataItemByDataName("active").setValue("{}")
     persistentStore.set("active", JSON.stringify(store.active));
-    console.log(toJSON(store.active))
+    console.log(toJS(store.active))
     HACK-ALERT-END */
   };
   return (
